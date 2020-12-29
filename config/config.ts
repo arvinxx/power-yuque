@@ -6,12 +6,13 @@ export default defineConfig({
   },
   locale: { default: 'zh-CN' },
   extensions: {
-    name: 'Umi Chrome Extension Template',
-    description: '基于 Umi 的 Chrome 插件开发脚手架',
+    name: 'Yuque Power',
+    description: '语雀增强插件',
     optionsUI: {
       page: '@/pages/options',
       openInTab: true,
     },
+    content_scripts: [],
     background: { scripts: ['@/background/index'] },
     popupUI: '@/pages/popup',
     icons: {
