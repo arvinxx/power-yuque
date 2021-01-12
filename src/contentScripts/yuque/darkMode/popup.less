@@ -1,0 +1,20 @@
+@import './token';
+
+.ant-popover-arrow {
+  border-color: @dark-mode-background-light rgba(0, 0, 0, 0) rgba(0, 0, 0, 0)
+    @dark-mode-background-light !important;
+}
+
+.ant-menu {
+  background: @dark-mode-background-light !important;
+  .ant-menu-item {
+    .dark-mode-base-text;
+    &:hover {
+      background: @dark-mode-background-light-hover !important;
+    }
+  }
+
+  .ant-menu-item-divider {
+    background: @dark-mode-border-color-dark !important;
+  }
+}

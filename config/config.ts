@@ -1,12 +1,18 @@
 import { defineConfig } from 'umi';
+import { resolve } from 'path';
 
 export default defineConfig({
   nodeModulesTransform: {
     type: 'none',
   },
   locale: { default: 'zh-CN' },
+  alias: {
+    // theme: '',
+    theme: resolve(__dirname, '../src/theme'),
+  },
+  // chrome 插件配置项
   extensions: {
-    name: 'Yuque Power',
+    name: 'Power Yuque',
     description: '语雀增强插件',
     optionsUI: {
       page: '@/pages/options',

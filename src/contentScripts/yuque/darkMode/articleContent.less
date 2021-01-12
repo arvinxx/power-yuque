@@ -1,0 +1,36 @@
+@import './token';
+
+// 文章内容
+#content {
+  // 文本颜色
+  .lake-typography-traditional,
+  .lake-typography-classic {
+    color: @dark-mode-text-color-base;
+  }
+  h1,
+  h2,
+  h3 {
+    color: @dark-mode-text-color-base !important;
+  }
+
+  h2 {
+    border-bottom-color: @dark-mode-border-color-light;
+  }
+
+  // 分割线
+  [data-lake-card='hr'] hr {
+    background-color: @dark-mode-border-color-light !important;
+  }
+  // 图片变暗 80%
+  .lake-image-meta {
+    .dark-mode-image;
+  }
+
+  // 文本链接
+  a {
+    color: @dark-mode-link-color !important;
+    &:hover {
+      color: @dark-mode-link-color-active !important;
+    }
+  }
+}

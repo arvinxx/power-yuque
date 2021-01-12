@@ -1,0 +1,32 @@
+@import './token';
+
+// 头部
+
+.header-crumb .doc-title {
+  color: @dark-mode-text-color-emphasize !important;
+}
+
+.book-name-text,
+.ant-breadcrumb-link {
+  color: @dark-mode-text-color-base !important;
+  &:hover {
+    color: @dark-mode-text-color-base-hover !important;
+  }
+}
+
+// 头部
+.header {
+  background: @dark-mode-background-light !important;
+  border-bottom-color: @dark-mode-border-color-dark !important;
+  box-shadow: none !important;
+
+  [data-testid='present-btn'] {
+    color: @dark-mode-text-color-emphasize !important;
+  }
+  .ant-btn[title='分享'] {
+    color: @dark-mode-text-color-emphasize !important;
+    &:hover {
+      color: @yuque-brand-color !important;
+    }
+  }
+}

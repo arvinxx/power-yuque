@@ -1,0 +1,39 @@
+@import './token';
+
+// 左侧侧边栏
+div[data-testid='aside'] {
+  background: @dark-mode-background-dark !important;
+  div[data-testid='catalog-tree'] {
+    &:before,
+    &:after {
+      display: none;
+    }
+  }
+
+  // hover样式
+  ul[data-testid='lite-doc-list'] li:hover,
+  .catalog-item-action-active {
+    background: @dark-mode-background-light;
+  }
+
+  //
+  .larkui-popover-trigger:hover {
+    background: @dark-mode-background-light;
+  }
+}
+
+// 拖动区 暂时无解
+.BookReader-module_dragbar_2Vb8j {
+  &:before,
+  &:after {
+    background: @dark-mode-background-dark !important;
+  }
+}
+// 折叠收起
+.BookReader-module_pinIconTrigger_msk4e {
+  background: @dark-mode-background-light !important;
+  border-color: @dark-mode-border-color-light !important;
+  &:hover {
+    border-color: @yuque-brand-color !important;
+  }
+}

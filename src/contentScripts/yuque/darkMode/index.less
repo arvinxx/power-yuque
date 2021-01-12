@@ -1,0 +1,24 @@
+@import './token';
+@import './header';
+@import './aside';
+@import './articleContent';
+@import './popup';
+
+.loading {
+  background: @dark-mode-background-dark !important;
+}
+
+body {
+  color: @dark-mode-text-color-base !important;
+  background: @dark-mode-background-base !important;
+}
+
+// 主文本区
+#main {
+  background: @dark-mode-background-base;
+
+  // 右侧大纲进度条
+  .larkui-synopsis .larkui-synopsis-progress-bar {
+    border-left-color: @dark-mode-border-color-light;
+  }
+}
