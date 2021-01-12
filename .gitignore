@@ -62,3 +62,6 @@ example/.temp/*
 .eslintcache
 
 dev
+
+*.crx
+*.pem

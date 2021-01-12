@@ -12,7 +12,13 @@ export default defineConfig({
       page: '@/pages/options',
       openInTab: true,
     },
-    content_scripts: [],
+    contentScripts: [
+      {
+        matches: ['https://yuque.com/*', 'https://www.yuque.com/*'],
+        entries: ['@/contentScripts/yuque'],
+      },
+    ],
+    // content_scripts: [],
     background: { scripts: ['@/background/index'] },
     popupUI: '@/pages/popup',
     icons: {
