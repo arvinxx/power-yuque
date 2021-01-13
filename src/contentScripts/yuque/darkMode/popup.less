@@ -4,17 +4,31 @@
   border-color: @dark-mode-background-light rgba(0, 0, 0, 0) rgba(0, 0, 0, 0)
     @dark-mode-background-light !important;
 }
-
+.ant-popover-inner,
 .ant-menu {
   background: @dark-mode-background-light !important;
-  .ant-menu-item {
-    .dark-mode-base-text;
-    &:hover {
-      background: @dark-mode-background-light-hover !important;
-    }
-  }
+}
 
-  .ant-menu-item-divider {
-    background: @dark-mode-border-color-base !important;
+.ant-menu-item,
+.menu-cls,
+.ant-menu-submenu-open {
+  .dark-mode-base-text;
+  transition: background-color 0.3s ease-in-out;
+
+  &:hover {
+    background: @dark-mode-background-light-hover !important;
   }
+}
+
+.ant-menu-submenu-title:hover {
+  background: @dark-mode-background-light-hover !important;
+  color: @yuque-brand-color !important;
+}
+
+.ant-menu-submenu-popup a:hover span {
+  color: @yuque-brand-color !important;
+}
+
+.ant-menu-item-divider {
+  background: @dark-mode-border-color-base !important;
 }

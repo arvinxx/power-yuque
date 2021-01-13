@@ -11,14 +11,17 @@ div[data-testid='aside'] {
   }
 
   // hover样式
-  ul[data-testid='lite-doc-list'] li:hover,
-  .catalog-item-action-active {
+  ul[data-testid='lite-doc-list'] li:hover {
     background: @dark-mode-background-light;
   }
 
   //
   .larkui-popover-trigger:hover {
     background: @dark-mode-background-light;
+  }
+
+  .ant-tree-treenode:hover:before {
+    background: @dark-mode-background-light !important;
   }
 }
 
