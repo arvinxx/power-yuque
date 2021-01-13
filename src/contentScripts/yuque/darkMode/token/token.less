@@ -11,6 +11,9 @@
 @dark-mode-background-dark-hover: hsl(@base-hue, @base-tone, 14%);
 @dark-mode-background-darker: hsl(@base-hue, @base-tone, 5%);
 
+// 阴影
+@dark-mode-shadow-color: hsla(@base-hue, @base-tone, 5%, 0.1);
+
 @dark-mode-text-color-emphasize: white;
 
 @dark-mode-text-color-base: hsl(@base-hue, 3%, 65%);
@@ -51,29 +54,5 @@
   color: @dark-mode-link-color !important;
   &:hover {
     color: @dark-mode-link-color-active !important;
-  }
-}
-
-// 暗色卡片
-.dark-mode-card {
-  transition: all 0.3s ease-in-out;
-  background: @dark-mode-background-dark !important;
-  border: none !important;
-}
-
-// 在 background-base 下的禁用按钮
-.dark-mode-button-disable-in-base {
-  .ant-btn[disabled] {
-    background: @dark-mode-background-dark !important;
-    border-color: @dark-mode-border-color-darker !important;
-    color: @dark-mode-text-color-second !important;
-  }
-}
-// 在 background-dark 下的禁用按钮
-.dark-mode-button-disable-in-dark {
-  .ant-btn[disabled] {
-    background: @dark-mode-background-base !important;
-    border-color: @dark-mode-background-base !important;
-    color: @dark-mode-text-color-second !important;
   }
 }

@@ -1,0 +1,89 @@
+@import '../token/index';
+.main-wrapper {
+  background: @dark-mode-background-dark !important;
+}
+
+.larkui-card {
+  .dark-mode-card-base;
+}
+
+.ant-card-head {
+  border-bottom-color: @dark-mode-border-color-dark !important;
+}
+.lark-nav.ant-menu-horizontal > .ant-menu-item > a.active {
+  color: @dark-mode-text-color-base !important;
+}
+
+div[class^='ant-card ant-card-bordered larkui-card Books-module_book_3FBFd']
+  .ant-card-body {
+  .dark-mode-card-light;
+}
+
+.homepage-header {
+  color: @dark-mode-text-color-base !important;
+}
+
+[class^='Readme-module_empty'] {
+  border-color: @dark-mode-border-color-light !important;
+}
+
+[class^='BookStack-module_bar'] {
+  background: @dark-mode-background-light !important;
+}
+[class^='BookStack-module_operations'] {
+  background: @dark-mode-background-light !important;
+  border-color: @dark-mode-background-light !important;
+  button {
+    background: @dark-mode-background-light !important;
+  }
+}
+
+div[class^='UserFollowed-module_container'] {
+  background: @dark-mode-background-light !important;
+
+  div[class^='UserFollowed-module_userDetail'] {
+    border-bottom-color: @dark-mode-border-color-light;
+
+    a[class^='UserFollowed-module_title'] {
+      color: @dark-mode-text-color-base !important;
+    }
+  }
+}
+
+div[class^='ItemLiked-module_container'] {
+  background: @dark-mode-background-light !important;
+
+  div[class^='ItemLiked-module_likesInfo'] a {
+    color: @dark-mode-text-color-base !important;
+    &:hover {
+      color: @dark-mode-text-color-emphasize !important;
+    }
+  }
+  a[class^='ItemLiked-module_title'] {
+    color: @dark-mode-text-color-base !important;
+  }
+}
+
+div[class^='BookWatched-module_container'] {
+  background: @dark-mode-background-light !important;
+  div[class^='BookWatched-module_bookDetail'] {
+    border-bottom-color: @dark-mode-border-color-light;
+  }
+}
+
+div[class^='DocUpdated-module_container'] {
+  background: @dark-mode-background-light !important;
+  color: @dark-mode-text-color-base !important;
+  [class^='DocUpdated-module_title'] {
+    color: @dark-mode-text-color-base !important;
+  }
+  [class^='DocUpdated-module_desc'] {
+    color: @dark-mode-text-color-second !important;
+  }
+  [class^='DocUpdated-module_book'] {
+    color: @dark-mode-text-color-base !important;
+    &:hover {
+      color: @dark-mode-link-color !important;
+    }
+  }
+}
