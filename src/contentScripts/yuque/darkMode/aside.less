@@ -22,15 +22,15 @@ div[data-testid='aside'] {
   }
 }
 
-// 拖动区 暂时无解
-.BookReader-module_dragbar_2Vb8j {
+// 拖动区
+div[class^='BookReader-module_dragbar'] {
   &:before,
   &:after {
     background: @dark-mode-background-dark !important;
   }
 }
 // 折叠收起
-.BookReader-module_pinIconTrigger_msk4e {
+span[class^='BookReader-module_pinIconTrigger'] {
   background: @dark-mode-background-light !important;
   border-color: @dark-mode-border-color-light !important;
   &:hover {

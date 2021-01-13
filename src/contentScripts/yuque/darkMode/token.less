@@ -1,20 +1,26 @@
 @yuque-brand-color: #25b864;
 
-@dark-mode-background-base: hsl(240, 4%, 15%);
+@base-tone: 4%;
+@base-hue: 240;
+
+@dark-mode-background-base: hsl(@base-hue, @base-tone, 15%);
 // 面板
-@dark-mode-background-light: hsl(240, 12%, 20%);
-@dark-mode-background-light-hover: hsl(240, 10%, 25%);
-@dark-mode-background-dark: hsl(240, 4%, 12%);
-@dark-mode-background-darker: hsl(240, 4%, 5%);
+@dark-mode-background-light: hsl(@base-hue, @base-tone, 20%);
+@dark-mode-background-light-hover: hsl(@base-hue, @base-tone, 25%);
+@dark-mode-background-dark: hsl(@base-hue, @base-tone, 12%);
+@dark-mode-background-dark-hover: hsl(@base-hue, @base-tone, 14%);
+@dark-mode-background-darker: hsl(@base-hue, @base-tone, 5%);
 
 @dark-mode-text-color-emphasize: white;
 
-@dark-mode-text-color-base: hsl(240, 3%, 65%);
-@dark-mode-text-color-base-hover: hsl(240, 8%, 75%);
-@dark-mode-text-color-second: hsl(240, 1%, 40%);
+@dark-mode-text-color-base: hsl(@base-hue, 3%, 65%);
+@dark-mode-text-color-base-hover: hsl(@base-hue, 8%, 75%);
+@dark-mode-text-color-second: hsl(@base-hue, 1%, 40%);
 
-@dark-mode-border-color-dark: hsl(240, 14%, 15%);
-@dark-mode-border-color-light: hsl(240, 2%, 25%);
+@dark-mode-border-color-base: hsl(@base-hue, 7%, 17%);
+@dark-mode-border-color-light: hsl(@base-hue, 2%, 25%);
+@dark-mode-border-color-dark: hsl(@base-hue, 14%, 15%);
+@dark-mode-border-color-darker: hsl(@base-hue, 14%, 12%);
 
 @dark-mode-link-color: #4da3ff;
 @dark-mode-link-color-active: #80b7ff;
@@ -26,4 +32,48 @@
 
 .dark-mode-base-text {
   color: @dark-mode-text-color-base !important;
+
+  // 文本颜色
+  .lake-typography-traditional,
+  .lake-typography-classic {
+    color: @dark-mode-text-color-base;
+  }
+}
+
+// 类似分享按钮的 ghost 按钮
+.dark-mode-ghost-btn {
+  color: @dark-mode-text-color-emphasize !important;
+  &:hover {
+    color: @yuque-brand-color !important;
+  }
+}
+.dark-mode-link-color {
+  color: @dark-mode-link-color !important;
+  &:hover {
+    color: @dark-mode-link-color-active !important;
+  }
+}
+
+// 暗色卡片
+.dark-mode-card {
+  transition: all 0.3s ease-in-out;
+  background: @dark-mode-background-dark !important;
+  border: none !important;
+}
+
+// 在 background-base 下的禁用按钮
+.dark-mode-button-disable-in-base {
+  .ant-btn[disabled] {
+    background: @dark-mode-background-dark !important;
+    border-color: @dark-mode-border-color-darker !important;
+    color: @dark-mode-text-color-second !important;
+  }
+}
+// 在 background-dark 下的禁用按钮
+.dark-mode-button-disable-in-dark {
+  .ant-btn[disabled] {
+    background: @dark-mode-background-base !important;
+    border-color: @dark-mode-background-base !important;
+    color: @dark-mode-text-color-second !important;
+  }
 }

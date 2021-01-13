@@ -2,11 +2,9 @@
 
 // 文章内容
 #content {
-  // 文本颜色
-  .lake-typography-traditional,
-  .lake-typography-classic {
-    color: @dark-mode-text-color-base;
-  }
+  .dark-mode-base-text;
+
+
   h1,
   h2,
   h3 {
@@ -28,9 +26,19 @@
 
   // 文本链接
   a {
-    color: @dark-mode-link-color !important;
+    .dark-mode-link-color;
+  }
+
+  .lake-doc-card-view-box {
+    .dark-mode-card;
     &:hover {
-      color: @dark-mode-link-color-active !important;
+      background: @dark-mode-background-dark-hover;
     }
+    .lake-doc-card-view-title {
+      color: @dark-mode-text-color-base;
+    }
+  }
+  [data-card-element='center'] {
+    border: none !important;
   }
 }

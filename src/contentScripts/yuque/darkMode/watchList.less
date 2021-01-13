@@ -1,0 +1,29 @@
+@import './token';
+
+div[data-testid='book-watchlist'] {
+  border-top-color: @dark-mode-border-color-darker;
+  & > div {
+    .dark-mode-card;
+
+    h4 a {
+      color: @dark-mode-text-color-base;
+    }
+
+    .ant-btn {
+      background: @dark-mode-background-base;
+      color: @dark-mode-text-color-base;
+      border-color: @dark-mode-background-base;
+      &:hover {
+        background: @dark-mode-background-light;
+      }
+    }
+
+    .dark-mode-button-disable-in-dark;
+  }
+}
+
+div[data-testid='book-watchlist'] ~ div[style='user-select: none;'] {
+  & > div {
+    border-top-color: @dark-mode-border-color-darker;
+  }
+}
