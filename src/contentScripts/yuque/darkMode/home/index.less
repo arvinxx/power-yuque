@@ -102,12 +102,27 @@ div[class^='DocUpdated-module_container'] {
   filter: invert(0.7);
 }
 
+[class^='UserInfo-module_name'],
+[class^='Readme-module_userBoard'],
 [class^='index-module_groupNameText'],
 [class^='index-module_title'],
 [class^='UserInfo-module_count'],
 [class^='UserInfo-module_detail'] p {
   color: @dark-mode-text-color-base !important;
 }
+
+[class^='FollowingFollowers-module'] {
+  span,
+  b {
+    color: @dark-mode-text-color-base !important;
+  }
+}
+
+[class^='UserInfo-module_description'],
+[class^='UserInfo-module_label'] {
+  color: @dark-mode-text-color-second !important;
+}
+
 [class^='Social-module_social'] {
   border-top-color: @dark-mode-background-light !important;
 
@@ -116,12 +131,14 @@ div[class^='DocUpdated-module_container'] {
     color: @dark-mode-text-color-base !important;
   }
 }
-[class^='UserInfo-module_description'],
-[class^='UserInfo-module_label'] {
-  color: @dark-mode-text-color-second !important;
-}
+
 [class^='index-module_groupNameScope'] {
   background: @dark-mode-background-light !important;
+}
+
+[class^='BookSummary-module_column'],
+[class^='BookSummary-module_default'] {
+  border-top-color: @dark-mode-border-color-base !important;
 }
 
 // svg icon
