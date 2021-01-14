@@ -50,14 +50,15 @@
   "dependencies": {
     "@ant-design/pro-layout": "^5.0.12",
     "@umijs/preset-react": "^1.7.8",
+    "ahooks": "^2.9.4",
     "antd": "^4.6.6",
     "prettier": "^1.19.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-intl": "^5.8.3",
     "umi": "^3.3.3",
-    "yorkie": "^2.0.0",
-    "umi-plugin-extensions": "^0.2.2"
+    "umi-plugin-extensions": "^0.2.2",
+    "yorkie": "^2.0.0"
   },
   "devDependencies": {
     "@types/chrome": "^0.0.128",

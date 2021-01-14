@@ -1,23 +1,29 @@
-// 注入文章样式
-#content {
-  p {
-    margin-bottom: 8px;
+@import './darkMode/token/index';
+
+.button {
+  position: fixed;
+  bottom: 96px;
+  right: 24px;
+
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+[theme='light'] {
+  .button {
   }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    position: relative;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    font-weight: bold;
-    line-height: 1.4;
-    cursor: text;
-  }
-  h2 {
-    border-bottom: 1px solid #eee;
-    padding-bottom: 4px;
+}
+
+[theme='dark'] {
+  .button {
+    .dark-mode-button-default-in-base;
   }
 }
