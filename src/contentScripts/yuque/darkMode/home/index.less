@@ -1,8 +1,10 @@
 @import '../token/index';
+// 外壳
 .main-wrapper {
   background: @dark-mode-background-dark !important;
 }
 
+// 基础卡片
 .larkui-card {
   .dark-mode-card-base;
 }
@@ -21,6 +23,13 @@ div[class^='ant-card ant-card-bordered larkui-card Books-module_book_3FBFd']
 
 .homepage-header {
   color: @dark-mode-text-color-base !important;
+}
+
+[class^='UserInfo-module_head'],
+.events-wrapper {
+  .ant-btn {
+    .dark-mode-button-default-in-base;
+  }
 }
 
 [class^='Readme-module_empty'] {
@@ -86,4 +95,40 @@ div[class^='DocUpdated-module_container'] {
       color: @dark-mode-link-color !important;
     }
   }
+}
+
+// 右下角的 trigger
+[class^='ant-dropdown-trigger index-module_dropdownTrigger'] {
+  filter: invert(0.7);
+}
+
+[class^='index-module_groupNameText'],
+[class^='index-module_title'],
+[class^='UserInfo-module_count'],
+[class^='UserInfo-module_detail'] p {
+  color: @dark-mode-text-color-base !important;
+}
+[class^='Social-module_social'] {
+  border-top-color: @dark-mode-background-light !important;
+
+  span,
+  b {
+    color: @dark-mode-text-color-base !important;
+  }
+}
+[class^='UserInfo-module_description'],
+[class^='UserInfo-module_label'] {
+  color: @dark-mode-text-color-second !important;
+}
+[class^='index-module_groupNameScope'] {
+  background: @dark-mode-background-light !important;
+}
+
+// svg icon
+path[fill='#8C8C8C'] {
+  fill: @dark-mode-text-color-base !important;
+}
+
+rect[stroke='#F0F0F0'] {
+  fill: none !important;
 }
