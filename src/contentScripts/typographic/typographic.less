@@ -1,9 +1,6 @@
 // 注入文章样式
 #content,
 .lake-max-editor-content {
-  p {
-    margin-bottom: 8px;
-  }
   h1,
   h2,
   h3,
@@ -12,18 +9,19 @@
   h6 {
     position: relative;
     margin-top: 8px;
-    margin-bottom: 8px;
+    margin-bottom: 16px !important;
     font-weight: bold;
     line-height: 1.4;
     cursor: text;
   }
   h2 {
     border-bottom: 1px solid #eee;
-    padding-bottom: 4px;
-    margin-bottom: 16px;
+    padding-bottom: 4px !important;
   }
 
+  p,
+  .lake-bookmark-link,
   li {
-    margin-bottom: 8px;
+    margin-bottom: 8px !important;
   }
 }

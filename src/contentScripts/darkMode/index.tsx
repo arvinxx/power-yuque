@@ -6,7 +6,6 @@ import { useLocalStorageState } from 'ahooks';
 import styles from './style.less';
 
 import './darkMode/index.less';
-import './typographic.less';
 
 const App: FC = () => {
   const [theme, setTheme] = useLocalStorageState('theme', 'light');

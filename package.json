@@ -50,11 +50,13 @@
   "dependencies": {
     "@ant-design/pro-layout": "^5.0.12",
     "@umijs/preset-react": "^1.7.8",
+    "@yuque/sdk": "^1.1.1",
     "ahooks": "^2.9.4",
     "antd": "^4.6.6",
     "prettier": "^1.19.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-hotkeys-hook": "^3.0.3",
     "react-intl": "^5.8.3",
     "umi": "^3.3.3",
     "umi-plugin-extensions": "^0.2.2",

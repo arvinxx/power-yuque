@@ -2,12 +2,8 @@ import { defineConfig } from 'umi';
 import { resolve } from 'path';
 
 export default defineConfig({
-  nodeModulesTransform: {
-    type: 'none',
-  },
   locale: { default: 'zh-CN' },
   alias: {
-    // theme: '',
     theme: resolve(__dirname, '../src/theme'),
   },
   // chrome 插件配置项
@@ -21,10 +17,9 @@ export default defineConfig({
     contentScripts: [
       {
         matches: ['https://yuque.com/*', 'https://www.yuque.com/*'],
-        entries: ['@/contentScripts/yuque'],
+        entries: ['@/contentScripts/index'],
       },
     ],
-    // content_scripts: [],
     background: { scripts: ['@/background/index'] },
     popupUI: '@/pages/popup',
     icons: {
