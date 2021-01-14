@@ -1,5 +1,5 @@
 import type { FC } from 'react';
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { Input } from 'antd';
 import useInputService, { InputService } from './useInputService';
 import { SearchBarService } from '../useSearchBarService';
@@ -11,6 +11,10 @@ const SearchInput: FC = () => {
   const { searchText, setSearchText } = useContext(InputService);
   const { hide } = useContext(SearchBarService);
   const { fetch } = useSearch();
+
+  useEffect(() => {
+    fetch({ q: '设计', type: 'repo', related: true }).then();
+  }, []);
   return (
     <Input
       className={styles.input}
@@ -26,8 +30,7 @@ const SearchInput: FC = () => {
         }
       }}
       onPressEnter={() => {
-        console.log(searchText);
-        fetch(searchText);
+        fetch({ q: searchText, type: 'repo', related: true }).then();
       }}
     />
   );

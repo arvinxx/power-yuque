@@ -2,6 +2,7 @@ module.exports = {
   extends: [require.resolve('@umijs/fabric/dist/eslint')],
   rules: {
     'import/no-extraneous-dependencies': 0,
+    '@typescript-eslint/consistent-type-definitions': 0,
     'import/default': 0,
     'import/no-named-as-default-member': 0,
     'import/named': 0,

@@ -7,9 +7,9 @@ export const SearchBarService = getServiceToken(useSearchBarService);
 /**
  * SearchBar 需要的状态
  */
-export default function useSearchBarService() {
+export default function useSearchBarService(initState?: boolean) {
   // SearchBar 可见
-  const [visible, setVisible] = useState(false);
+  const [visible, setVisible] = useState(initState || false);
 
   const show = () => {
     setVisible(true);

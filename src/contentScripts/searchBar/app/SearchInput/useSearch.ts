@@ -1,15 +1,14 @@
 import { request } from '@/utils';
+import { useContext } from 'react';
+import { ResultService } from '../useResultService';
 
 export const useSearch = () => {
-  const fetch = async (searchText: string) => {
-    const { data } = await request.get('/search', {
-      params: {
-        q: searchText,
-        type: 'doc',
-      },
+  const { setResult } = useContext(ResultService);
+  const fetch = async (params: SearchBar.SearchParams) => {
+    const data = await request.get<SearchBar.SearchResponse>('/search', {
+      params,
     });
-    console.log(data);
-    return data;
+    setResult(data.data);
   };
 
   return { fetch };
