@@ -27,7 +27,7 @@ const SearchBar: FC = () => {
 };
 
 export default () => (
-  <SearchBarService.Provider value={useSearchBarService(true)}>
+  <SearchBarService.Provider value={useSearchBarService()}>
     <ResultService.Provider value={useResultService()}>
       <SearchBar />
     </ResultService.Provider>

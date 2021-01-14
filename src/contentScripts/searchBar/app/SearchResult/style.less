@@ -1,11 +1,32 @@
 @import '~theme/token/index';
 
+.repo {
+  margin-right: 8px;
+  width: 24px;
+}
 .title {
+  font-size: 16px;
+  margin-bottom: 8px;
   em {
     color: @yuque-brand-color;
+    font-style: normal;
+    font-weight: bold;
   }
+}
+
+.desc {
+  color: @text-color-secondary;
 }
 
 .row {
   cursor: pointer;
+  padding: 12px;
+  transition: background-color 300ms ease-in-out;
+  display: flex;
+}
+
+[theme='light'] {
+  .row:hover {
+    background: @item-hover-bg;
+  }
 }

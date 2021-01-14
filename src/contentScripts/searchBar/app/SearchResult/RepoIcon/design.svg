@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" id="book-type-design"><g fill="none" fill-rule="evenodd"><path d="M9.02 17.156l1.458 1.459-2.718 2.718a1.031 1.031 0 11-1.458-1.459l2.718-2.718zm5.886 0l2.718 2.718a1.031 1.031 0 11-1.458 1.459l-2.718-2.718 1.458-1.459z" fill="#E65B29" mask="url(#book-type-design_b)"></path>
+
+
+
+
+  <path fill="#E65B29" d="M4.5 4.313h15a1.5 1.5 0 011.5 1.5v10.875a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 16.688V5.813a1.5 1.5 0 011.5-1.5z" id="book-type-design_c"></path>
+
+  <path d="M8.719 9.75a1.219 1.219 0 100-2.437 1.219 1.219 0 000 2.437z" fill="#FFF" mask="url(#book-type-design_d)"></path><path stroke="#FFF" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round" mask="url(#book-type-design_d)" d="M5.156 17.492l3.065-4.207 1.79 2.457 3.779-5.187 5.054 6.937"></path><path d="M2.813 17.063h18.375a.937.937 0 110 1.875H2.813a.937.937 0 110-1.875zM12 2.063c.621 0 1.125.503 1.125 1.124v1.126h-2.25V3.188c0-.622.504-1.126 1.125-1.126z" fill="#E65B29"></path></g></svg>

@@ -1,5 +1,5 @@
 import type { FC } from 'react';
-import React, { useContext, useEffect } from 'react';
+import React, { useContext } from 'react';
 import { Input } from 'antd';
 import useInputService, { InputService } from './useInputService';
 import { SearchBarService } from '../useSearchBarService';
@@ -12,11 +12,12 @@ const SearchInput: FC = () => {
   const { hide } = useContext(SearchBarService);
   const { fetch } = useSearch();
 
-  useEffect(() => {
-    fetch({ q: '设计', type: 'repo', related: true }).then();
-  }, []);
+  // useEffect(() => {
+  //   fetch({ q: '设计', type: 'repo', related: true }).then();
+  // }, []);
   return (
     <Input
+      autoFocus
       className={styles.input}
       placeholder={'请输入待搜索内容...'}
       size={'large'}
