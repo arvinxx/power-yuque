@@ -57,4 +57,15 @@ declare module yuque {
     _serializer: string;
   }
   export type SearchResponseData = yuque.DocType | yuque.RepoType;
+  /**
+   * 资源类型
+   */
+  export type ResourcesType =
+    | 'topic'
+    | 'repo'
+    | 'doc'
+    | 'artboard'
+    | 'group'
+    | 'user'
+    | 'attachment';
 }

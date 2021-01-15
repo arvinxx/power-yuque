@@ -18,19 +18,16 @@ declare module SearchBar {
     data: yuque.SearchResponseData[];
     meta: Meta;
   }
+  /**
+   * 资源类型
+   */
+  export type SearchType = yuque.ResourcesType;
 
   export interface SearchParams {
     /**
      * 资源类型
      */
-    type:
-      | 'topic'
-      | 'repo'
-      | 'doc'
-      | 'artboard'
-      | 'group'
-      | 'user'
-      | 'attachment';
+    type: SearchType;
     /**
      * 关键字
      */

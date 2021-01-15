@@ -7,6 +7,7 @@ import { useMemo, useState } from 'react';
 export const useResultService = () => {
   // SearchBar 可见
   const [result, setResult] = useState<yuque.RepoType[]>([]);
+  const [loading, setLoading] = useState(false);
 
   console.log(result);
   const isEmpty = useMemo(() => result.length === 0, [result]);
@@ -17,6 +18,8 @@ export const useResultService = () => {
     clear: () => {
       setResult([]);
     },
+    loading,
+    setLoading,
   };
 };
 

@@ -1,15 +1,19 @@
 import { getServiceToken } from '@/utils';
 import { useState } from 'react';
 
-// 这个服务将被注册至全局
-export const InputService = getServiceToken(useInputService);
-
 /**
  * SearchInput 需要的状态
  */
-export default function useInputService() {
-  // SearchBar 可见
+export const useInputService = () => {
+  // 文本
   const [searchText, setSearchText] = useState('');
+  // 搜索类型
+  const [type, setType] = useState<SearchBar.SearchType>('repo');
+  // 与我相关
+  const [related, setRelated] = useState(true);
 
-  return { searchText, setSearchText };
-}
+  return { searchText, setSearchText, type, setType, related, setRelated };
+};
+
+// 这个服务将被注册至全局
+export const InputService = getServiceToken(useInputService);

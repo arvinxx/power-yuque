@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import type { FC } from 'react';
+import { Skeleton } from 'antd';
 
 import { ResultService } from '../useResultService';
 import RepoIcon from './RepoIcon';
@@ -7,10 +8,10 @@ import RepoIcon from './RepoIcon';
 import styles from './style.less';
 
 const SearchResult: FC = () => {
-  const { isEmpty, result } = useContext(ResultService);
+  const { result, loading } = useContext(ResultService);
 
-  return isEmpty ? null : (
-    <div>
+  return (
+    <Skeleton loading={loading} active className={styles.skeleton}>
       {result.map((item: yuque.RepoType) => {
         const {
           title,
@@ -43,7 +44,7 @@ const SearchResult: FC = () => {
           </div>
         );
       })}
-    </div>
+    </Skeleton>
   );
 };
 
