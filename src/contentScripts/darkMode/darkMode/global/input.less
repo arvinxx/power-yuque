@@ -1,0 +1,17 @@
+@import '~theme/index';
+
+.larkui-input-search {
+  background: @dark-mode-background-light;
+  border-color: @dark-mode-border-color-dark;
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: @yuque-brand-color !important;
+  }
+  .ant-input {
+    background: @dark-mode-background-light !important;
+    &::placeholder {
+      color: @dark-mode-text-color-second !important;
+    }
+  }
+}

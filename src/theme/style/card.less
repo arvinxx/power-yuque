@@ -1,9 +1,10 @@
 @import '../token/index';
+@import './background';
 
 // 暗色卡片
 .dark-mode-card-dark {
   transition: all 0.3s ease-in-out;
-  background: @dark-mode-background-dark !important;
+  .dark-mode-background-dark;
   border: none !important;
 }
 
@@ -15,6 +16,6 @@
 
 // 亮色卡片
 .dark-mode-card-light {
-  background: @dark-mode-background-light !important;
+  .dark-mode-background-light;
   border: none !important;
 }

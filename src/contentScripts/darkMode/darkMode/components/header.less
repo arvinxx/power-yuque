@@ -23,23 +23,13 @@
     color: @dark-mode-text-color-emphasize !important;
   }
 
-  .larkui-input-search {
-    background: @dark-mode-background-light;
-    .ant-input {
-      background: @dark-mode-background-light !important;
-    }
-  }
-
   .header-nav-item {
-    color: @dark-mode-text-color-base !important;
-  }
-
-  span[class^='ant-input-affix-wrapper larkui-input-search ant-dropdown-trigger index-module_input'] {
-    border-color: @dark-mode-border-color-dark !important;
-    .ant-input {
-      &::placeholder {
-        color: @dark-mode-text-color-second !important;
-      }
+    .dark-mode-text-color-base-with-hover;
+    a {
+      .dark-mode-text-color-base-with-hover;
+    }
+    &:hover {
+      background: @dark-mode-background-base !important;
     }
   }
 }
