@@ -1,7 +1,10 @@
-@import 'token';
+@import '../token/index';
+
+// 在 background-base 下的默认按钮
 
 .dark-mode-button-default-in-base {
   background: @dark-mode-background-light !important;
+
   color: @dark-mode-text-color-base !important;
   border-color: @dark-mode-background-light !important;
   &:hover {
@@ -23,5 +26,15 @@
     background: @dark-mode-background-base !important;
     border-color: @dark-mode-background-base !important;
     color: @dark-mode-text-color-second !important;
+  }
+}
+
+// 类似分享按钮的 ghost 按钮
+.dark-mode-ghost-btn {
+  color: @dark-mode-text-color-base !important;
+  border-color: @dark-mode-text-color-base !important;
+  &:hover {
+    color: @yuque-brand-color !important;
+    border-color: @yuque-brand-color !important;
   }
 }
