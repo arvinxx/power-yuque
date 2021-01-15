@@ -4,15 +4,15 @@ const fs = require('fs');
 const path = require('path');
 const archiver = require('archiver');
 
-const extPackageJson = require('../package.json');
+const pkg = require('../package.json');
 
 const DEST_DIR = path.join(__dirname, '../dist');
 const DEST_ZIP_DIR = path.join(__dirname, '../dist-zip');
 
 const extractExtensionData = () => {
   return {
-    name: extPackageJson.name,
-    version: extPackageJson.version,
+    name: pkg.name,
+    version: pkg.version,
   };
 };
 
@@ -23,7 +23,7 @@ const makeDestZipDirIfNotExists = () => {
 };
 
 const buildZip = (src: string, dist: string, zipFilename: string) => {
-  console.info(`Building ${zipFilename}...`);
+  console.info(`📦 Building ${zipFilename}...`);
 
   const archive = archiver('zip', { zlib: { level: 9 } });
   const stream = fs.createWriteStream(path.join(dist, zipFilename));
@@ -35,7 +35,7 @@ const buildZip = (src: string, dist: string, zipFilename: string) => {
       .pipe(stream);
 
     stream.on('close', () => resolve());
-    archive.finalize();
+    archive.finalize().then();
   });
 };
 
@@ -46,7 +46,7 @@ const main = () => {
   makeDestZipDirIfNotExists();
 
   buildZip(DEST_DIR, DEST_ZIP_DIR, zipFilename)
-    .then(() => console.info('OK'))
+    .then(() => console.info('✅  Build Done!'))
     .catch(console.error);
 };
 
