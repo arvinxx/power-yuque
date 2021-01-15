@@ -3,14 +3,17 @@ import React, { useContext } from 'react';
 import { useKeyboardTrigger } from './useKeyboardTrigger';
 
 import useSearchBarService, { SearchBarService } from './useSearchBarService';
+
 import { ResultService, useResultService } from './useResultService';
 import SearchInput from './SearchInput';
 import SearchResult from './SearchResult';
+import AnimatedHeight from './AnimatedHeight';
 
 import styles from './style.less';
 
 const SearchBar: FC = () => {
   const { visible, searchBarRef } = useContext(SearchBarService);
+
   useKeyboardTrigger();
 
   return visible ? (
@@ -20,7 +23,9 @@ const SearchBar: FC = () => {
           <SearchInput />
         </div>
         <div className={styles.result}>
-          <SearchResult />
+          <AnimatedHeight maxHeight={400}>
+            <SearchResult />
+          </AnimatedHeight>
         </div>
       </div>
     </div>

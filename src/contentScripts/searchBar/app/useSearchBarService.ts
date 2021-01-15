@@ -28,5 +28,11 @@ export default function useSearchBarService(initState?: boolean) {
     setVisible(false);
   }, [searchBarRef]);
 
-  return { visible, show, hide, trigger, searchBarRef };
+  return {
+    visible,
+    show,
+    hide,
+    trigger,
+    searchBarRef,
+  };
 }
