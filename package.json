@@ -16,6 +16,7 @@
   "scripts": {
     "start": "umi dev",
     "build": "umi build",
+    "zip": "ts-node ./scripts/zip",
     "---------  ": "",
     "test": "umi-test",
     "test:update": "UPDATE=1 umi-test --update-snapshot",
@@ -64,6 +65,7 @@
     "yorkie": "^2.0.0"
   },
   "devDependencies": {
+    "@types/archiver": "^5.1.0",
     "@types/chrome": "^0.0.128",
     "@types/jest": "^26.0.14",
     "@types/node": "^14.11.2",
@@ -71,6 +73,7 @@
     "@types/webpack": "^4.41.22",
     "@umijs/fabric": "^2.2.2",
     "@umijs/test": "^3.2.22",
+    "archiver": "^5.2.0",
     "babel-jest": "^26.6.0",
     "cross-env": "^7.0.0",
     "eslint": "^7.7.0",
@@ -78,6 +81,7 @@
     "jest": "26.6.0",
     "lint-staged": "^10.0.2",
     "react-test-renderer": "^16.13.1",
+    "ts-node": "^9.1.1",
     "tsconfig-paths": "^3.9.0",
     "typescript": "^4.1.3"
   }
