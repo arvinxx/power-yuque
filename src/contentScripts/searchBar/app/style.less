@@ -1,3 +1,5 @@
+@import '~theme/index';
+
 .container {
   position: fixed;
   left: 0;
@@ -14,17 +16,18 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
-  width: 800px;
-  //display: none;
+  width: 600px;
 }
 .input {
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  .search-bar-shadow;
+  border-radius: 4px;
+  background: @background-color-base;
 }
 .result {
   margin-top: 8px;
   max-height: 400px;
   overflow-y: scroll;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  .search-bar-shadow;
 
   border-radius: 4px;
 }
@@ -35,4 +38,7 @@
 }
 
 [theme='dark'] {
+  .result {
+    background: @dark-mode-background-light;
+  }
 }

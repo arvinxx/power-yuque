@@ -1,3 +1,22 @@
+@import '~theme/index';
 .input {
   height: 48px;
+  box-shadow: none !important;
+
+  &:focus,
+  &:hover {
+    border-color: transparent !important;
+    box-shadow: none !important;
+  }
+}
+
+.options {
+  padding: 8px 12px;
+  display: flex;
+}
+
+.option {
+  background: @search-bar-options-tag-bg;
+  padding: 2px 6px;
+  border-radius: 2px;
 }

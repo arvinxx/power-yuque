@@ -10,7 +10,14 @@ export const useResultService = () => {
 
   console.log(result);
   const isEmpty = useMemo(() => result.length === 0, [result]);
-  return { result, setResult, isEmpty };
+  return {
+    result,
+    setResult,
+    isEmpty,
+    clear: () => {
+      setResult([]);
+    },
+  };
 };
 
 // 这个服务将被注册至全局
