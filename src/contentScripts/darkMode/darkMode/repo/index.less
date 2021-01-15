@@ -1,0 +1,29 @@
+@import '~theme/index';
+
+div[class^='index-module_wrapper'] {
+  background: @dark-mode-background-dark !important;
+  box-shadow: 0 1px 0 @dark-mode-border-color-base !important;
+}
+
+#doc-mark {
+  .dark-mode-ghost-btn;
+}
+
+.favor-wrapper-watch {
+  button {
+    .dark-mode-button-default-in-base;
+  }
+}
+
+[class^='BookInfo-module_title'],
+[class^='IndexColumn-module_title'] {
+  .dark-mode-text-color-base;
+}
+
+.ant-list-item {
+  border-bottom-color: @dark-mode-border-color-light !important;
+}
+
+[class^='IndexColumn-module_meta'] a {
+  .dark-mode-text-color-base-with-hover;
+}
