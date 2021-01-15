@@ -50,6 +50,7 @@ const errorHandler = (error: { response: Response }): Response => {
   }
   return response;
 };
+
 /**
  * 配置request请求时的默认参数
  */
@@ -58,6 +59,7 @@ export const request = extend({
   prefix: 'https://www.yuque.com/api/v2',
   credentials: 'include', // 默认请求是否带上cookie
   headers: {
-    'X-Auth-Token': 'TR8UhfgHTqxaQiyGDvPbE1PEgcdgdApvMglbnDPj',
+    'X-Auth-Token':
+      localStorage.getItem('yuque_token')!.replace(/"/g, '') || '',
   },
 });

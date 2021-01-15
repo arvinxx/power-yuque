@@ -22,6 +22,7 @@ export default defineConfig({
     ],
     background: { scripts: ['@/background/index'] },
     popupUI: '@/pages/popup',
+    permissions: ['storage'],
     icons: {
       16: 'logo/logo@16.png',
       32: 'logo/logo@32.png',

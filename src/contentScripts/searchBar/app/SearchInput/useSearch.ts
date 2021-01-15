@@ -8,6 +8,7 @@ export const useSearch = () => {
     const data = await request.get<SearchBar.SearchResponse>('/search', {
       params,
     });
+    // @ts-ignore
     setResult(data.data);
   };
 
