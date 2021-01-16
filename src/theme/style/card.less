@@ -1,21 +1,24 @@
 @import '../token/index';
 @import './background';
 
+.no-border {
+  border: none !important;
+}
 // 暗色卡片
 .dark-mode-card-dark {
   transition: all 0.3s ease-in-out;
   .dark-mode-background-dark;
-  border: none !important;
+  .no-border;
 }
 
 // 亮色卡片
 .dark-mode-card-base {
   background: @dark-mode-background-base !important;
-  border: none !important;
+  .no-border;
 }
 
 // 亮色卡片
 .dark-mode-card-light {
   .dark-mode-background-light;
-  border: none !important;
+  .no-border;
 }
