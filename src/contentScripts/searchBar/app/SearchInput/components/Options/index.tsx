@@ -3,7 +3,7 @@ import React, { useContext } from 'react';
 import { Checkbox, Space } from 'antd';
 import cls from 'classnames';
 
-import { InputService } from '../../useInputService';
+import { SearchService } from '../../../useSearchService';
 
 import styles from './style.less';
 
@@ -18,12 +18,12 @@ const options: Option[] = [
   { key: 'topic', title: '主题' },
   { key: 'artboard', title: '画板' },
   { key: 'group', title: '团队' },
-  { key: 'user', title: '用户' },
-  { key: 'attachment', title: '附件' },
+  // { key: 'user', title: '用户' },
+  // { key: 'attachment', title: '附件' },
 ];
 
 const Options: FC = () => {
-  const { type, setType, related, setRelated } = useContext(InputService);
+  const { type, setType, related, setRelated } = useContext(SearchService);
 
   return (
     <div className={styles.container}>

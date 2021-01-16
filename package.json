@@ -63,6 +63,8 @@
     "react-hotkeys-hook": "^3.0.3",
     "react-intl": "^5.8.3",
     "react-spring": "^8.0.27",
+    "rxjs": "^6.6.3",
+    "rxjs-hooks": "^0.6.2",
     "umi": "^3.3.3",
     "umi-plugin-extensions": "^0.3.1",
     "yorkie": "^2.0.0"

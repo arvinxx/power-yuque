@@ -1,6 +1,7 @@
 import { getServiceToken } from '@/utils';
 import { useRef, useState } from 'react';
 import { useClickAway } from 'ahooks';
+import { useHotkeys } from 'react-hotkeys-hook';
 
 // 这个服务将被注册至全局
 export const SearchBarService = getServiceToken(useSearchBarService);
@@ -28,11 +29,22 @@ export default function useSearchBarService(initState?: boolean) {
     setVisible(false);
   }, [searchBarRef]);
 
+  useHotkeys(
+    'command+shift+F',
+    () => {
+      trigger();
+    },
+    [visible],
+  );
+
+  useHotkeys('Esc', () => {
+    hide();
+  });
+
   return {
     visible,
     show,
     hide,
-    trigger,
     searchBarRef,
   };
 }

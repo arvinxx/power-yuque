@@ -18,6 +18,10 @@ declare module SearchBar {
     data: yuque.SearchResponseData[];
     meta: Meta;
   }
+  export interface SearchData {
+    data: yuque.SearchResponseData[];
+    total: number;
+  }
   /**
    * 资源类型
    */

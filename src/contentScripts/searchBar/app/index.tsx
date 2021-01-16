@@ -1,10 +1,9 @@
 import type { FC } from 'react';
 import React, { useContext } from 'react';
-import { useKeyboardTrigger } from './useKeyboardTrigger';
 
 import useSearchBarService, { SearchBarService } from './useSearchBarService';
 
-import { ResultService, useResultService } from './useResultService';
+import { SearchService, useSearchService } from './useSearchService';
 import SearchInput from './SearchInput';
 import SearchResult from './SearchResult';
 import AnimatedHeight from './AnimatedHeight';
@@ -13,8 +12,6 @@ import styles from './style.less';
 
 const SearchBar: FC = () => {
   const { visible, searchBarRef } = useContext(SearchBarService);
-
-  useKeyboardTrigger();
 
   return visible ? (
     <div className={styles.container}>
@@ -33,9 +30,9 @@ const SearchBar: FC = () => {
 };
 
 export default () => (
-  <SearchBarService.Provider value={useSearchBarService(true)}>
-    <ResultService.Provider value={useResultService()}>
+  <SearchBarService.Provider value={useSearchBarService()}>
+    <SearchService.Provider value={useSearchService()}>
       <SearchBar />
-    </ResultService.Provider>
+    </SearchService.Provider>
   </SearchBarService.Provider>
 );

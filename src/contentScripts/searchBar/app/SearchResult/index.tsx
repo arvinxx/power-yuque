@@ -2,24 +2,18 @@ import React, { useContext } from 'react';
 import type { FC } from 'react';
 import { Skeleton } from 'antd';
 
-import { ResultService } from '../useResultService';
+import { SearchService } from '../useSearchService';
 import RepoIcon from './RepoIcon';
 
 import styles from './style.less';
 
 const SearchResult: FC = () => {
-  const { result, loading } = useContext(ResultService);
+  const { result, loading } = useContext(SearchService);
 
   return (
     <Skeleton loading={loading} active className={styles.skeleton}>
-      {result.map((item: yuque.RepoType) => {
-        const {
-          title,
-          info,
-          id,
-          url,
-          target: { type },
-        } = item;
+      {result?.map((item) => {
+        const { title, info, id, url, target, type } = item;
 
         return (
           <div
@@ -30,7 +24,13 @@ const SearchResult: FC = () => {
             }}
           >
             <div className={styles.repo}>
-              <RepoIcon type={type.toLowerCase()} />
+              {type === 'repo' ? (
+                <RepoIcon
+                  type={(target as yuque.RepoTarget).type.toLowerCase()}
+                />
+              ) : (
+                <RepoIcon type={type.toLowerCase()} />
+              )}
             </div>
             <div>
               <div
