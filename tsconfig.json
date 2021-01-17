@@ -36,5 +36,5 @@
       "@@/*": ["src/.umi/*"]
     }
   },
-  "exclude": [".eslintrc.js", "commitlint.config.js", "gitmoji-lint.js"]
+  "exclude": [".eslintrc.js", "commitlint.config.js"]
 }
