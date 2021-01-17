@@ -26,7 +26,6 @@
     "postinstall": "umi generate tmp",
     "lint": "npm run lint-eslint",
     "tsc": "tsc -p tsconfig-check.json",
-    "commitmsg": "commitlint -e $GIT_PARAMS",
     "lint-eslint": "eslint --cache --ext .js,.jsx,.ts,.tsx --format=pretty packages",
     "lint-staged": "lint-staged",
     "lint-staged:js": "eslint --cache --ext .js,.jsx,.ts,.tsx --format=pretty",
@@ -36,6 +35,7 @@
   },
   "husky": {
     "hooks": {
+      "commit-msg": "commitlint -e HUSKY_GIT_PARAMS",
       "pre-commit": "lint-staged"
     }
   },
@@ -54,7 +54,7 @@
     "@ant-design/pro-layout": "^5.0.12",
     "@ant-design/pro-list": "^1.2.20",
     "@umijs/preset-react": "^1.7.8",
-    "@commitlint/cli": "^6.2.0",
+    "@commitlint/cli": "^11.0.0",
     "@yuque/sdk": "^1.1.1",
     "ahooks": "^2.9.4",
     "commitlint-config-gitmoji": "^1.1.0",
