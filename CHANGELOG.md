@@ -1,3 +1,12 @@
+# Power Yuque 更新日志
+
+## [0.1.2](https://github.com/arvinxx/power-yuque/compare/v0.1.1...v0.1.2) (2021-01-18)
+
+
+### 🐛 Bug Fixes | 修复
+
+* **(commitlint-config-gitmoji)**: 修正 release push 无效代码的bug ([04fd6bf](https://github.com/arvinxx/power-yuque/commit/04fd6bf)) by: ****<>, closes [#1](https://github.com/arvinxx/power-yuque/issues/1)
+
 # my-changelog-test
 
 ## [0.1.1](https://github.com/arvinxx/power-yuque/compare/v0.1.0...v0.1.1) (2021-01-18)
