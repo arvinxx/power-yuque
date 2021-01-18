@@ -36,5 +36,5 @@
       "@@/*": ["src/.umi/*"]
     }
   },
-  "exclude": [".eslintrc.js", "commitlint.config.js"]
+  "exclude": [".eslintrc.js", ".commitlintrc.js"]
 }
