@@ -34,7 +34,7 @@ module.exports = {
           'package.json',
         ],
         message:
-          ':bookmark: chore(release): v${nextRelease.version} [skip ci]\n\nhttps://github.com/momocow/semantic-release-gitmoji/releases/tag/${nextRelease.gitTag}',
+          ':bookmark: chore(release): v${nextRelease.version} [skip ci]\n\nhttps://github.com/arvinxx/power-yuque/releases/tag/${nextRelease.gitTag}',
       },
     ],
   ],
