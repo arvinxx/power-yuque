@@ -1,0 +1,20 @@
+name: Release CI
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: macos-latest
+
+    steps:
+      - name: checkout
+        uses: actions/checkout@master
+
+      - name: install
+        run: yarn
+
+      - name: lint
+        run: yarn lint && yarn tsc
+
+      - name: release
+        run: yarn release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
