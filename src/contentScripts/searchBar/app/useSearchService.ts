@@ -1,5 +1,5 @@
 import { getServiceToken, request } from '@/utils';
-import type { ChangeEvent } from 'react';
+import { ChangeEvent } from 'react';
 import { useState } from 'react';
 import { useEventCallback } from 'rxjs-hooks';
 import { map, debounceTime, switchMap, combineLatest } from 'rxjs/operators';
@@ -38,7 +38,7 @@ export const useSearchService = () => {
     (event$, _, input$) =>
       event$.pipe(
         // 1. 获取 value
-        map((event) => event.target.value),
+        map(event => event.target.value),
         // 2. 防抖
         debounceTime(600),
         // 提供输入
@@ -49,23 +49,22 @@ export const useSearchService = () => {
           if (value.length === 0) return of({ data: [], meta: { total: 0 } });
 
           // 直接返回结果
-          const [related, type] = input;
-          return request$({ q: value, type, related });
+          const [relate, searchType] = input;
+          return request$({ q: value, type: searchType, related: relate });
         }),
         // 4. 解构得值
-        map((response) => {
+        map(response => {
           if (!response) return defaultState;
 
           // 之后在这一步做值解构
-          const { data, meta } = response;
-          return { data, total: meta?.total };
+          const { data: result, meta } = response;
+          return { data: result, total: meta?.total };
         }),
       ),
     defaultState,
     [related, type],
   );
 
-  console.log(data);
   return {
     total,
     result: data,
