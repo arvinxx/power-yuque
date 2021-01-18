@@ -1,5 +1,12 @@
 # Power Yuque 更新日志
 
+## [0.1.3](https://github.com/arvinxx/power-yuque/compare/v0.1.2...v0.1.3) (2021-01-18)
+
+
+### 🐛 Bug Fixes | 修复
+
+* **(config)**: 测试输出文件 ([08d2dad](https://github.com/arvinxx/power-yuque/commit/08d2dad))
+
 ## [0.1.2](https://github.com/arvinxx/power-yuque/compare/v0.1.1...v0.1.2) (2021-01-18)
 
 ### 🐛 Bug Fixes | 修复
