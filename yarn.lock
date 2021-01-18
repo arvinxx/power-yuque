@@ -1570,15 +1570,10 @@
   resolved "https://registry.yarnpkg.com/@gitmoji/commit-types/-/commit-types-1.0.0.tgz#b9351616d5cbf31e01911c42c68effb2ea64bd59"
   integrity sha512-LmFQvuE4QR8R8qEjZMfXK+TuyBmRsWlMjBHfNDrb7c1Zm+WU4F22SAEVjGK170CF5wsqjgPmoPYiiQwgUo04Rg==
 
-"@gitmoji/parser-opts@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@gitmoji/parser-opts/-/parser-opts-1.1.0.tgz#e5033e71ffd8aa4fc0549eb23e6ed93b35e777fb"
-  integrity sha512-m1k7HCIizOnexCjJaJiqIcXz/JecUZY6IOBiFHn4d1oO8Ppp8V90xXQhZ5V0WsidOCK6tJxzav/UYr63tv3G5Q==
-
-"@gitmoji/parser-opts@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.npm.taobao.org/@gitmoji/parser-opts/download/@gitmoji/parser-opts-1.2.0.tgz?cache=0&sync_timestamp=1610997749669&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40gitmoji%2Fparser-opts%2Fdownload%2F%40gitmoji%2Fparser-opts-1.2.0.tgz#b6754952687c633f00eed08df06beb1fadebd94f"
-  integrity sha1-tnVJUmh8Yz8A7tCN8GvrH63r2U8=
+"@gitmoji/parser-opts@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.npm.taobao.org/@gitmoji/parser-opts/download/@gitmoji/parser-opts-1.2.1.tgz?cache=0&sync_timestamp=1611004005361&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40gitmoji%2Fparser-opts%2Fdownload%2F%40gitmoji%2Fparser-opts-1.2.1.tgz#08dade2481c6de109f4ca976ed773b9a4e89273b"
+  integrity sha1-CNreJIHG3hCfTKl27Xc7mk6JJzs=
 
 "@hapi/address@^2.1.2":
   version "2.1.4"
@@ -5806,19 +5801,19 @@ commander@^6.2.0:
   resolved "https://registry.yarnpkg.com/commander/-/commander-6.2.1.tgz#0792eb682dfbc325999bb2b84fddddba110ac73c"
   integrity sha512-U7VdrJFnJgo4xjrHpTzu0yrHPGImdsmD95ZlgYSEajAn2JKzDhDTPG9kBTefmObL2w/ngeZnilk+OV9CG3d7UA==
 
-commitlint-config-gitmoji@^2.1.1:
-  version "2.1.1"
-  resolved "https://registry.npm.taobao.org/commitlint-config-gitmoji/download/commitlint-config-gitmoji-2.1.1.tgz?cache=0&sync_timestamp=1610997794590&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fcommitlint-config-gitmoji%2Fdownload%2Fcommitlint-config-gitmoji-2.1.1.tgz#bf8c423860a1d0a24e502d18e3d857c7912ee0e1"
-  integrity sha1-v4xCOGCh0KJOUC0Y49hXx5Eu4OE=
+commitlint-config-gitmoji@^2.1.2:
+  version "2.1.2"
+  resolved "https://registry.npm.taobao.org/commitlint-config-gitmoji/download/commitlint-config-gitmoji-2.1.2.tgz?cache=0&sync_timestamp=1611004010353&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fcommitlint-config-gitmoji%2Fdownload%2Fcommitlint-config-gitmoji-2.1.2.tgz#66658c31867780d707c6ca516b285ecff2090588"
+  integrity sha1-ZmWMMYZ3gNcHxspRayhez/IJBYg=
   dependencies:
     "@gitmoji/commit-types" "^1.0.0"
-    "@gitmoji/parser-opts" "^1.2.0"
-    commitlint-plugin-gitmoji "^2.0.0"
+    "@gitmoji/parser-opts" "^1.2.1"
+    commitlint-plugin-gitmoji "^2.0.1"
 
-commitlint-plugin-gitmoji@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/commitlint-plugin-gitmoji/-/commitlint-plugin-gitmoji-2.0.0.tgz#631fc6602a429417b8892572e07f8555bb4b9b37"
-  integrity sha512-09TT3N64EwLENq9kX3afseWJh810FR2i8uqIrd8+MXg5VLFi8G2wrC3/u45YtU0wngqewmQ6mRxtJkmCHAmBWQ==
+commitlint-plugin-gitmoji@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.npm.taobao.org/commitlint-plugin-gitmoji/download/commitlint-plugin-gitmoji-2.0.1.tgz?cache=0&sync_timestamp=1611004005352&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fcommitlint-plugin-gitmoji%2Fdownload%2Fcommitlint-plugin-gitmoji-2.0.1.tgz#6f9d91abed03821df062a5208c854d727f44eb86"
+  integrity sha1-b52Rq+0Dgh3wYqUgjIVNcn9E64Y=
 
 commondir@^1.0.1:
   version "1.0.1"
@@ -6060,13 +6055,13 @@ conventional-changelog-express@^2.0.6:
   dependencies:
     q "^1.5.1"
 
-conventional-changelog-gitmoji-config@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/conventional-changelog-gitmoji-config/-/conventional-changelog-gitmoji-config-1.1.0.tgz#b4bf277dd7a4879839e933ad65f983aa67ee418a"
-  integrity sha512-34Ktu9oMD3g3K8PvgpDo5qy4J+8fTySCAgopFvJCSg9Wk/klzcF4BaDbq3FmHTLFCVhDdyBwaIcDpaqXMVKwpA==
+conventional-changelog-gitmoji-config@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.npm.taobao.org/conventional-changelog-gitmoji-config/download/conventional-changelog-gitmoji-config-1.1.1.tgz?cache=0&sync_timestamp=1611004010404&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fconventional-changelog-gitmoji-config%2Fdownload%2Fconventional-changelog-gitmoji-config-1.1.1.tgz#ff8e253215ca14622186ad5cdd575f66dc200f31"
+  integrity sha1-/44lMhXKFGIhhq1c3VdfZtwgDzE=
   dependencies:
     "@gitmoji/commit-types" "^1.0.0"
-    "@gitmoji/parser-opts" "^1.1.0"
+    "@gitmoji/parser-opts" "^1.2.1"
     q "^1.5.1"
 
 conventional-changelog-jquery@^3.0.11:
