@@ -31,6 +31,7 @@
     "tsc": "tsc -p tsconfig-check.json",
     "lint-eslint": "eslint --cache --ext .js,.jsx,.ts,.tsx --format=pretty src",
     "lint-staged": "lint-staged",
+    "lint-styles": "stylelint",
     "lint-staged:js": "eslint --cache --ext .js,.jsx,.ts,.tsx --format=pretty",
     "lint:fix": "eslint --fix --cache --ext .js,.jsx,.ts,.tsx --format=pretty ",
     "prettier": "prettier -c --write \"**/**\""
@@ -40,7 +41,7 @@
       "eslint -c .eslintrc.js"
     ],
     "*.{css,less,scss}": [
-      "stylelint --config .stylelintrc.json"
+      "stylelint   --fix"
     ],
     "*.{ts,tsx,json,js,css,less,scss,md}": [
       "prettier --write"
@@ -83,7 +84,7 @@
     "@umijs/test": "^3.2.22",
     "archiver": "^5.2.0",
     "babel-jest": "^26.6.0",
-    "commitlint-config-gitmoji": "^2.0.1",
+    "commitlint-config-gitmoji": "^2.1.1",
     "conventional-changelog-cli": "^2.1.1",
     "conventional-changelog-gitmoji-config": "^1.1.0",
     "cross-env": "^7.0.0",

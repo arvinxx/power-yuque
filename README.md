@@ -8,6 +8,10 @@
 - 🌙 深色模式
 - 🔍 增强搜索框
 
+## 更新日志
+
+[英文](./CHANGELOG.md)
+
 ## License
 
 [MIT](./LICENSE) ® Arvin Xu

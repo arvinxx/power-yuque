@@ -1570,10 +1570,15 @@
   resolved "https://registry.yarnpkg.com/@gitmoji/commit-types/-/commit-types-1.0.0.tgz#b9351616d5cbf31e01911c42c68effb2ea64bd59"
   integrity sha512-LmFQvuE4QR8R8qEjZMfXK+TuyBmRsWlMjBHfNDrb7c1Zm+WU4F22SAEVjGK170CF5wsqjgPmoPYiiQwgUo04Rg==
 
-"@gitmoji/parser-opts@^1.0.0", "@gitmoji/parser-opts@^1.1.0":
+"@gitmoji/parser-opts@^1.1.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@gitmoji/parser-opts/-/parser-opts-1.1.0.tgz#e5033e71ffd8aa4fc0549eb23e6ed93b35e777fb"
   integrity sha512-m1k7HCIizOnexCjJaJiqIcXz/JecUZY6IOBiFHn4d1oO8Ppp8V90xXQhZ5V0WsidOCK6tJxzav/UYr63tv3G5Q==
+
+"@gitmoji/parser-opts@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.npm.taobao.org/@gitmoji/parser-opts/download/@gitmoji/parser-opts-1.2.0.tgz?cache=0&sync_timestamp=1610997749669&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40gitmoji%2Fparser-opts%2Fdownload%2F%40gitmoji%2Fparser-opts-1.2.0.tgz#b6754952687c633f00eed08df06beb1fadebd94f"
+  integrity sha1-tnVJUmh8Yz8A7tCN8GvrH63r2U8=
 
 "@hapi/address@^2.1.2":
   version "2.1.4"
@@ -5801,12 +5806,13 @@ commander@^6.2.0:
   resolved "https://registry.yarnpkg.com/commander/-/commander-6.2.1.tgz#0792eb682dfbc325999bb2b84fddddba110ac73c"
   integrity sha512-U7VdrJFnJgo4xjrHpTzu0yrHPGImdsmD95ZlgYSEajAn2JKzDhDTPG9kBTefmObL2w/ngeZnilk+OV9CG3d7UA==
 
-commitlint-config-gitmoji@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/commitlint-config-gitmoji/-/commitlint-config-gitmoji-2.0.1.tgz#c1c5d6814b910f163b229ef1f823e8597cdb0ffa"
-  integrity sha512-kdEslH0ctXLrNY11wLaugGjW8aEEiRKn3Nz6nQf6yAxbRUkk+HsA7wIfq/E12Emmh15Ekrqq1/FkpH2mxu/ZSw==
+commitlint-config-gitmoji@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.npm.taobao.org/commitlint-config-gitmoji/download/commitlint-config-gitmoji-2.1.1.tgz?cache=0&sync_timestamp=1610997794590&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fcommitlint-config-gitmoji%2Fdownload%2Fcommitlint-config-gitmoji-2.1.1.tgz#bf8c423860a1d0a24e502d18e3d857c7912ee0e1"
+  integrity sha1-v4xCOGCh0KJOUC0Y49hXx5Eu4OE=
   dependencies:
-    "@gitmoji/parser-opts" "^1.0.0"
+    "@gitmoji/commit-types" "^1.0.0"
+    "@gitmoji/parser-opts" "^1.2.0"
     commitlint-plugin-gitmoji "^2.0.0"
 
 commitlint-plugin-gitmoji@^2.0.0:
