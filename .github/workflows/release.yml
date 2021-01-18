@@ -1,7 +1,7 @@
 name: Release CI
 on: [push, pull_request]
 jobs:
-  test:
+  release:
     runs-on: macos-latest
 
     steps:

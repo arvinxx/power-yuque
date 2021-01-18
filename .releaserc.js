@@ -23,7 +23,7 @@ module.exports = {
       },
     ],
     '@semantic-release/npm', //如果是npm包会自动更新版本号并发布
-    '@semantic-release/github', //推送代码回到GitHub
+    '@semantic-release/github', // 推送代码回到GitHub
     [
       '@semantic-release/git', //发布release
       {
@@ -35,6 +35,8 @@ module.exports = {
           'package.json',
           'yarn.lock',
         ],
+        message:
+          ':bookmark: chore(release): v${nextRelease.version} [skip ci]\n\nhttps://github.com/momocow/semantic-release-gitmoji/releases/tag/${nextRelease.gitTag}',
       },
     ],
   ],
