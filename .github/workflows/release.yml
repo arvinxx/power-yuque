@@ -1,5 +1,5 @@
 name: Release CI
-on: [push, pull_request]
+on: [push]
 jobs:
   release:
     runs-on: macos-latest
@@ -14,7 +14,7 @@ jobs:
       - name: lint
         run: yarn lint && yarn tsc
 
-      - name: release
-        run: yarn release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#      - name: release
+#        run: yarn release
+#        env:
+#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
