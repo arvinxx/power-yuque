@@ -31,9 +31,6 @@ jobs:
       - name: lint
         run: yarn lint && yarn tsc
 
-      - name: build
-        run: yarn zip
-
       - name: release
         run: yarn release
         env:
