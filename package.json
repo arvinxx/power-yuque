@@ -49,7 +49,7 @@
     ]
   },
   "dependencies": {
-    "@ant-design/pro-layout": "^6.11.1",
+    "@ant-design/pro-layout": "^6.12.0",
     "@ant-design/pro-list": "^1.3.4",
     "@umijs/preset-react": "^1.7.13",
     "@yuque/sdk": "^1.1.1",
