@@ -1260,6 +1260,15 @@
     "@babel/helper-plugin-utils" "^7.10.4"
     "@babel/plugin-transform-typescript" "^7.12.1"
 
+"@babel/preset-typescript@^7.12.7":
+  version "7.12.7"
+  resolved "https://registry.yarnpkg.com/@babel/preset-typescript/-/preset-typescript-7.12.7.tgz#fc7df8199d6aae747896f1e6c61fc872056632a3"
+  integrity sha512-nOoIqIqBmHBSEgBXWR4Dv/XBehtIFcw9PqZw6rFYuKrzsZmOQm3PR5siLBnKZFEsDb03IegG8nSjU/iXXXYRmw==
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.10.4"
+    "@babel/helper-validator-option" "^7.12.1"
+    "@babel/plugin-transform-typescript" "^7.12.1"
+
 "@babel/register@7.12.10":
   version "7.12.10"
   resolved "https://registry.yarnpkg.com/@babel/register/-/register-7.12.10.tgz#19b87143f17128af4dbe7af54c735663b3999f60"
@@ -3445,16 +3454,17 @@
   resolved "https://registry.yarnpkg.com/@umijs/error-code-map/-/error-code-map-1.0.1.tgz#2a2dd7b4bcd11869e968264ff3dabacfabe8b874"
   integrity sha512-Q0KSpQYKTF2XWOlAxJO/SRbRhIGAp1GK1spWFbzwv3h0WvfX7pPeA05Y3p0hut7Vcjhdocnx5NduuApF4R1lGQ==
 
-"@umijs/fabric@^2.5.4":
-  version "2.5.4"
-  resolved "https://registry.yarnpkg.com/@umijs/fabric/-/fabric-2.5.4.tgz#f8b0d51352e8544548967b088b4b04abd3152155"
-  integrity sha512-0YYMjcZpIwJYB2hoIPG0smno5hNJNKyAuo7DlWRawfsa1tsUPMBxfOSd6Z4weHcHXxr+NfLE/jOD8eLsy2sAFQ==
+"@umijs/fabric@^2.5.6":
+  version "2.5.6"
+  resolved "https://registry.yarnpkg.com/@umijs/fabric/-/fabric-2.5.6.tgz#5cef0a642768a35ffa11f1f4b80056e2971f0357"
+  integrity sha512-rpfbQxy+hbO9yScRuFpOHE6d+6KOzsCN2gpQpGsAtgM0TlUQ8Aa6QtrG35bsPylNITp7qf+SOy31StRCC1xW/Q==
   dependencies:
     "@babel/core" "^7.12.10"
     "@babel/eslint-parser" "^7.12.1"
     "@babel/plugin-proposal-class-properties" "^7.12.1"
     "@babel/preset-env" "^7.12.11"
     "@babel/preset-react" "^7.12.10"
+    "@babel/preset-typescript" "^7.12.7"
     "@typescript-eslint/eslint-plugin" "^4.10.0"
     "@typescript-eslint/parser" "^4.10.0"
     eslint "^7.11.0"
