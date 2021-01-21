@@ -81,7 +81,7 @@
     "@types/node": "^14.11.2",
     "@types/react-test-renderer": "^17.0.0",
     "@types/webpack": "^4.41.22",
-    "@umijs/fabric": "^2.2.2",
+    "@umijs/fabric": "^2.5.4",
     "@umijs/test": "^3.2.22",
     "archiver": "^5.2.0",
     "babel-jest": "^26.6.0",
