@@ -60,6 +60,6 @@ export const request = extend({
   credentials: 'include', // 默认请求是否带上cookie
   headers: {
     'X-Auth-Token':
-      localStorage.getItem('yuque_token')!.replace(/"/g, '') || '',
+      localStorage.getItem('yuque_token')?.replace(/"/g, '') || '',
   },
 });
