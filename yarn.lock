@@ -18796,10 +18796,10 @@ umask@^1.1.0, umask@~1.1.0:
   resolved "https://registry.yarnpkg.com/umask/-/umask-1.1.0.tgz#f29cebf01df517912bb58ff9c4e50fde8e33320d"
   integrity sha1-8pzr8B31F5ErtY/5xOUP3o4zMg0=
 
-umi-plugin-extensions@^0.3.1:
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/umi-plugin-extensions/-/umi-plugin-extensions-0.3.1.tgz#171b1123d6cd34468fa3730464973aaa7e7c2315"
-  integrity sha512-fbzvR9NvKK+lQo5hQrbUCH+UfYSrtasl5tzFoG9HcqjxdyEfxFZBe1lI1aWxTF4pE9HTUas2qqTTbJ5kR4AtAg==
+umi-plugin-extensions@^0.3.3:
+  version "0.3.3"
+  resolved "https://registry.yarnpkg.com/umi-plugin-extensions/-/umi-plugin-extensions-0.3.3.tgz#87cb49f4030f487c7528160d42f92910d44ef5f2"
+  integrity sha512-t7WlU1Qa3X2P5TKcpnuOTskuu99bKdAn/WucRJcffCCHFg9wv0m/SSiBYbMoQV+21rXYJ2dVa34oQZjiuR/6Jw==
   dependencies:
     crx-hotreload "^1.0.6"
     fs-extra "^9.0.1"
