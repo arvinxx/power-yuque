@@ -1,0 +1,27 @@
+@import '~theme/index';
+
+// 表格
+.ant-table {
+  .dark-mode-background-base;
+  .ant-table-tbody > tr > td {
+    border-bottom-color: @dark-mode-border-color-light;
+  }
+
+  .ant-table-row:hover {
+    .dark-mode-background-light;
+    > td {
+      .dark-mode-background-light;
+    }
+  }
+
+  .ant-table-placeholder:hover > td {
+    .dark-mode-background-light;
+  }
+
+  .ant-table-thead > tr > th {
+    .dark-mode-background-base;
+    .dark-mode-text-color-base;
+
+    border-bottom-color: @dark-mode-border-color-light;
+  }
+}

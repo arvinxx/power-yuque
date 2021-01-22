@@ -1,0 +1,42 @@
+@import '~theme/index';
+
+.ant-menu {
+  .ant-menu-item {
+    .dark-mode-background-base;
+  }
+}
+
+// 下拉菜单
+.ant-dropdown-menu {
+  .dark-mode-background-light;
+
+  .ant-dropdown-menu-item,
+  .ant-dropdown-menu-submenu-title {
+    .dark-mode-text-color-base;
+    &:hover {
+      .dark-mode-background-lighter;
+    }
+  }
+}
+// 级联菜单
+.ant-cascader-menu,
+.ant-cascader-menus {
+  .dark-mode-background-light;
+
+  .ant-cascader-menu-item {
+    .dark-mode-text-color-base;
+    &:hover {
+      .dark-mode-background-lighter;
+    }
+  }
+
+  .ant-cascader-menu-item-active {
+    .dark-mode-background-lighter;
+  }
+}
+
+.ant-cascader-menus {
+  .ant-cascader-menu:not(:last-child) {
+    border-right-color: @dark-mode-border-color-light !important;
+  }
+}

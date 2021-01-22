@@ -3,3 +3,27 @@
 [class*='Layout-module_main'] {
   .dark-mode-background-base;
 }
+
+[class*='Recent-module_recentTab'] a {
+  .dark-mode-text-color-base;
+  &:hover {
+    .dark-mode-text-color-base-hover;
+  }
+} // 表头
+[class*='Recent-module_active'] a {
+  .dark-mode-text-color-base;
+}
+// 主表
+
+[class*='Recent-module_title'] {
+  .dark-mode-text-color-base;
+}
+
+[class*='Recent-module_filterItem'] {
+  .ant-dropdown-open {
+    .dark-mode-background-light;
+  }
+}
+[class*='Recent-module_activeFilterItem'] span {
+  .dark-mode-background-light;
+}
