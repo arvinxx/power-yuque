@@ -1,8 +1,5 @@
 @import '~theme/index';
 
-
-
-
 .ant-card-head {
   border-bottom-color: @dark-mode-border-color-dark !important;
 }
@@ -75,8 +72,8 @@ div[class^='BookWatched-module_container'] {
 }
 
 div[class^='DocUpdated-module_container'] {
-  background: @dark-mode-background-light !important;
   color: @dark-mode-text-color-base !important;
+  background: @dark-mode-background-light !important;
   [class^='DocUpdated-module_title'] {
     color: @dark-mode-text-color-base !important;
   }
@@ -92,8 +89,17 @@ div[class^='DocUpdated-module_container'] {
 }
 
 // 右下角的 trigger
-[class^='ant-dropdown-trigger index-module_dropdownTrigger'] {
-  filter: invert(0.7);
+
+[class*='index-module_dropdownTrigger'] {
+  //filter: invert(0.7);
+  .dark-mode-background-base;
+}
+
+path[opacity='.65'] {
+  fill: @dark-mode-text-color-base !important;
+}
+use[fill='#FFF'] {
+  fill: @dark-mode-background-base;
 }
 
 [class^='UserInfo-module_name'],
@@ -102,7 +108,7 @@ div[class^='DocUpdated-module_container'] {
 [class^='index-module_title'],
 [class^='UserInfo-module_count'],
 [class^='UserInfo-module_detail'] p {
-  color: @dark-mode-text-color-base !important;
+  .dark-mode-text-color-base;
 }
 
 [class^='FollowingFollowers-module'] {

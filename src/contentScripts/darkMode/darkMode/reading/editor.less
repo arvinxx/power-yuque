@@ -1,7 +1,7 @@
 @import '~theme/index';
 .lake-content-editor,
 .lake-engine {
-  background: @dark-mode-background-light !important;
+  .dark-mode-background-light;
 }
 
 .lake-mini-editor {
@@ -10,8 +10,11 @@
 
 .lake-button {
   &:hover {
-    background: @dark-mode-background-light !important;
+    .dark-mode-background-light;
   }
+}
+.lake-button-active {
+  .dark-mode-background-light;
 }
 
 .comments-form-wrapper {
@@ -20,4 +23,61 @@
   }
 
   .dark-mode-button-disable-in-base;
+}
+
+.lark-editor-header {
+  .dark-mode-background-base;
+  .dark-mode-border-bottom-color-light;
+
+  .name-title {
+    .dark-mode-text-color-base;
+  }
+  .ant-btn {
+    .dark-mode-button-default-in-base;
+  }
+}
+
+.lake-max-editor-wrapper {
+  // 大纲
+  .lake-sidebar-title {
+    .dark-mode-border-bottom-color-light;
+    .dark-mode-text-color-base;
+  }
+  // 大纲文本
+  .larkui-synopsis-item-collapsible-link a,
+  .larkui-synopsis-item-link a {
+    .dark-mode-text-color-base-with-hover;
+  }
+
+  .lake-toolbar {
+    .dark-mode-background-base;
+
+    .no-border;
+    .lake-toolbar-area {
+      border-left-color: @dark-mode-border-color-light !important;
+    }
+
+    .lake-button {
+      .dark-mode-text-color-base;
+    }
+  }
+}
+
+// 背景框
+.lake-max-editor-content {
+  .dark-mode-background-dark;
+
+  .ant-input {
+    .dark-mode-background-base;
+    .dark-mode-text-color-base;
+  }
+
+  .lake-content-editor,
+  .lake-content-editor-core,
+  .lake-engine,
+  .lake-typography-classic {
+    .dark-mode-background-base;
+    .dark-mode-border-color-light;
+    .dark-mode-border-color-base;
+  }
 }

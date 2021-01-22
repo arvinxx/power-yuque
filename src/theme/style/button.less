@@ -2,9 +2,8 @@
 
 // 在 background-base 下的默认按钮
 .dark-mode-button-default-in-base {
-  background: @dark-mode-background-light !important;
-
   color: @dark-mode-text-color-base !important;
+  background: @dark-mode-background-light !important;
   border-color: @dark-mode-background-light !important;
   &:hover {
     background: @dark-mode-background-light-hover !important;
@@ -12,10 +11,10 @@
 }
 // 在 background-base 下的默认按钮
 .dark-mode-button-default-in-light {
-  background: @dark-mode-background-lighter !important;
-  transition: all 300ms ease-in-out;
   color: @dark-mode-text-color-base !important;
+  background: @dark-mode-background-lighter !important;
   border-color: @dark-mode-background-lighter !important;
+  transition: all 300ms ease-in-out;
   &:hover {
     background: @dark-mode-background-lighter-hover !important;
   }
@@ -24,17 +23,17 @@
 // 在 background-base 下的禁用按钮
 .dark-mode-button-disable-in-base {
   .ant-btn[disabled] {
+    color: @dark-mode-text-color-second !important;
     background: @dark-mode-background-dark !important;
     border-color: @dark-mode-border-color-darker !important;
-    color: @dark-mode-text-color-second !important;
   }
 }
 // 在 background-dark 下的禁用按钮
 .dark-mode-button-disable-in-dark {
   .ant-btn[disabled] {
+    color: @dark-mode-text-color-second !important;
     background: @dark-mode-background-base !important;
     border-color: @dark-mode-background-base !important;
-    color: @dark-mode-text-color-second !important;
   }
 }
 
