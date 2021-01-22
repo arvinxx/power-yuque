@@ -1,11 +1,22 @@
+/* stylelint-disable */
+
 @import '~theme/index';
 // 文章内容
-#content {
+#content,
+.lake-content-editor {
   .dark-mode-text-color-base;
+
+  .lake-list,
+  .lake-list-task {
+    .dark-mode-text-color-base;
+  }
 
   h1,
   h2,
-  h3 {
+  h3,
+  h4,
+  h5,
+  h6 {
     color: @dark-mode-text-color-base !important;
   }
 
@@ -17,10 +28,6 @@
   [data-lake-card='hr'] hr {
     background-color: @dark-mode-border-color-light !important;
   }
-  //// 图片变暗 80%
-  //.lake-image-meta {
-  //  .dark-mode-image;
-  //}
 
   // 文本链接
   a {
@@ -38,5 +45,42 @@
   }
   [data-card-element='center'] {
     border: none !important;
+  }
+
+  // 信息块
+  .lake-alert-info {
+    background: @dark-mode-block-background-info !important;
+  }
+  .lake-alert-success {
+    background: @dark-mode-block-background-success !important;
+  }
+  .lake-alert-danger {
+    background: @dark-mode-block-background-error !important;
+  }
+  .lake-alert-warning {
+    background: @dark-mode-block-background-warning !important;
+  }
+  .lake-alert-tips {
+    background: @dark-mode-block-background-tips !important;
+  }
+
+  // 代码块
+  .lake-codeblock {
+    .no-border;
+  }
+  .lake-codeblock-content {
+    .dark-mode-background-light;
+  }
+
+  //
+  .lake-checkbox-inner {
+    .dark-mode-background-light;
+    .dark-mode-border-color-light;
+  }
+  .lake-checkbox-checked {
+    .lake-checkbox-inner {
+      background: @dark-mode-yuque-brand-color !important;
+      border-color: @dark-mode-yuque-brand-color !important;
+    }
   }
 }
