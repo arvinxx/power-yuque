@@ -1,5 +1,14 @@
 # Power Yuque 更新日志
 
+## [0.1.6](https://github.com/arvinxx/power-yuque/compare/v0.1.5...v0.1.6) (2021-01-22)
+
+
+### style
+
+* **(深色模式)**: 初步完成工作台深色模式 ([9e85141](https://github.com/arvinxx/power-yuque/commit/9e85141))
+* **(深色模式)**: 完成工作台侧边导航栏的深色模式样式 ([2c38756](https://github.com/arvinxx/power-yuque/commit/2c38756))
+* **(深色模式)**: 完成工作台侧边导航栏的深色模式样式 ([a9a5558](https://github.com/arvinxx/power-yuque/commit/a9a5558))
+
 ## [0.1.5](https://github.com/arvinxx/power-yuque/compare/v0.1.4...v0.1.5) (2021-01-21)
 
 
