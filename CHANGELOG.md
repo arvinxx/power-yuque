@@ -1,5 +1,13 @@
 # Power Yuque 更新日志
 
+## [0.1.7](https://github.com/arvinxx/power-yuque/compare/v0.1.6...v0.1.7) (2021-01-22)
+
+
+### style
+
+* **(深色模式)**: 优化文章显示页面样式 ([f79a8fc](https://github.com/arvinxx/power-yuque/commit/f79a8fc))
+* **(深色模式)**: 初步完成编辑器深色模式 ([5885d66](https://github.com/arvinxx/power-yuque/commit/5885d66))
+
 ## [0.1.6](https://github.com/arvinxx/power-yuque/compare/v0.1.5...v0.1.6) (2021-01-22)
 
 
