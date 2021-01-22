@@ -1,0 +1,53 @@
+@import '~theme/index';
+
+// 左侧侧边栏
+[class*='Layout-module_sidebar'] {
+  .dark-mode-background-dark;
+
+  border-right-color: @dark-mode-border-color-light;
+
+  &::-webkit-scrollbar-thumb {
+    .dark-mode-background-light;
+  }
+  &::-webkit-scrollbar-track {
+    .dark-mode-background-base;
+  }
+}
+
+[class*='Layout-module_navLink'],
+[class*='GroupItem-module_name'],
+[class*='Layout-module_bookItem'] {
+  .dark-mode-text-color-second;
+}
+
+// hover 或激活时的样式
+
+[class*='Layout-module_active'],
+[class*='Layout-module_bookItem']:hover,
+[class*='Layout-module_groupItem'] > a:hover,
+[class*='Layout-module_navLink']:hover {
+  .dark-mode-background-light;
+  .dark-mode-text-color-base;
+  /* stylelint-disable */
+  [class*='Layout-module_navLink'],
+  [class*='GroupItem-module_name'],
+  [class*='Layout-module_bookItem'] {
+    .dark-mode-text-color-base;
+  }
+  /* stylelint-enable */
+}
+
+[class*='Layout-module_navBlockTitle']::before {
+  .dark-mode-background-light;
+  &:hover {
+    .dark-mode-background-light;
+  }
+}
+
+[class*='Layout-module_iconActive'] {
+  .dark-mode-text-color-base;
+}
+[fill='#0D0D0D'],
+[fill='#262626'] {
+  fill: @dark-mode-text-color-base !important;
+}
