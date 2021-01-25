@@ -17032,10 +17032,10 @@ select-hose@^2.0.0:
   resolved "https://registry.npm.taobao.org/select-hose/download/select-hose-2.0.0.tgz#625d8658f865af43ec962bfc376a37359a4994ca"
   integrity sha1-Yl2GWPhlr0Psliv8N2o3NZpJlMo=
 
-semantic-release@^17.3.6:
-  version "17.3.6"
-  resolved "https://registry.npm.taobao.org/semantic-release/download/semantic-release-17.3.6.tgz#0390eb9c4d13e82dbf0f8e5700f196b599fa2a12"
-  integrity sha1-A5DrnE0T6C2/D45XAPGWtZn6KhI=
+semantic-release@^17.3.7:
+  version "17.3.7"
+  resolved "https://registry.yarnpkg.com/semantic-release/-/semantic-release-17.3.7.tgz#a54a8ccf443c7389706c9e3c52f2a9433e0581f7"
+  integrity sha512-mMWaxykq1+mZu7hvUjEdUhJXb+BvEJhcuy15hog3+8XWZqmxRfcdlW/aTBav8rWUZ16bEevWVc6qHwsq3aPGiQ==
   dependencies:
     "@semantic-release/commit-analyzer" "^8.0.0"
     "@semantic-release/error" "^2.2.0"
@@ -17049,7 +17049,7 @@ semantic-release@^17.3.6:
     execa "^5.0.0"
     figures "^3.0.0"
     find-versions "^4.0.0"
-    get-stream "^5.0.0"
+    get-stream "^6.0.0"
     git-log-parser "^1.2.0"
     hook-std "^2.0.0"
     hosted-git-info "^3.0.0"
