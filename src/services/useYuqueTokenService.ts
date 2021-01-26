@@ -17,6 +17,11 @@ export const useYuqueTokenService = () => {
     message.success('保存成功');
   }, [token]);
 
+  const resetToken = useCallback(() => {
+    chrome.storage?.sync.set({ yuque_token: '' });
+    setYuqueToken('');
+  }, []);
+
   const [valid, setValid] = useState(false);
 
   /**
@@ -52,7 +57,14 @@ export const useYuqueTokenService = () => {
     });
   }, []);
 
-  return { token, setYuqueToken, syncToCloudStorage, valid, checkTokenValid };
+  return {
+    token,
+    setYuqueToken,
+    syncToCloudStorage,
+    valid,
+    checkTokenValid,
+    resetToken,
+  };
 };
 
 // 这个服务将被注册至全局
