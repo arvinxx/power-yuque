@@ -1,9 +1,15 @@
 console.log('This is background page!');
 
-chrome.browserAction.onClicked.addListener((tab) => {
-  console.log(tab);
-  console.log('123');
+chrome.browserAction.onClicked.addListener(() => {
   chrome.tabs.create({ url: 'https://yuque.com' });
 });
 
-export default null;
+chrome.runtime.onMessage.addListener((message) => {
+  switch (message.action) {
+    case 'openOptionsPage':
+      chrome.runtime.openOptionsPage();
+      break;
+    default:
+      break;
+  }
+});

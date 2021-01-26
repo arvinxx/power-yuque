@@ -28,17 +28,17 @@ const App = () => {
             <Menu.Item key="token">
               <KeyOutlined /> 语雀 Token
             </Menu.Item>
-            <Menu.Item key="typographic">
+            <Menu.Item disabled key="typographic">
               <FontColorsOutlined />
               排版配置
             </Menu.Item>
 
-            <Menu.Item key="dark">
+            <Menu.Item disabled key="dark">
               <BulbOutlined />
               深色模式
             </Menu.Item>
-            <Menu.Item key="12">
-              <SearchOutlined /> 搜索框
+            <Menu.Item disabled key="search-bar">
+              <SearchOutlined /> 高级搜索框
             </Menu.Item>
           </Menu>
 

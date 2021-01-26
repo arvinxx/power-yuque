@@ -1,14 +1,18 @@
 import React, { useContext } from 'react';
-import { Button, Input, Space } from 'antd';
+import { Button, Input, message, Space } from 'antd';
 
 import { YuqueTokenService } from '@/services';
 
 import styles from './style.less';
 
 const Token = () => {
-  const { setYuqueToken, token, syncToCloudStorage } = useContext(
-    YuqueTokenService,
-  );
+  const {
+    setYuqueToken,
+    token,
+    syncToCloudStorage,
+    checkTokenValid,
+    valid,
+  } = useContext(YuqueTokenService);
 
   return (
     <div className={styles.container}>
@@ -22,9 +26,27 @@ const Token = () => {
           }}
           onPressEnter={syncToCloudStorage}
         />
-        <Button type={'primary'} onClick={syncToCloudStorage}>
-          保存
-        </Button>
+        <Space>
+          <Button
+            onClick={async () => {
+              const data = await checkTokenValid();
+              if (data) {
+                message.success('Token 有效');
+              } else {
+                message.error('Token 无效，请重试');
+              }
+            }}
+          >
+            测试 Token
+          </Button>
+          <Button
+            disabled={!valid}
+            type={'primary'}
+            onClick={syncToCloudStorage}
+          >
+            保存
+          </Button>
+        </Space>
       </Space>
     </div>
   );

@@ -2,8 +2,8 @@
 
 .container {
   position: fixed;
-  left: 0;
   top: 0;
+  left: 0;
   z-index: 999999;
   width: 100%;
   height: 100vh;
@@ -11,26 +11,31 @@
 }
 .bar {
   position: fixed;
-
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-
   width: 600px;
+  transform: translate(-50%, -50%);
 }
 .input {
   .search-bar-shadow;
-  border-radius: 4px;
-  background: @background-color-base;
-}
 
+  background: @background-color-base;
+  border-radius: 4px;
+}
 .result {
   margin-top: 8px;
+  overflow: hidden;
   border-radius: 4px;
   .search-bar-shadow;
-  overflow: hidden;
 }
 
+.invalid {
+  width: 500px;
+  padding: 24px;
+  background: @white;
+  border-radius: 4px;
+  .flex-center-children;
+}
 [theme='light'] {
   .result {
     background: white;

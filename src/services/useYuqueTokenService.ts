@@ -1,14 +1,16 @@
 import { useLocalStorageState } from 'ahooks';
-import { getServiceToken } from '@/utils';
-import { useCallback, useEffect } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { message } from 'antd';
+import request from 'umi-request';
+
+import { getServiceToken } from '@/utils';
 
 /**
  *  Yuque Token
  */
 export const useYuqueTokenService = () => {
   // SearchBar 可见
-  const [token, setYuqueToken] = useLocalStorageState('yuque_token', '');
+  const [token, setYuqueToken] = useLocalStorageState('PY_YUQUE_TOKEN', '');
 
   const syncToCloudStorage = useCallback(() => {
     chrome.storage?.sync.set({ yuque_token: token }, () => {
@@ -17,16 +19,42 @@ export const useYuqueTokenService = () => {
     message.success('保存成功');
   }, [token]);
 
+  const [valid, setValid] = useState(false);
+
+  /**
+   * 验证 token 是否有效
+   */
+  const checkTokenValid = useCallback(async () => {
+    // 如果验证过有效,就不验证了
+    if (valid) return;
+
+    try {
+      const data = await request.get('https://www.yuque.com/api/v2/hello', {
+        headers: {
+          'X-Auth-Token': token || '',
+          'Access-Control-Allow-Origin': '*',
+        },
+        getResponse: true,
+      });
+      console.log(data);
+      setValid(true);
+      return true;
+    } catch (e) {
+      setValid(false);
+      return false;
+    }
+  }, [token, valid]);
+
+  // 初始化时做一次检查
   useEffect(() => {
     chrome.storage?.sync.get((data) => {
-      console.log(data);
       if (data.yuque_token !== token) {
         setYuqueToken(data.yuque_token);
       }
     });
   }, []);
 
-  return { token, setYuqueToken, syncToCloudStorage };
+  return { token, setYuqueToken, syncToCloudStorage, valid, checkTokenValid };
 };
 
 // 这个服务将被注册至全局
