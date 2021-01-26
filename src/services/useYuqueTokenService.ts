@@ -13,9 +13,7 @@ export const useYuqueTokenService = () => {
   const [token, setYuqueToken] = useLocalStorageState('PY_YUQUE_TOKEN', '');
 
   const syncToCloudStorage = useCallback(() => {
-    chrome.storage?.sync.set({ yuque_token: token }, () => {
-      chrome.storage.sync.get(console.log);
-    });
+    chrome.storage?.sync.set({ yuque_token: token });
     message.success('保存成功');
   }, [token]);
 
@@ -29,14 +27,14 @@ export const useYuqueTokenService = () => {
     if (valid) return;
 
     try {
-      const data = await request.get('https://www.yuque.com/api/v2/hello', {
+      await request.get('https://www.yuque.com/api/v2/hello', {
         headers: {
           'X-Auth-Token': token || '',
           'Access-Control-Allow-Origin': '*',
         },
         getResponse: true,
       });
-      console.log(data);
+
       setValid(true);
       return true;
     } catch (e) {

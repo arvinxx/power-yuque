@@ -76,7 +76,7 @@ const SearchBar: FC = () => {
 
 export default () => (
   <YuqueTokenService.Provider value={useYuqueTokenService()}>
-    <SearchBarService.Provider value={useSearchBarService()}>
+    <SearchBarService.Provider value={useSearchBarService(true)}>
       <SearchService.Provider value={useSearchService()}>
         <SearchBar />
       </SearchService.Provider>

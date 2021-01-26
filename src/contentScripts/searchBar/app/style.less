@@ -17,10 +17,9 @@
   transform: translate(-50%, -50%);
 }
 .input {
-  .search-bar-shadow;
-
-  background: @background-color-base;
   border-radius: 4px;
+
+  .search-bar-shadow;
 }
 .result {
   margin-top: 8px;
@@ -32,18 +31,32 @@
 .invalid {
   width: 500px;
   padding: 24px;
-  background: @white;
   border-radius: 4px;
+
   .flex-center-children;
 }
 [theme='light'] {
   .result {
-    background: white;
+    background: @white;
+  }
+  .invalid {
+    background: @white;
+  }
+  .input {
+    background: @background-color-base;
   }
 }
 
 [theme='dark'] {
   .result {
+    color: @dark-mode-text-color-base;
     background: @dark-mode-background-light;
+  }
+  .invalid {
+    background: @dark-mode-background-light;
+  }
+  .input {
+    color: @dark-mode-text-color-base;
+    background: @dark-mode-background-base;
   }
 }

@@ -3,16 +3,16 @@
   padding: 8px 12px 24px;
 }
 .repo {
-  margin-right: 8px;
   width: 24px;
+  margin-right: 8px;
 }
 .title {
-  font-size: 16px;
   margin-bottom: 8px;
+  font-size: 16px;
   em {
     color: @yuque-brand-color;
-    font-style: normal;
     font-weight: bold;
+    font-style: normal;
   }
 }
 
@@ -21,14 +21,23 @@
 }
 
 .row {
-  cursor: pointer;
-  padding: 12px;
-  transition: background-color 300ms ease-in-out;
   display: flex;
+  padding: 12px;
+  cursor: pointer;
+  transition: background-color 300ms ease-in-out;
 }
 
 [theme='light'] {
   .row:hover {
     background: @item-hover-bg;
+  }
+}
+
+[theme='dark'] {
+  .desc {
+    .dark-mode-text-color-second;
+  }
+  .row:hover {
+    background: @dark-mode-background-light-hover;
   }
 }
