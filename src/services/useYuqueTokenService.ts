@@ -1,6 +1,7 @@
 import { useLocalStorageState } from 'ahooks';
 import { getServiceToken } from '@/utils';
 import { useCallback, useEffect } from 'react';
+import { message } from 'antd';
 
 /**
  *  Yuque Token
@@ -10,13 +11,14 @@ export const useYuqueTokenService = () => {
   const [token, setYuqueToken] = useLocalStorageState('yuque_token', '');
 
   const syncToCloudStorage = useCallback(() => {
-    chrome.storage.sync.set({ yuque_token: token }, () => {
+    chrome.storage?.sync.set({ yuque_token: token }, () => {
       chrome.storage.sync.get(console.log);
     });
+    message.success('保存成功');
   }, [token]);
 
   useEffect(() => {
-    chrome.storage.sync.get((data) => {
+    chrome.storage?.sync.get((data) => {
       console.log(data);
       if (data.yuque_token !== token) {
         setYuqueToken(data.yuque_token);
