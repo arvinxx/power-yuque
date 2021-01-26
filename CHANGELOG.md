@@ -1,5 +1,13 @@
 # Power Yuque 更新日志
 
+## [0.2.1](https://github.com/arvinxx/power-yuque/compare/v0.2.0...v0.2.1) (2021-01-26)
+
+
+### 🐛 Bug Fixes | 修复
+
+* **增强搜索框**: 优化 token 的重置能力 ([b9280e2](https://github.com/arvinxx/power-yuque/commit/b9280e2))
+* **增强搜索框**: 修正默认打开的错误 ([d4ee043](https://github.com/arvinxx/power-yuque/commit/d4ee043))
+
 # [0.2.0](https://github.com/arvinxx/power-yuque/compare/v0.1.7...v0.2.0) (2021-01-26)
 
 
