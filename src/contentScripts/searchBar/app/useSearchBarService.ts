@@ -10,6 +10,9 @@ export const SearchBarService = getServiceToken(useSearchBarService);
  * SearchBar 需要的状态
  */
 export default function useSearchBarService(initState?: boolean) {
+  // searchBar 对象
+  const searchBarRef = useRef(null);
+
   // SearchBar 可见
   const [visible, setVisible] = useState(initState || false);
 
@@ -19,20 +22,16 @@ export default function useSearchBarService(initState?: boolean) {
   const hide = () => {
     setVisible(false);
   };
-  const trigger = () => {
-    setVisible(!visible);
-  };
-
-  const searchBarRef = useRef(null);
 
   useClickAway(() => {
     setVisible(false);
   }, [searchBarRef]);
 
+  // 快捷键触发能力
   useHotkeys(
     'command+shift+F',
     () => {
-      trigger();
+      setVisible(!visible);
     },
     [visible],
   );

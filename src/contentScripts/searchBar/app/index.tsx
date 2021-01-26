@@ -1,9 +1,10 @@
 import type { FC } from 'react';
 import React, { useContext } from 'react';
+import { useYuqueTokenService, YuqueTokenService } from '@/services';
 
 import useSearchBarService, { SearchBarService } from './useSearchBarService';
-
 import { SearchService, useSearchService } from './useSearchService';
+
 import SearchInput from './SearchInput';
 import SearchResult from './SearchResult';
 import AnimatedHeight from './AnimatedHeight';
@@ -30,9 +31,11 @@ const SearchBar: FC = () => {
 };
 
 export default () => (
-  <SearchBarService.Provider value={useSearchBarService()}>
-    <SearchService.Provider value={useSearchService()}>
-      <SearchBar />
-    </SearchService.Provider>
-  </SearchBarService.Provider>
+  <YuqueTokenService.Provider value={useYuqueTokenService()}>
+    <SearchBarService.Provider value={useSearchBarService()}>
+      <SearchService.Provider value={useSearchService()}>
+        <SearchBar />
+      </SearchService.Provider>
+    </SearchBarService.Provider>
+  </YuqueTokenService.Provider>
 );
