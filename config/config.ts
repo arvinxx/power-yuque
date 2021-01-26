@@ -1,5 +1,6 @@
 import { defineConfig } from 'umi';
 import { resolve } from 'path';
+import theme from '../src/theme/theme';
 
 const isDev = process.env.NODE_ENV === 'development';
 
@@ -8,6 +9,7 @@ export default defineConfig({
   alias: {
     theme: resolve(__dirname, '../src/theme'),
   },
+  theme,
   // chrome 插件配置项
   extensions: {
     name: `Power Yuque${isDev ? ' DEV' : ''}`,
