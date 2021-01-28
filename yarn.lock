@@ -6412,10 +6412,10 @@ conventional-changelog-express@^2.0.6:
   dependencies:
     q "^1.5.1"
 
-conventional-changelog-gitmoji-config@^1.3.5:
-  version "1.3.5"
-  resolved "https://registry.yarnpkg.com/conventional-changelog-gitmoji-config/-/conventional-changelog-gitmoji-config-1.3.5.tgz#70f487afab45bc7e89cfe39ade4c835466066939"
-  integrity sha512-JTW2048vWoBnmGaQM9Gf058ThmdHY9NoRCbPcFNLipvChIFJbZ5tdfiUqzCZANo2xagKr0Gu16uSPTjgdlmjUw==
+conventional-changelog-gitmoji-config@^1.3.6:
+  version "1.3.6"
+  resolved "https://registry.yarnpkg.com/conventional-changelog-gitmoji-config/-/conventional-changelog-gitmoji-config-1.3.6.tgz#f20e60030d48d3ce5aa784cd08edaad6e7a134c7"
+  integrity sha512-sNA7cMaxP11UzvTIEVgXNLRusvHex5+/H1tZlex1ILDrBZxd7yaRASfVwiXTGhXQ57Yc5QMQ7q+X/qjIGrbt2g==
   dependencies:
     "@gitmoji/commit-types" "1.1.5"
     "@gitmoji/parser-opts" "1.2.5"
