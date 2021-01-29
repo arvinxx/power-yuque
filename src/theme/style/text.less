@@ -20,6 +20,16 @@
 .dark-mode-text-color-second {
   color: @dark-mode-text-color-second !important;
 }
+.dark-mode-text-color-second-hover {
+  color: @dark-mode-text-color-base !important;
+}
+
+.dark-mode-text-color-second-with-hover {
+  .dark-mode-text-color-second;
+  &:hover {
+    .dark-mode-text-color-second-hover;
+  }
+}
 // 链接颜色
 .dark-mode-link-color {
   color: @dark-mode-link-color !important;

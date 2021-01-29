@@ -28,6 +28,16 @@
     border-color: @dark-mode-border-color-darker !important;
   }
 }
+
+// 在 background-base 下的默认按钮
+.dark-mode-button-default-in-dark {
+  color: @dark-mode-text-color-base !important;
+  background: @dark-mode-background-base !important;
+  border-color: @dark-mode-background-base !important;
+  &:hover {
+    background: @dark-mode-text-color-base-hover !important;
+  }
+}
 // 在 background-dark 下的禁用按钮
 .dark-mode-button-disable-in-dark {
   .ant-btn[disabled] {

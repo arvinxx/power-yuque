@@ -4,6 +4,12 @@
 // 文章内容
 #content,
 .lake-content-editor {
+  // 锚文本
+  .lake-anchor-button {
+    .dark-mode-background-base-with-hover;
+    .dark-mode-text-color-second-with-hover;
+  }
+
   .dark-mode-text-color-base;
 
   .lake-list,
@@ -48,6 +54,16 @@
   }
 
   // 信息块
+  .lake-alert {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: #262626 !important;
+    }
+  }
   .lake-alert-info {
     background: @dark-mode-block-background-info !important;
   }
@@ -72,7 +88,7 @@
     .dark-mode-background-light;
   }
 
-  //
+  // checkbox
   .lake-checkbox-inner {
     .dark-mode-background-light;
     .dark-mode-border-color-light;
@@ -83,4 +99,25 @@
       border-color: @dark-mode-yuque-brand-color !important;
     }
   }
+
+  // 引用卡片
+  .lake-embed-mask {
+    .doc-embed-content-container {
+      .dark-mode-background-light;
+    }
+  }
+}
+
+[class*='BookReader-module_content'] {
+  #footer {
+    .dark-mode-background-base;
+  }
+}
+
+.lake-engine .CodeMirror-gutters,
+.lake-engine-view .CodeMirror-gutters {
+  .dark-mode-background-light;
+}
+.lake-codeblock-header {
+  .dark-mode-border-bottom-color-light;
 }
