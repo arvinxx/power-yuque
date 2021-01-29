@@ -6158,19 +6158,19 @@ commander@^6.2.0:
   resolved "https://registry.npm.taobao.org/commander/download/commander-6.2.1.tgz?cache=0&sync_timestamp=1610702173050&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fcommander%2Fdownload%2Fcommander-6.2.1.tgz#0792eb682dfbc325999bb2b84fddddba110ac73c"
   integrity sha1-B5LraC37wyWZm7K4T93duhEKxzw=
 
-commitlint-config-gitmoji@^2.1.10:
-  version "2.1.10"
-  resolved "https://registry.yarnpkg.com/commitlint-config-gitmoji/-/commitlint-config-gitmoji-2.1.10.tgz#9be85853d12675fb60820882fc38ac3c41a99669"
-  integrity sha512-TM1m+9F7AEiAF7QzAc8XxjDGDqlNB4tVIyYQK0d2215Ckvg0b3LnCI1A2MN41ll1re2dFxHsoRv1aTQJhXQQMg==
+commitlint-config-gitmoji@^2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/commitlint-config-gitmoji/-/commitlint-config-gitmoji-2.2.1.tgz#f42e247953f99cd328417956eef20c72f9926910"
+  integrity sha512-VSIC5TJdMqDcYsrswil5max//85170RZcqRRG0pUsVmAB92ntge6XVprgJMi70poPeZHpaDQBraEGaNNnJvsDw==
   dependencies:
     "@gitmoji/commit-types" "1.1.5"
     "@gitmoji/parser-opts" "1.2.5"
-    commitlint-plugin-gitmoji "2.0.4"
+    commitlint-plugin-gitmoji "2.0.6"
 
-commitlint-plugin-gitmoji@2.0.4:
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/commitlint-plugin-gitmoji/-/commitlint-plugin-gitmoji-2.0.4.tgz#27253085a2ab1bc5ea0b22edd1d27308a316c76f"
-  integrity sha512-3e3UJabeSpVRhNY/wzitLPxavCQiSyiWpNoCYQf5Zsqnou+W7o97J5VIm19RhwBVzSOEh6/AxrlQVKbDBo6Lxw==
+commitlint-plugin-gitmoji@2.0.6:
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/commitlint-plugin-gitmoji/-/commitlint-plugin-gitmoji-2.0.6.tgz#ef90562d0033071db39685ef89913d53956f7b8b"
+  integrity sha512-8SdmLPtxKbJiAiLQThO+SJVUO2AIyNCG2WpIL6h7pT1dED+10Rk0T3KWk8zcWJQmQHy+dyMlTMHx3k28BK+M+A==
 
 commondir@^1.0.1:
   version "1.0.1"
