@@ -2634,10 +2634,10 @@
   dependencies:
     "@types/node" "*"
 
-"@types/chrome@^0.0.128":
-  version "0.0.128"
-  resolved "https://registry.npm.taobao.org/@types/chrome/download/@types/chrome-0.0.128.tgz#5dbd8b2539a367353fbe4386f119b510105f8b6a"
-  integrity sha1-Xb2LJTmjZzU/vkOG8Rm1EBBfi2o=
+"@types/chrome@^0.0.129":
+  version "0.0.129"
+  resolved "https://registry.yarnpkg.com/@types/chrome/-/chrome-0.0.129.tgz#0f11484239da26a0eb692049a269c90ab91d1860"
+  integrity sha512-7SdqJ7YFu8wBI13SRbxWibHG7W3W3N2Cdn2hRHw24tWiLBZGC2OOfIKREQyga8AeT83AaVcTirWDVMrph0Gkkw==
   dependencies:
     "@types/filesystem" "*"
     "@types/har-format" "*"
