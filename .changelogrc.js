@@ -6,4 +6,5 @@ module.exports = {
     typographic: '排版优化',
   },
   displayTypes: ['feat', 'fix', 'style', 'pref'],
+  titleLanguage: 'zh-CN',
 };

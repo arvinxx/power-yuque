@@ -6412,14 +6412,14 @@ conventional-changelog-express@^2.0.6:
   dependencies:
     q "^1.5.1"
 
-conventional-changelog-gitmoji-config@^1.3.6:
-  version "1.3.6"
-  resolved "https://registry.yarnpkg.com/conventional-changelog-gitmoji-config/-/conventional-changelog-gitmoji-config-1.3.6.tgz#f20e60030d48d3ce5aa784cd08edaad6e7a134c7"
-  integrity sha512-sNA7cMaxP11UzvTIEVgXNLRusvHex5+/H1tZlex1ILDrBZxd7yaRASfVwiXTGhXQ57Yc5QMQ7q+X/qjIGrbt2g==
+conventional-changelog-gitmoji-config@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.npmjs.org/conventional-changelog-gitmoji-config/-/conventional-changelog-gitmoji-config-1.4.0.tgz#aeaae17aca37ca04b771e19eaed305fb25311c5c"
+  integrity sha512-37PnHFjFkaE3SHIEng8cDULhFM9MAShQ2hGS4ObTil+f++jD7yRKJQj+tb6JN3oPGJx3wjYXGhDDeX8UKfxgJA==
   dependencies:
     "@gitmoji/commit-types" "1.1.5"
     "@gitmoji/parser-opts" "1.2.5"
-    q "^1.5.1"
+    cosmiconfig "^7.0.0"
 
 conventional-changelog-jquery@^3.0.11:
   version "3.0.11"
