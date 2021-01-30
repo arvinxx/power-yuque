@@ -1,5 +1,12 @@
 # Power Yuque 更新日志
 
+## [0.2.2](https://github.com/arvinxx/power-yuque/compare/v0.2.1...v0.2.2) (2021-01-30)
+
+
+### 💄 样式
+
+* **深色模式**: 优化编辑器的深色模式 ([69a317a](https://github.com/arvinxx/power-yuque/commit/69a317a))
+
 ## [0.2.1](https://github.com/arvinxx/power-yuque/compare/v0.2.0...v0.2.1) (2021-01-26)
 
 ### 🐛 Bug Fixes | 修复
