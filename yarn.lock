@@ -1564,10 +1564,10 @@
   dependencies:
     tslib "^2.0.1"
 
-"@formatjs/intl-datetimeformat@3.2.5":
-  version "3.2.5"
-  resolved "https://registry.yarnpkg.com/@formatjs/intl-datetimeformat/-/intl-datetimeformat-3.2.5.tgz#3c6d5d38dfbf15816592082886e8aaef20364a48"
-  integrity sha512-rTxk9CDpk1Vi07hDRI4p31X/HO3UsEfxHLWEBw+eWmW9CF6na5X96oeB0qkDpru++BqdWhNWdAl1oHCBk9ysKQ==
+"@formatjs/intl-datetimeformat@3.2.7":
+  version "3.2.7"
+  resolved "https://registry.yarnpkg.com/@formatjs/intl-datetimeformat/-/intl-datetimeformat-3.2.7.tgz#2cd32add6d79242394c3f5057b8b6e385f8665b6"
+  integrity sha512-DN3y19Hek9DhGSlwXhjgTQIHOf65XrPc7MbVw6JVnYUlsI/rkKV3fQFcEU77zCPHQjBqaM6R2OCkI4lj+uFrSA==
   dependencies:
     "@formatjs/ecma402-abstract" "1.5.2"
     tslib "^2.0.1"
@@ -1636,13 +1636,13 @@
   resolved "https://registry.npm.taobao.org/@formatjs/intl-utils/download/@formatjs/intl-utils-2.3.0.tgz#2dc8c57044de0340eb53a7ba602e59abf80dc799"
   integrity sha1-LcjFcETeA0DrU6e6YC5Zq/gNx5k=
 
-"@formatjs/intl@1.6.4":
-  version "1.6.4"
-  resolved "https://registry.yarnpkg.com/@formatjs/intl/-/intl-1.6.4.tgz#36b69e0adc398f7e11b59725e659bc3535690be5"
-  integrity sha512-pjx/Zw5djoLtQz3iphLZS/hql+Wp8r38hXkNtFddkpgoHJT1Us+CWl+Mvh3WyV6OcGuFkN7ZPeAPVFLqnB9rew==
+"@formatjs/intl@1.6.6":
+  version "1.6.6"
+  resolved "https://registry.yarnpkg.com/@formatjs/intl/-/intl-1.6.6.tgz#e95e9e317da45005b944d154c24417cce2fd7814"
+  integrity sha512-j9J4HG6hJ++aZFj2zCCh4QBSMyoxwqc2R4YyBBix9lzpALNjTW3xPkvhjV3KWN+zujRy89utSqWF+LqxxTO7LA==
   dependencies:
     "@formatjs/ecma402-abstract" "1.5.2"
-    "@formatjs/intl-datetimeformat" "3.2.5"
+    "@formatjs/intl-datetimeformat" "3.2.7"
     "@formatjs/intl-displaynames" "4.0.5"
     "@formatjs/intl-listformat" "5.0.5"
     "@formatjs/intl-relativetimeformat" "8.0.4"
@@ -16664,13 +16664,13 @@ react-intl@3.12.1:
     intl-messageformat-parser "^3.6.4"
     shallow-equal "^1.2.1"
 
-react-intl@^5.10.19:
-  version "5.10.19"
-  resolved "https://registry.yarnpkg.com/react-intl/-/react-intl-5.10.19.tgz#a16a15373ec4b06cf1857e4605d80f38e17afe71"
-  integrity sha512-l8OoBqNT1XqilyMnb7PxXxL7ran/EQ/N/sln5Vun4y0Sz0kFYYSJdw9IbeGDzNcXWKDTQ5MIr9ccsVa0CDVWzw==
+react-intl@^5.12.0:
+  version "5.12.0"
+  resolved "https://registry.yarnpkg.com/react-intl/-/react-intl-5.12.0.tgz#297868c7a7b8ac568ac457dddbf200a39a19014f"
+  integrity sha512-SWIt2+OFEGR8XjqDYpOBQLKVN3cR+1eJZGlHIAlZWw/562YE4OkXyFlK7e/Gk9KHS4xl9FwCBD7FScjfcDvm0g==
   dependencies:
     "@formatjs/ecma402-abstract" "1.5.2"
-    "@formatjs/intl" "1.6.4"
+    "@formatjs/intl" "1.6.6"
     "@formatjs/intl-displaynames" "4.0.5"
     "@formatjs/intl-listformat" "5.0.5"
     "@formatjs/intl-relativetimeformat" "8.0.4"
