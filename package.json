@@ -53,7 +53,7 @@
     "@ant-design/pro-list": "^1.4.0",
     "@umijs/preset-react": "^1.7.13",
     "@yuque/sdk": "^1.1.1",
-    "ahooks": "^2.9.4",
+    "ahooks": "^2.9.6",
     "antd": "^4.11.2",
     "classnames": "^2.2.6",
     "jquery": "^3.5.1",
