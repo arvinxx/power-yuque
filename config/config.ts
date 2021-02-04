@@ -27,11 +27,18 @@ export default defineConfig({
     background: { scripts: ['@/background/index'] },
     popupUI: '@/pages/popup',
     permissions: ['storage'],
-    icons: {
-      16: 'logo/logo@16.png',
-      32: 'logo/logo@32.png',
-      48: 'logo/logo@48.png',
-      128: 'logo/logo@128.png',
-    },
+    icons: isDev
+      ? {
+          16: 'logo/logo-dev.png',
+          32: 'logo/logo-dev.png',
+          48: 'logo/logo-dev.png',
+          128: 'logo/logo-dev.png',
+        }
+      : {
+          16: 'logo/logo@16.png',
+          32: 'logo/logo@32.png',
+          48: 'logo/logo@48.png',
+          128: 'logo/logo@128.png',
+        },
   },
 });
