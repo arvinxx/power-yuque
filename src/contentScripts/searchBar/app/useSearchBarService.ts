@@ -2,6 +2,7 @@ import { getServiceToken } from '@/utils';
 import { useRef, useState } from 'react';
 import { useClickAway } from 'ahooks';
 import { useHotkeys } from 'react-hotkeys-hook';
+import device from 'current-device';
 
 // 这个服务将被注册至全局
 export const SearchBarService = getServiceToken(useSearchBarService);
@@ -29,7 +30,7 @@ export default function useSearchBarService(initState?: boolean) {
 
   // 快捷键触发能力
   useHotkeys(
-    'command+shift+F',
+    `${device.windows() ? 'ctrl' : 'command'}+shift+F`,
     () => {
       setVisible(!visible);
     },
