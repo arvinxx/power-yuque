@@ -1,5 +1,12 @@
 # Power Yuque 更新日志
 
+## [0.2.3](https://github.com/arvinxx/power-yuque/compare/v0.2.2...v0.2.3) (2021-02-04)
+
+
+### 🐛 修复
+
+* **增强搜索框**: 修复 windows 快捷键不对的 bug ([211b276](https://github.com/arvinxx/power-yuque/commit/211b276)), closes [#46](https://github.com/arvinxx/power-yuque/issues/46)
+
 ## [0.2.2](https://github.com/arvinxx/power-yuque/compare/v0.2.1...v0.2.2) (2021-01-30)
 
 
