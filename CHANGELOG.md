@@ -1,5 +1,12 @@
 # Power Yuque 更新日志
 
+## [0.3.1](https://github.com/arvinxx/power-yuque/compare/v0.3.0...v0.3.1) (2021-02-10)
+
+
+### 🐛 修复
+
+* 修正背景图透明度问题 ([4c463c9](https://github.com/arvinxx/power-yuque/commit/4c463c9))
+
 # [0.3.0](https://github.com/arvinxx/power-yuque/compare/v0.2.3...v0.3.0) (2021-02-10)
 
 
