@@ -1,5 +1,6 @@
 import { extend } from 'umi-request';
 import { message, notification } from 'antd';
+import { yuqueToken } from '@/utils/env';
 
 /**
  * request 网络请求工具
@@ -59,7 +60,6 @@ export const request = extend({
   prefix: 'https://www.yuque.com/api/v2',
   credentials: 'include', // 默认请求是否带上cookie
   headers: {
-    'X-Auth-Token':
-      localStorage.getItem('PY_YUQUE_TOKEN')?.replace(/"/g, '') || '',
+    'X-Auth-Token': yuqueToken,
   },
 });

@@ -15,6 +15,7 @@ export const useDarkModeService = () => {
   );
 
   const switchDarkMode = () => {
+    window.postMessage('PW_SWITCH_DARK_MODE', 'https://www.yuque.com');
     setTheme(theme === 'light' ? 'dark' : 'light');
   };
 

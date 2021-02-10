@@ -1,0 +1,32 @@
+[
+  {
+    "time": "2019-02-03T17:19:25.000Z",
+    "title": "Fixing Embedded Controller (Laptop)",
+    "url": "/arvinxx/hackintosh/laptops_laptop-ec",
+    "user_id": 85716
+  },
+  {
+    "time": "2021-02-03T17:19:25.000Z",
+    "title": "Disabling laptop dGPUs",
+    "url": "/arvinxx/hackintosh/laptops_laptop-disable",
+    "user_id": 85716
+  },
+  {
+    "time": "2021-02-03T17:19:25.000Z",
+    "title": "Backlight PNLF",
+    "url": "/arvinxx/hackintosh/laptops_backlight",
+    "user_id": 85716
+  },
+  {
+    "time": "2021-02-03T17:19:16.000Z",
+    "title": "Prebuilt",
+    "url": "/arvinxx/hackintosh/laptops_backlight-methods_prebuilt",
+    "user_id": 85716
+  },
+  {
+    "time": "2021-02-03T17:19:24.000Z",
+    "title": "Manual",
+    "url": "/arvinxx/hackintosh/laptops_backlight-methods_manual",
+    "user_id": 85716
+  }
+]
