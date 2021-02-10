@@ -1,5 +1,18 @@
 # Power Yuque 更新日志
 
+# [0.3.0](https://github.com/arvinxx/power-yuque/compare/v0.2.3...v0.3.0) (2021-02-10)
+
+
+### ✨ 新特性
+
+* 添加语雀活跃日历 ([195e952](https://github.com/arvinxx/power-yuque/commit/195e952))
+
+
+### 🐛 修复
+
+* 优化提示文案 ([fc7922e](https://github.com/arvinxx/power-yuque/commit/fc7922e))
+* 优化提示文案 ([e86d3d7](https://github.com/arvinxx/power-yuque/commit/e86d3d7))
+
 ## [0.2.3](https://github.com/arvinxx/power-yuque/compare/v0.2.2...v0.2.3) (2021-02-04)
 
 
