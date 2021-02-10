@@ -14,7 +14,7 @@ export const useYuqueTokenService = () => {
 
   const syncToCloudStorage = useCallback(() => {
     chrome.storage?.sync.set({ yuque_token: token });
-    message.success('保存成功');
+    message.success('保存成功 🎉');
   }, [token]);
 
   const resetToken = useCallback(() => {

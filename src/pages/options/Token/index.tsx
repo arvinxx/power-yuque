@@ -34,7 +34,7 @@ const Token = () => {
               onClick={async () => {
                 const data = await checkTokenValid();
                 if (data) {
-                  message.success('Token 有效 🎉 ，将自动保存... ');
+                  message.success('Token 有效，将自动保存... ');
                   syncToCloudStorage();
                 } else {
                   message.error('Token 无效，请重试');
