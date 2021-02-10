@@ -57,6 +57,7 @@
     "ahooks": "^2.9.6",
     "antd": "^4.12.2",
     "classnames": "^2.2.6",
+    "current-device": "^0.10.2",
     "dayjs": "^1.10.4",
     "jquery": "^3.5.1",
     "react": "^17.0.1",
