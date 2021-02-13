@@ -3,6 +3,7 @@ declare module SearchBar {
     key: SearchBar.SearchType;
     title: string;
   }
+  type FocusType = 'input' | 'options' | 'result';
 
   export interface User {
     id: number;

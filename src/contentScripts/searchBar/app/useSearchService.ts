@@ -11,6 +11,7 @@ import {
   combineLatest,
   filter,
   tap,
+  distinctUntilChanged,
 } from 'rxjs/operators';
 
 import { getServiceToken, request } from '@/utils';
@@ -66,6 +67,8 @@ export const useSearchService = () => {
         debounceTime(600),
         // 过滤掉没有值的情况
         filter((value) => value.length !== 0),
+        // 过滤相同值
+        distinctUntilChanged(),
         // 提供输入
         combineLatest(input$),
         // 3. 发起请求
@@ -104,6 +107,7 @@ export const useSearchService = () => {
     setType,
     related,
     setRelated,
+    isEmpty: data.length === 0,
   };
 };
 

@@ -5,16 +5,16 @@ import { getServiceToken } from '@/utils';
 import { SearchService } from '../useSearchService';
 import { SearchBarService } from '../useSearchBarService';
 
-type FocusType = 'input' | 'options' | 'result';
-
 /**
  * Keyboard 需要的状态
  */
 export const useKeyboardService = () => {
-  const { setType, optionKeys, optionActiveIndex } = useContext(SearchService);
+  const { setType, optionKeys, optionActiveIndex, isEmpty } = useContext(
+    SearchService,
+  );
   const { hide } = useContext(SearchBarService);
 
-  const [focusKey, setFocusKey] = useState<FocusType>('input');
+  const [focusKey, setFocusKey] = useState<SearchBar.FocusType>('input');
   const inputRef = useRef<Input>(null);
 
   /**
@@ -39,10 +39,13 @@ export const useKeyboardService = () => {
     inputRef.current?.focus();
     setFocusKey('input');
   };
-
   const focusOnOptions = () => {
     inputRef.current?.blur();
     setFocusKey('options');
+  };
+  const focusOnResult = () => {
+    inputRef.current?.blur();
+    setFocusKey('result');
   };
 
   // 将焦点切换到 Options
@@ -83,7 +86,11 @@ export const useKeyboardService = () => {
           break;
         case 'ArrowDown':
           event.preventDefault();
-          focusOnOptions();
+          if (isEmpty) {
+            focusOnOptions();
+          } else {
+            focusOnResult();
+          }
           break;
         default:
       }
@@ -96,12 +103,13 @@ export const useKeyboardService = () => {
     return () => {
       window.onkeydown = null;
     };
-  }, [focusKey, optionActiveIndex]);
+  }, [focusKey, optionActiveIndex, isEmpty]);
 
   return {
-    onKeyDown,
     focusKey,
     inputRef,
+
+    onKeyDown,
     focusOnInput,
     focusOnOptions,
   };
