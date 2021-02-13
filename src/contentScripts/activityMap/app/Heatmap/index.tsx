@@ -3,6 +3,7 @@ import { Heatmap, G2 } from '@ant-design/charts';
 import type { HeatmapConfig } from '@ant-design/charts/es/heatmap/index';
 import type { G2HeatmapData } from '@/utils';
 import { useDarkTheme } from '@/hooks';
+import { mapDataCountToLevel } from '@/utils';
 
 const colorMap = ['#eaecef', '#9be9a8', '#40c463', '#30a14e', '#216e39'];
 const colorMapDark = ['#161b22', '#003820', '#00602d', '#1d9d47', '#26d545'];
@@ -50,8 +51,11 @@ const DemoHeatmap: FC<HeatMapProps> = ({ data }) => {
     padding: [0, 0, 0, 20],
     xField: 'week',
     yField: 'day',
-    colorField: 'level',
-    color: theme === 'light' ? colorMap : colorMapDark,
+    colorField: 'commits',
+    color: (commits) => {
+      const level = mapDataCountToLevel(Number(commits));
+      return theme === 'light' ? colorMap[level] : colorMapDark[level];
+    },
     reflect: 'y',
     shape: 'boundary-polygon',
     meta: {
@@ -62,7 +66,6 @@ const DemoHeatmap: FC<HeatMapProps> = ({ data }) => {
       week: { type: 'cat' },
       commits: { sync: true, alias: '修改次数' },
       date: { type: 'cat' },
-      level: { alias: '活跃等级' },
     },
     limitInPlot: true,
     yAxis: { grid: null },

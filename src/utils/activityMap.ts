@@ -19,7 +19,6 @@ export interface ActivityDoc {
 
 export interface G2HeatmapData {
   date: string;
-  level: number;
   commits: number;
   month: number;
   day: number;
@@ -131,13 +130,13 @@ export const getActivityData = async () => {
  * 活跃等级映射
  * @param count
  */
-const mapDataCountToLevel = (count: number) => {
+export const mapDataCountToLevel = (count: number) => {
   if (count === 0) return 0;
   if (count < 2) return 1;
   if (count < 5) return 2;
   if (count < 10) return 3;
-  if (count < 20) return 4;
-  return 5;
+  // if (count < 20) return 4;
+  return 4;
 };
 /**
  * 计算距今天开始是第几天
@@ -170,7 +169,6 @@ export const lastYearData = () => {
     data.push({
       date,
       commits: 0,
-      level: 0,
       month: calcDateDiff(date, 'month'),
       day: dayjs(date).day(),
       week: calcDateDiff(date, 'week'),
@@ -201,7 +199,6 @@ export const mapToHeatData = (docs: ActivityDoc[]): G2HeatmapData[] => {
     return {
       date,
       commits: item.length,
-      level: mapDataCountToLevel(item.length),
       month: calcDateDiff(date, 'month'),
       day: dayjs(date).day(),
       week: calcDateDiff(date, 'week'),
