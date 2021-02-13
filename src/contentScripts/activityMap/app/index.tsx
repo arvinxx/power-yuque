@@ -3,15 +3,15 @@ import { Button, Col, Row, Skeleton } from 'antd';
 import { ReloadOutlined, InfoCircleOutlined } from '@ant-design/icons';
 
 import Heatmap from './Heatmap';
-import { useFetchData } from './useFetchData';
+import { useHeatmapData } from './useHeatmapData';
 import styles from './style.less';
 import { yuqueToken } from '@/utils';
 import React from 'react';
 
 const App: FC = () => {
-  const { loading, data, fetchData } = useFetchData();
+  const { loading, data, fetchData, isHome } = useHeatmapData();
 
-  return (
+  return yuqueToken && !isHome ? null : (
     <div className={styles.container}>
       <Row justify={'space-between'}>
         <Col>

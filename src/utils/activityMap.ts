@@ -118,9 +118,12 @@ export const getActivityData = async () => {
 
   const docs: ActivityDoc[] = flattenDeep(tempDocList);
 
-  return docs.filter(({ user_id }) => {
-    return user_id === id;
-  });
+  return {
+    username: login,
+    data: docs.filter(({ user_id }) => {
+      return user_id === id;
+    }),
+  };
 };
 
 /**
