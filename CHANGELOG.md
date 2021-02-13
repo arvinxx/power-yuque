@@ -1,5 +1,15 @@
 # Power Yuque 更新日志
 
+## [0.3.2](https://github.com/arvinxx/power-yuque/compare/v0.3.1...v0.3.2) (2021-02-13)
+
+
+### 🐛 修复
+
+* 优化 tooltip 为显示次数 ([efe48ee](https://github.com/arvinxx/power-yuque/commit/efe48ee))
+* 优化没更新时数据的区域是空白的问题 ([a07d5fd](https://github.com/arvinxx/power-yuque/commit/a07d5fd))
+* 修复他人主页出现自己活跃状态的 bug ([8083cdf](https://github.com/arvinxx/power-yuque/commit/8083cdf))
+* 更新状态优化为每天更新一次 ([cc31e25](https://github.com/arvinxx/power-yuque/commit/cc31e25))
+
 ## [0.3.1](https://github.com/arvinxx/power-yuque/compare/v0.3.0...v0.3.1) (2021-02-10)
 
 
