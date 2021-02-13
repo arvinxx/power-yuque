@@ -4,7 +4,7 @@ import dayjs from 'dayjs';
 import weekOfYear from 'dayjs/plugin/weekOfYear';
 import isSameOrAfter from 'dayjs/plugin/isSameOrAfter';
 import relativeTime from 'dayjs/plugin/relativeTime';
-import { groupBy, orderBy } from 'lodash';
+import { groupBy, orderBy, unionBy } from 'lodash';
 
 dayjs.extend(weekOfYear);
 dayjs.extend(isSameOrAfter);
@@ -19,6 +19,7 @@ export interface ActivityDoc {
 
 export interface G2HeatmapData {
   date: string;
+  level: number;
   commits: number;
   month: number;
   day: number;
@@ -155,6 +156,30 @@ const calcDateDiff = (date: string, type: 'week' | 'month') => {
 };
 
 /**
+ * 获取一年的数据
+ */
+export const lastYearData = () => {
+  const startTime = dayjs();
+  const lastYear = startTime.subtract(1, 'year');
+  const data: G2HeatmapData[] = [];
+  const days = startTime.diff(lastYear, 'd');
+
+  for (let i = 0; i <= days; i += 1) {
+    const date = lastYear.add(i, 'd').format('YYYY-MM-DD');
+
+    data.push({
+      date,
+      commits: 0,
+      level: 0,
+      month: calcDateDiff(date, 'month'),
+      day: dayjs(date).day(),
+      week: calcDateDiff(date, 'week'),
+    });
+  }
+  return data;
+};
+
+/**
  * 将活跃数据转换为热力图数据
  * @param docs
  */
@@ -183,10 +208,13 @@ export const mapToHeatData = (docs: ActivityDoc[]): G2HeatmapData[] => {
     };
   });
 
-  data = orderBy(data, 'week').map((item, index) => ({
+  const base = lastYearData();
+
+  // 将数据合并
+  data = unionBy([...data, ...base], 'date');
+
+  return orderBy(data, 'week').map((item, index) => ({
     ...item,
     lastDay: index + 1 === data.length,
   }));
-
-  return data;
 };

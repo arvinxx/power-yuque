@@ -6,6 +6,7 @@ import {
   fetchUser,
   getActivityData,
   mapToHeatData,
+  lastYearData,
 } from '@/utils';
 import { readJSONSync } from 'fs-extra';
 import { join } from 'path';
@@ -65,16 +66,11 @@ describe('数据转换', () => {
       join(__dirname, './testData.json'),
     );
 
-    expect(mapToHeatData(testData)).toEqual([
-      {
-        commits: 4,
-        date: '2021-02-04',
-        day: 4,
-        lastDay: true,
-        level: 2,
-        month: 12,
-        week: 51,
-      },
-    ]);
+    expect(mapToHeatData(testData)).toHaveLength(367);
+  });
+
+  it('lastYearData', () => {
+    const data = lastYearData();
+    expect(data).toHaveLength(367);
   });
 });

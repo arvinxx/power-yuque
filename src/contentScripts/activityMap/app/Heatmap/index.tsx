@@ -4,7 +4,7 @@ import type { HeatmapConfig } from '@ant-design/charts/es/heatmap/index';
 import type { G2HeatmapData } from '@/utils';
 import { useDarkTheme } from '@/hooks';
 
-const colorMap = ['#9be9a8', '#40c463', '#30a14e', '#216e39'];
+const colorMap = ['#eaecef', '#9be9a8', '#40c463', '#30a14e', '#216e39'];
 const colorMapDark = ['#161b22', '#003820', '#00602d', '#1d9d47', '#26d545'];
 
 interface HeatMapProps {
@@ -57,7 +57,7 @@ const DemoHeatmap: FC<HeatMapProps> = ({ data }) => {
     meta: {
       day: {
         type: 'cat',
-        values: ['一', '二', '三', '四', '五', '六', '日'],
+        values: ['日', '一', '二', '三', '四', '五', '六'],
       },
       week: { type: 'cat' },
       commits: { sync: true, alias: '修改次数' },
