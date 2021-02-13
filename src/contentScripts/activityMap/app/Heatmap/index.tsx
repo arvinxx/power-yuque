@@ -64,7 +64,7 @@ const DemoHeatmap: FC<HeatMapProps> = ({ data }) => {
         values: ['日', '一', '二', '三', '四', '五', '六'],
       },
       week: { type: 'cat' },
-      commits: { sync: true, alias: '修改次数' },
+      commits: { sync: true, alias: '修改文档' },
       date: { type: 'cat' },
     },
     limitInPlot: true,

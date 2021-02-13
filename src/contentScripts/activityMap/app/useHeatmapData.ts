@@ -1,13 +1,21 @@
 import { useEffect, useState } from 'react';
 import { getActivityData, mapToHeatData, yuqueToken } from '@/utils';
 import { useLocalStorageState } from 'ahooks';
+import dayjs from 'dayjs';
 
 export const useHeatmapData = () => {
   const [loading, setLoading] = useState(false);
 
-  const [data, setData] = useLocalStorageState<any[]>('HeatmapRowData', []);
+  const [data, setData] = useLocalStorageState<any[]>(
+    'PY_HEATMAP_RAW_DATA',
+    [],
+  );
+  const [date, setDate] = useLocalStorageState<number>(
+    'PY_HEATMAP_UPDATED_AT',
+    Date.now(),
+  );
 
-  const [loginPath, setLoginPath] = useLocalStorageState('LOGIN_PATH', '');
+  const [loginPath, setLoginPath] = useLocalStorageState('PY_LOGIN_PATH', '');
 
   /**
    * 获取数据
@@ -21,11 +29,16 @@ export const useHeatmapData = () => {
       const { data: activityData, username } = result;
       setLoginPath(username);
       setData(activityData!);
+      setDate(Date.now());
     }
   };
 
   useEffect(() => {
-    if ((yuqueToken && !loginPath) || data?.length === 0) {
+    if (!yuqueToken) return;
+    const isToday = date && dayjs(date).isSame(dayjs(), 'd');
+    const isEmpty = data && data.length === 0;
+
+    if (!loginPath || isEmpty || !isToday) {
       fetchData();
     }
   }, [data]);
