@@ -1,4 +1,9 @@
 declare module SearchBar {
+  interface Option {
+    key: SearchBar.SearchType;
+    title: string;
+  }
+
   export interface User {
     id: number;
     login: string;

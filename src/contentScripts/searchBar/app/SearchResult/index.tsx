@@ -11,7 +11,15 @@ const SearchResult: FC = () => {
   const { result, loading } = useContext(SearchService);
 
   return (
-    <Skeleton loading={loading} active className={styles.skeleton}>
+    <Skeleton
+      loading={loading}
+      title={false}
+      paragraph={{
+        rows: 4,
+      }}
+      active
+      className={styles.skeleton}
+    >
       {result?.map((item) => {
         const { title, info, id, url, target, type } = item;
 

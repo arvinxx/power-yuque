@@ -12,6 +12,7 @@ import SearchResult from './SearchResult';
 import AnimatedHeight from './AnimatedHeight';
 
 import styles from './style.less';
+import { isDev } from '@/utils';
 
 const SearchBar: FC = () => {
   const { visible, searchBarRef } = useContext(SearchBarService);
@@ -60,7 +61,6 @@ const SearchBar: FC = () => {
               <Button
                 type={'primary'}
                 onClick={() => {
-                  console.log(chrome.runtime);
                   chrome.runtime.sendMessage({ action: 'openOptionsPage' });
                 }}
               >
@@ -76,7 +76,7 @@ const SearchBar: FC = () => {
 
 export default () => (
   <YuqueTokenService.Provider value={useYuqueTokenService()}>
-    <SearchBarService.Provider value={useSearchBarService()}>
+    <SearchBarService.Provider value={useSearchBarService(isDev)}>
       <SearchService.Provider value={useSearchService()}>
         <SearchBar />
       </SearchService.Provider>
