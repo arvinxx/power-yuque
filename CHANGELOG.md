@@ -1,5 +1,12 @@
 # Power Yuque 更新日志
 
+# [0.4.0-beta.3](https://github.com/arvinxx/power-yuque/compare/v0.4.0-beta.2...v0.4.0-beta.3) (2021-02-14)
+
+
+### ✨ 新特性
+
+* 添加键盘控制上下移动 ([a1d202d](https://github.com/arvinxx/power-yuque/commit/a1d202d))
+
 # [0.4.0-beta.2](https://github.com/arvinxx/power-yuque/compare/v0.4.0-beta.1...v0.4.0-beta.2) (2021-02-14)
 
 
