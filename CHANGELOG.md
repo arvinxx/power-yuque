@@ -1,5 +1,20 @@
 # Power Yuque 更新日志
 
+# [0.4.0](https://github.com/arvinxx/power-yuque/compare/v0.3.2...v0.4.0) (2021-02-14)
+
+
+### ✨ 新特性
+
+* 添加搜索区键盘操作支持 ([fe4cfec](https://github.com/arvinxx/power-yuque/commit/fe4cfec))
+* 添加键盘控制上下移动 ([a1d202d](https://github.com/arvinxx/power-yuque/commit/a1d202d))
+* **增强搜索框**: 添加快捷键操作支持 ([e5a1532](https://github.com/arvinxx/power-yuque/commit/e5a1532))
+
+
+### 🐛 修复
+
+* 修正 search bar 开发时配置 ([fce42d1](https://github.com/arvinxx/power-yuque/commit/fce42d1))
+* **增强搜索框**: 优化向下切换焦点交互 ([57d0ea7](https://github.com/arvinxx/power-yuque/commit/57d0ea7))
+
 # [0.4.0-beta.4](https://github.com/arvinxx/power-yuque/compare/v0.4.0-beta.3...v0.4.0-beta.4) (2021-02-14)
 
 
