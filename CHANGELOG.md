@@ -1,5 +1,12 @@
 # Power Yuque 更新日志
 
+# [0.4.0-beta.4](https://github.com/arvinxx/power-yuque/compare/v0.4.0-beta.3...v0.4.0-beta.4) (2021-02-14)
+
+
+### 🐛 修复
+
+* 修正 search bar 开发时配置 ([fce42d1](https://github.com/arvinxx/power-yuque/commit/fce42d1))
+
 # [0.4.0-beta.3](https://github.com/arvinxx/power-yuque/compare/v0.4.0-beta.2...v0.4.0-beta.3) (2021-02-14)
 
 
