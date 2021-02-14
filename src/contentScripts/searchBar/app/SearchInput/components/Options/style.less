@@ -15,17 +15,27 @@
   transition: all 150ms ease-in-out;
 }
 
-.optionActive {
+.active {
   color: @yuque-brand-color-dark;
   background: @yuque-brand-color-light;
+}
+
+.selected {
+  color: white;
+  background: @yuque-brand-color-light-darken;
 }
 
 [theme='dark'] {
   .option {
     background: @dark-mode-background-dark;
   }
-  .optionActive {
+  .active {
     color: @dark-mode-yuque-brand-color-dark;
     background: @dark-mode-yuque-brand-color-light;
+  }
+
+  .selected {
+    color: white;
+    background: @dark-mode-yuque-brand-color-light-lighter;
   }
 }

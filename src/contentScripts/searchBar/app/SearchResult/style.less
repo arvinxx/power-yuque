@@ -1,5 +1,6 @@
 @import '~theme/index';
 .skeleton {
+  margin-top: 16px;
   padding: 8px 12px 24px;
 }
 .repo {
@@ -27,9 +28,12 @@
   transition: background-color 300ms ease-in-out;
 }
 
+.selected {
+  background: @item-hover-bg;
+}
 [theme='light'] {
   .row:hover {
-    background: @item-hover-bg;
+    //.selected;
   }
 }
 

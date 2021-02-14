@@ -37,10 +37,6 @@ export default function useSearchBarService(initState?: boolean) {
     [visible],
   );
 
-  useHotkeys('Esc', () => {
-    hide();
-  });
-
   return {
     visible,
     show,

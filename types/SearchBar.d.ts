@@ -1,4 +1,10 @@
 declare module SearchBar {
+  interface Option {
+    key: SearchBar.SearchType;
+    title: string;
+  }
+  type FocusType = 'input' | 'options' | 'result';
+
   export interface User {
     id: number;
     login: string;
@@ -19,7 +25,7 @@ declare module SearchBar {
     meta: Meta;
   }
   export interface SearchData {
-    data: yuque.SearchResponseData[];
+    result: yuque.SearchResponseData[];
     total: number;
   }
   /**
