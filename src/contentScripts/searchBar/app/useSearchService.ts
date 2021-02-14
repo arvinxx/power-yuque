@@ -14,7 +14,7 @@ import {
   distinctUntilChanged,
 } from 'rxjs/operators';
 
-import { getServiceToken, request } from '@/utils';
+import { getServiceToken, isDevSearchBar, request } from '@/utils';
 
 /**
  * SearchInput 需要的状态
@@ -92,8 +92,10 @@ export const useSearchService = () => {
 
   // TEST 用于测试 list 的代码
   useEffect(() => {
-    // @ts-ignore
-    onSearchEvent({ target: { value: '设计' } });
+    if (isDevSearchBar) {
+      // @ts-ignore
+      onSearchEvent({ target: { value: '设计' } });
+    }
   }, []);
 
   return {

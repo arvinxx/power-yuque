@@ -12,7 +12,7 @@ import SearchInput from './SearchInput';
 import SearchResult from './SearchResult';
 
 import styles from './style.less';
-import { isDev } from '@/utils';
+import { isDevSearchBar } from '@/utils';
 
 const SearchBar: FC = () => {
   const { visible, searchBarRef } = useContext(SearchBarService);
@@ -77,7 +77,7 @@ const SearchBar: FC = () => {
 
 export default () => (
   <YuqueTokenService.Provider value={useYuqueTokenService()}>
-    <SearchBarService.Provider value={useSearchBarService(isDev)}>
+    <SearchBarService.Provider value={useSearchBarService(isDevSearchBar)}>
       <SearchService.Provider value={useSearchService()}>
         <SearchBar />
       </SearchService.Provider>

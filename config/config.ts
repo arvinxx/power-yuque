@@ -10,6 +10,9 @@ export default defineConfig({
     theme: resolve(__dirname, '../src/theme'),
   },
   theme,
+  define: {
+    'process.env.SEARCH_BAR': process.env.SEARCH_BAR,
+  },
   // chrome 插件配置项
   extensions: {
     name: `Power Yuque${isDev ? ' DEV' : ''}`,

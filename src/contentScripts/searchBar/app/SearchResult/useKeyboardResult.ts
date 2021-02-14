@@ -18,24 +18,24 @@ export const useKeyboardResult = () => {
 
   const [resultIndex, setResultIndex] = useState(0);
   const resultRef = useRef<HTMLDivElement>(null);
-  console.log('real', resultIndex);
 
   /**
    * 处理结果区高度
    */
-  const scrollResultContainer = (index: number, back?: boolean) => {
+  const scrollResultContainer = (back?: boolean) => {
     const { current: ctn } = resultRef;
     if (!ctn) return;
 
     const step = 77;
 
-    if (index === result.length) {
-      ctn.scrollTop = 0;
-    }
-
     if (!back) {
-      if (index > 3) {
+      if (resultIndex > 3) {
         ctn.scrollTop += step;
+      }
+
+      // 最后一个
+      if (resultIndex === result.length - 1) {
+        ctn.scrollTop = 0;
       }
     } else if (ctn.scrollTop > 0) {
       ctn.scrollTop -= step;
@@ -65,7 +65,6 @@ export const useKeyboardResult = () => {
   // 将焦点切换到 Options
   const onKeyDown = (event: KeyboardEvent) => {
     if (focusKey !== 'result') return;
-    console.log(resultIndex);
 
     switch (event.key) {
       case 'Tab':
@@ -74,7 +73,7 @@ export const useKeyboardResult = () => {
         break;
       case 'ArrowDown':
         event.preventDefault();
-        scrollResultContainer(resultIndex + 1);
+        scrollResultContainer();
         switchResultIndex();
         break;
       case 'ArrowUp':
@@ -83,7 +82,7 @@ export const useKeyboardResult = () => {
         if (resultIndex === 0) {
           focusOnOptions();
         } else {
-          scrollResultContainer(resultIndex - 1, true);
+          scrollResultContainer(true);
           switchResultIndex(true);
         }
         break;
