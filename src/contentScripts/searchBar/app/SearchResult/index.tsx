@@ -4,16 +4,18 @@ import { Skeleton } from 'antd';
 import cls from 'classnames';
 
 import { SearchService } from '../useSearchService';
-import { KeyboardService } from '../useKeyboardService';
+import { useKeyboardResult } from './useKeyboardResult';
 import RepoIcon from './RepoIcon';
 
 import styles from './style.less';
 
 const SearchResult: FC = () => {
   const { result, loading } = useContext(SearchService);
-  const { selectResultIndex, handleResultIndex, focusKey } = useContext(
-    KeyboardService,
-  );
+  const {
+    resultIndex,
+    handleResultIndex,
+    isFocusOnResult,
+  } = useKeyboardResult();
 
   return (
     <Skeleton
@@ -33,8 +35,7 @@ const SearchResult: FC = () => {
             key={id}
             className={cls({
               [styles.row]: true,
-              [styles.selected]:
-                focusKey === 'result' && selectResultIndex === index,
+              [styles.selected]: isFocusOnResult && resultIndex === index,
             })}
             onClick={() => {
               window.open(url);
