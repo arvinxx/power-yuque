@@ -4,7 +4,7 @@ import { Checkbox, Space } from 'antd';
 import cls from 'classnames';
 
 import { SearchService } from '../../../useSearchService';
-import { KeyboardService } from '../../useKeyboardService';
+import { KeyboardService } from '../../../useKeyboardService';
 
 import styles from './style.less';
 

@@ -28,9 +28,12 @@
   transition: background-color 300ms ease-in-out;
 }
 
+.selected {
+  background: @item-hover-bg;
+}
 [theme='light'] {
   .row:hover {
-    background: @item-hover-bg;
+    //.selected;
   }
 }
 

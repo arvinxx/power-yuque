@@ -1,5 +1,5 @@
 import type { ChangeEvent } from 'react';
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { useDebounce } from 'ahooks';
 
 import { useEventCallback } from 'rxjs-hooks';
@@ -38,23 +38,18 @@ export const useSearchService = () => {
       }),
     );
 
-  // TEST 用于测试 list 的代码
-  // useEffect(() => {
-  //   fetch({ q: '设计', type: 'repo', related: true }).then();
-  // }, []);
-
   // 搜索类型
   const [type, setType] = useState<SearchBar.SearchType>('repo');
   // 与我相关
   const [related, setRelated] = useState(true);
   const [loading, setLoading] = useState(false);
 
-  const defaultState = { data: [], total: 0 };
+  const defaultState = { result: [], total: 0 };
 
   /**
    * 搜索方法
    */
-  const [onSearchEvent, { total, data }] = useEventCallback<
+  const [onSearchEvent, { total, result }] = useEventCallback<
     ChangeEvent<HTMLInputElement>,
     SearchBar.SearchData,
     [boolean, SearchBar.SearchType]
@@ -87,27 +82,33 @@ export const useSearchService = () => {
           if (!response) return defaultState;
 
           // 之后在这一步做值解构
-          const { data: result, meta } = response;
-          return { data: result, total: meta?.total };
+          const { data, meta } = response;
+          return { result: data, total: meta?.total };
         }),
       ),
     defaultState,
     [related, type],
   );
 
+  // TEST 用于测试 list 的代码
+  useEffect(() => {
+    // @ts-ignore
+    onSearchEvent({ target: { value: '设计' } });
+  }, []);
+
   return {
     options,
     optionKeys: options.map((o) => o.key),
     optionActiveIndex: options.findIndex((o) => o.key === type),
     total,
-    result: data,
+    result,
     loading: useDebounce(loading, { wait: 500 }),
     onSearchEvent,
     type,
     setType,
     related,
     setRelated,
-    isEmpty: data.length === 0,
+    isEmpty: result.length === 0,
   };
 };
 

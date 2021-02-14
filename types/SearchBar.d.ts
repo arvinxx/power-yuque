@@ -25,7 +25,7 @@ declare module SearchBar {
     meta: Meta;
   }
   export interface SearchData {
-    data: yuque.SearchResponseData[];
+    result: yuque.SearchResponseData[];
     total: number;
   }
   /**

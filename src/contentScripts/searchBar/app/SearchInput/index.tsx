@@ -1,9 +1,9 @@
 import type { FC } from 'react';
 import React, { useContext } from 'react';
 import { Input } from 'antd';
-import { KeyboardService, useKeyboardService } from './useKeyboardService';
-
 import Options from './components/Options';
+
+import { KeyboardService } from '../useKeyboardService';
 import { SearchService } from '../useSearchService';
 
 import styles from './style.less';
@@ -11,10 +11,10 @@ import styles from './style.less';
 const SearchInput: FC = () => {
   const { onSearchEvent } = useContext(SearchService);
 
-  const keyboardService = useKeyboardService();
-  const { inputRef, focusOnInput } = keyboardService;
+  const { inputRef, focusOnInput } = useContext(KeyboardService);
+
   return (
-    <KeyboardService.Provider value={keyboardService}>
+    <>
       <Input
         autoFocus
         ref={inputRef}
@@ -23,10 +23,9 @@ const SearchInput: FC = () => {
         size={'large'}
         onChange={onSearchEvent}
         onFocus={focusOnInput}
-        // onKeyDown={onKeyDown}
       />
       <Options />
-    </KeyboardService.Provider>
+    </>
   );
 };
 

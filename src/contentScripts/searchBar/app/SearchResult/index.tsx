@@ -1,14 +1,19 @@
 import React, { useContext } from 'react';
 import type { FC } from 'react';
 import { Skeleton } from 'antd';
+import cls from 'classnames';
 
 import { SearchService } from '../useSearchService';
+import { KeyboardService } from '../useKeyboardService';
 import RepoIcon from './RepoIcon';
 
 import styles from './style.less';
 
 const SearchResult: FC = () => {
   const { result, loading } = useContext(SearchService);
+  const { selectResultIndex, handleResultIndex, focusKey } = useContext(
+    KeyboardService,
+  );
 
   return (
     <Skeleton
@@ -20,15 +25,22 @@ const SearchResult: FC = () => {
       active
       className={styles.skeleton}
     >
-      {result?.map((item) => {
+      {result?.map((item, index) => {
         const { title, info, id, url, target, type } = item;
 
         return (
           <div
             key={id}
-            className={styles.row}
+            className={cls({
+              [styles.row]: true,
+              [styles.selected]:
+                focusKey === 'result' && selectResultIndex === index,
+            })}
             onClick={() => {
               window.open(url);
+            }}
+            onMouseEnter={() => {
+              handleResultIndex(index);
             }}
           >
             <div className={styles.repo}>
