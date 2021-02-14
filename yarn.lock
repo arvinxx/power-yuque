@@ -20522,10 +20522,10 @@ umask@^1.1.0, umask@~1.1.0:
   resolved "https://registry.npm.taobao.org/umask/download/umask-1.1.0.tgz#f29cebf01df517912bb58ff9c4e50fde8e33320d"
   integrity sha1-8pzr8B31F5ErtY/5xOUP3o4zMg0=
 
-umi-plugin-extensions@^0.3.6:
-  version "0.3.6"
-  resolved "https://registry.npm.taobao.org/umi-plugin-extensions/download/umi-plugin-extensions-0.3.6.tgz#34de6f6f65a86c9d09aef708ea8d6a0edd371d47"
-  integrity sha1-NN5vb2WobJ0JrvcI6o1qDt03HUc=
+umi-plugin-extensions@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.npm.taobao.org/umi-plugin-extensions/download/umi-plugin-extensions-0.4.0.tgz#09f59568c8b6ccbc9048e77e3e29f909f6cfd67e"
+  integrity sha1-CfWVaMi2zLyQSOd+Pin5CfbP1n4=
   dependencies:
     crx-hotreload "^1.0.6"
     fs-extra "^9.0.1"
