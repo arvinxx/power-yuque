@@ -1,5 +1,12 @@
 # Power Yuque 更新日志
 
+# [0.4.0-beta.2](https://github.com/arvinxx/power-yuque/compare/v0.4.0-beta.1...v0.4.0-beta.2) (2021-02-14)
+
+
+### ✨ 新特性
+
+* 添加搜索区键盘操作支持 ([fe4cfec](https://github.com/arvinxx/power-yuque/commit/fe4cfec))
+
 # [0.4.0-beta.1](https://github.com/arvinxx/power-yuque/compare/v0.3.2...v0.4.0-beta.1) (2021-02-13)
 
 
