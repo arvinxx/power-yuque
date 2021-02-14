@@ -10,7 +10,6 @@ import { KeyboardService, useKeyboardService } from './useKeyboardService';
 
 import SearchInput from './SearchInput';
 import SearchResult from './SearchResult';
-import AnimatedHeight from './AnimatedHeight';
 
 import styles from './style.less';
 import { isDev } from '@/utils';
@@ -31,9 +30,7 @@ const SearchBar: FC = () => {
                 <SearchInput />
               </div>
               <div className={styles.result}>
-                <AnimatedHeight maxHeight={400}>
-                  <SearchResult />
-                </AnimatedHeight>
+                <SearchResult />
               </div>
             </>
           ) : (
