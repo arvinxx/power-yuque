@@ -33,12 +33,7 @@ module.exports = {
     [
       '@semantic-release/github',
       {
-        assets: [
-          {
-            path: 'dist-zip/power-yuque.zip',
-            label: 'power-yuque.${nextRelease.gitTag}.zip',
-          },
-        ],
+        assets: ['release'],
       },
     ], // 推送代码回到GitHub
     [
