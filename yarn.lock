@@ -2013,10 +2013,10 @@
   resolved "https://registry.npm.taobao.org/@formatjs/intl-utils/download/@formatjs/intl-utils-2.3.0.tgz#2dc8c57044de0340eb53a7ba602e59abf80dc799"
   integrity sha1-LcjFcETeA0DrU6e6YC5Zq/gNx5k=
 
-"@formatjs/intl@1.6.7":
-  version "1.6.7"
-  resolved "https://registry.yarnpkg.com/@formatjs/intl/-/intl-1.6.7.tgz#308fac0e5653909266e2f619ef1ebe1c401053eb"
-  integrity sha512-LvJPfwW+MEeTqgXp0B5BsHl60XMmNZ05gksnmFU5v72najRkjt/Bje1JFsOHa4RK0IvrF5ZuG8taQjOtVITNnw==
+"@formatjs/intl@1.6.8":
+  version "1.6.8"
+  resolved "https://registry.yarnpkg.com/@formatjs/intl/-/intl-1.6.8.tgz#c147cb3b5779e5a37bda791bc09be97a863d249a"
+  integrity sha512-cN4pUXFoUvbbLk9nq46QkDTSLzh8KN2ddK+Fi3py9Yv28xFQBl1HrSIZM4P8CFolzfoB3i7HsdI/yq0WocOx1A==
   dependencies:
     "@formatjs/ecma402-abstract" "1.5.2"
     "@formatjs/intl-datetimeformat" "3.2.7"
@@ -2024,8 +2024,8 @@
     "@formatjs/intl-listformat" "5.0.5"
     "@formatjs/intl-relativetimeformat" "8.0.4"
     fast-memoize "^2.5.2"
-    intl-messageformat "9.4.6"
-    intl-messageformat-parser "6.3.1"
+    intl-messageformat "9.4.7"
+    intl-messageformat-parser "6.3.2"
     tslib "^2.0.1"
 
 "@gitmoji/commit-types@1.1.5":
@@ -10844,10 +10844,10 @@ intl-format-cache@^4.2.21:
   resolved "https://registry.npm.taobao.org/intl-format-cache/download/intl-format-cache-4.3.1.tgz#484d31a9872161e6c02139349b259a6229ade377"
   integrity sha1-SE0xqYchYebAITk0myWaYimt43c=
 
-intl-messageformat-parser@6.3.1:
-  version "6.3.1"
-  resolved "https://registry.yarnpkg.com/intl-messageformat-parser/-/intl-messageformat-parser-6.3.1.tgz#da343ea34ed061db1597e46885d6f5a8febb68e4"
-  integrity sha512-/aK5zKeNfVO9OEGji6X8y11J0Xse7cQFVJo4YPJwQ/ts85O2J4QQsxXZBh5mMVHvHuKDDdsX+FY4/YTD9bwoNQ==
+intl-messageformat-parser@6.3.2:
+  version "6.3.2"
+  resolved "https://registry.yarnpkg.com/intl-messageformat-parser/-/intl-messageformat-parser-6.3.2.tgz#5104d23b175f1c9aaccacdc98d558930b6890d00"
+  integrity sha512-n6To2TG0ictSMDBXvenS+BalJDzbIAT/e6ByPXPEBhaouVEaHbqII02gZbusAoEUI3Xq19bKyrDkkOBP0PapIA==
   dependencies:
     "@formatjs/ecma402-abstract" "1.5.2"
     tslib "^2.0.1"
@@ -10859,13 +10859,13 @@ intl-messageformat-parser@^3.6.4:
   dependencies:
     "@formatjs/intl-unified-numberformat" "^3.2.0"
 
-intl-messageformat@9.4.6:
-  version "9.4.6"
-  resolved "https://registry.yarnpkg.com/intl-messageformat/-/intl-messageformat-9.4.6.tgz#dc447cd338023f7c1ad478bd8c1807691cd4f01b"
-  integrity sha512-7GSvbRcM2iuWGWoHrvqB/Yu0vvidj3eTbsjFGI9CeYxboPxlmmTGAXGJo9gbOqM5dw6zL0rFFWyMUS1b4yNPMw==
+intl-messageformat@9.4.7:
+  version "9.4.7"
+  resolved "https://registry.yarnpkg.com/intl-messageformat/-/intl-messageformat-9.4.7.tgz#02696a819ade1ae847639335199e3b6d8ba825c9"
+  integrity sha512-BUGRv2MI2m4CQFcZH09pf+zl1msaCe+G4e63dPT0wEEuySOMfoEilGftOJ/jxnOvDs6udD2OVCRUuv2/xt8bag==
   dependencies:
     fast-memoize "^2.5.2"
-    intl-messageformat-parser "6.3.1"
+    intl-messageformat-parser "6.3.2"
     tslib "^2.0.1"
 
 intl-messageformat@^7.8.4:
@@ -17310,21 +17310,21 @@ react-intl@3.12.1:
     intl-messageformat-parser "^3.6.4"
     shallow-equal "^1.2.1"
 
-react-intl@^5.12.2:
-  version "5.12.2"
-  resolved "https://registry.yarnpkg.com/react-intl/-/react-intl-5.12.2.tgz#7126a93b22bcb251ad75c6183a3b04b7b20087b5"
-  integrity sha512-retZ4h8q8n2YpTQWgLx4Zzn1qbP3BwI/eEhXLtsXtubUZi8CYK7/NGrH2+HLY06DfU9osyQA2VnKo1Zgh1kCpw==
+react-intl@^5.12.3:
+  version "5.12.3"
+  resolved "https://registry.yarnpkg.com/react-intl/-/react-intl-5.12.3.tgz#edac4339ac28feb71923c5ec5965aa0c51672b4c"
+  integrity sha512-xzqsorTC7LYYS29bokeg3HuEL4gZ4xhrrme7PHx+wum4S6d+TEMERJbdsJTrU95ClWiqZ8u7BsT7Ep+0yTXkyw==
   dependencies:
     "@formatjs/ecma402-abstract" "1.5.2"
-    "@formatjs/intl" "1.6.7"
+    "@formatjs/intl" "1.6.8"
     "@formatjs/intl-displaynames" "4.0.5"
     "@formatjs/intl-listformat" "5.0.5"
     "@formatjs/intl-relativetimeformat" "8.0.4"
     "@types/hoist-non-react-statics" "^3.3.1"
     fast-memoize "^2.5.2"
     hoist-non-react-statics "^3.3.2"
-    intl-messageformat "9.4.6"
-    intl-messageformat-parser "6.3.1"
+    intl-messageformat "9.4.7"
+    intl-messageformat-parser "6.3.2"
     shallow-equal "^1.2.1"
     tslib "^2.0.1"
 
