@@ -17,6 +17,7 @@ const SearchResult: FC = () => {
     handleResultIndex,
     isFocusOnResult,
     resultRef,
+    openPage,
   } = useKeyboardResult();
 
   return (
@@ -32,7 +33,7 @@ const SearchResult: FC = () => {
         className={styles.skeleton}
       >
         {result?.map((item, index) => {
-          const { title, info, id, url, target, type } = item;
+          const { title, info, id, target, type } = item;
 
           return (
             <div
@@ -42,7 +43,7 @@ const SearchResult: FC = () => {
                 [styles.selected]: isFocusOnResult && resultIndex === index,
               })}
               onClick={() => {
-                window.open(url);
+                openPage();
               }}
               onMouseEnter={() => {
                 handleResultIndex(index);

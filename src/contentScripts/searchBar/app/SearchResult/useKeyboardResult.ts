@@ -42,9 +42,11 @@ export const useKeyboardResult = () => {
     }
   };
 
+  const openPage = () => {
+    window.open(result[resultIndex].url);
+  };
   /**
    * 按 上下键切换选中的 result
-   * @param index
    * @param back
    */
   const switchResultIndex = (back?: boolean) => {
@@ -97,6 +99,9 @@ export const useKeyboardResult = () => {
       case 'Escape':
         focusOnInput();
         break;
+      case 'Enter':
+        openPage();
+        break;
       default:
     }
   };
@@ -113,5 +118,6 @@ export const useKeyboardResult = () => {
     resultIndex,
     handleResultIndex,
     isFocusOnResult: focusKey === 'result',
+    openPage,
   };
 };
