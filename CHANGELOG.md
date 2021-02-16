@@ -1,5 +1,12 @@
 # Power Yuque 更新日志
 
+## [0.4.1](https://github.com/arvinxx/power-yuque/compare/v0.4.0...v0.4.1) (2021-02-16)
+
+
+### 🐛 修复
+
+* 修正回车无法打开页面的 bug ([7f42d62](https://github.com/arvinxx/power-yuque/commit/7f42d62))
+
 # [0.4.0](https://github.com/arvinxx/power-yuque/compare/v0.3.2...v0.4.0) (2021-02-14)
 
 
