@@ -18,7 +18,7 @@
 
 ## 更新日志
 
-[英文](./CHANGELOG.md)
+[更新日志](./CHANGELOG.md)
 
 ## License
 
