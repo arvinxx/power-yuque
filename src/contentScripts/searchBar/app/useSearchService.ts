@@ -24,9 +24,9 @@ export const useSearchService = () => {
     () => [
       { key: 'repo', title: '知识库' },
       { key: 'doc', title: '文档' },
+      { key: 'group', title: '团队' },
       { key: 'topic', title: '主题' },
       { key: 'artboard', title: '画板' },
-      { key: 'group', title: '团队' },
     ],
     [],
   );
