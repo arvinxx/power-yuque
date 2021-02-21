@@ -1,5 +1,12 @@
 # Power Yuque 更新日志
 
+## [0.4.2](https://github.com/arvinxx/power-yuque/compare/v0.4.1...v0.4.2) (2021-02-21)
+
+
+### 🐛 修复
+
+* **增强搜索框**: 调整搜索资源顺序 ([205e04f](https://github.com/arvinxx/power-yuque/commit/205e04f))
+
 ## [0.4.1](https://github.com/arvinxx/power-yuque/compare/v0.4.0...v0.4.1) (2021-02-16)
 
 
