@@ -49,7 +49,7 @@
     ]
   },
   "dependencies": {
-    "@ant-design/charts": "^1.0.17",
+    "@ant-design/charts": "^1.0.18",
     "@ant-design/pro-layout": "^6.14.2",
     "@ant-design/pro-list": "^1.5.1",
     "@umijs/preset-react": "^1.7.13",
