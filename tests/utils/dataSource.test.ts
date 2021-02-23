@@ -1,3 +1,7 @@
+/**
+ * @jest-environment node
+ */
+
 import type { ActivityDoc } from '@/utils';
 import {
   fetchRepo,

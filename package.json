@@ -19,7 +19,7 @@
     "zip": "yarn build && yarn zip:only",
     "zip:only": "ts-node ./scripts/zip",
     "---------  ": "",
-    "test": "umi-test",
+    "test": "umi test",
     "test:update": "UPDATE=1 umi-test --update-snapshot",
     "test:coverage": "umi-test --coverage",
     "---------   ": "",
