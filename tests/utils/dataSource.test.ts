@@ -15,12 +15,12 @@ describe('数据请求', () => {
   it('成功获取 用户信息 ', async () => {
     const data = await fetchUser();
 
-    expect(data.login).toEqual('arvinxx');
+    expect(data.login).toEqual('ceshizhanghao-oxvzu');
   });
   it('成功获取 Group ', async () => {
-    const data = await fetchGroup('arvinxx');
+    const data = await fetchGroup('ceshizhanghao-oxvzu');
     if (data) {
-      expect(data.reverse()[0]).toEqual('lruur3');
+      expect(data[0]).toEqual('lruur3');
     }
   });
 
@@ -58,7 +58,10 @@ describe('数据转换', () => {
   it('获取所有自己创建的文档', async () => {
     const data = await getActivityData();
 
-    expect(data).toBeDefined();
+    expect(data).toEqual({
+      data: [],
+      username: 'ceshizhanghao-oxvzu',
+    });
   }, 20000);
 
   it('转换文档', () => {
