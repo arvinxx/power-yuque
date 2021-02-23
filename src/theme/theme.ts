@@ -1,3 +1,4 @@
+/* istanbul ignore file */
 import fs from 'fs';
 import lessToJs from 'less-vars-to-js';
 import path from 'path';

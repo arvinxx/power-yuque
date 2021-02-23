@@ -1,3 +1,4 @@
+/* istanbul ignore file */
 import { extend } from 'umi-request';
 import { message, notification } from 'antd';
 import { yuqueToken } from '@/utils/env';
