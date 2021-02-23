@@ -23,6 +23,8 @@ jobs:
         run: yarn lint && yarn tsc
 
       - run: yarn test
+        env:
+          YUQUE_TOKEN: ${{ secrets.YUQUE_TOKEN }}
 
       - uses: ahmadnassri/action-dependabot-auto-merge@v2
         with:
