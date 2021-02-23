@@ -1,12 +1,10 @@
-const path = require('path');
+const {
+  default: umiConfig,
+} = require('@umijs/test/lib/createDefaultConfig/createDefaultConfig');
+
+const defaultConfig = umiConfig(process.cwd(), {});
 
 module.exports = {
-  preset: 'ts-jest',
-  testEnvironment: 'node',
-  verbose: true,
-  moduleNameMapper: {
-    '^@/(.*)$': '<rootDir>/src/$1',
-  },
-  rootDir: path.resolve(__dirname, '.'),
-  setupFiles: ['dotenv/config'],
+  ...defaultConfig,
+  setupFiles: [...defaultConfig.setupFiles, 'dotenv/config'],
 };
