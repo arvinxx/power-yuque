@@ -4,13 +4,14 @@ import { message } from 'antd';
 import request from 'umi-request';
 
 import { getServiceToken } from '@/utils';
+import { PY_KEYS } from '@/store/key';
 
 /**
  *  Yuque Token
  */
 export const useYuqueTokenService = () => {
   // SearchBar 可见
-  const [token, setYuqueToken] = useLocalStorageState('PY_YUQUE_TOKEN', '');
+  const [token, setYuqueToken] = useLocalStorageState(PY_KEYS.token, '');
 
   const syncToCloudStorage = useCallback(() => {
     chrome.storage?.sync.set({ yuque_token: token });

@@ -10,7 +10,6 @@ const selectors = Array.from(
 const target = selectors[0];
 
 if (target) {
-  console.log(target);
   // 创建容器
   const container = document.createElement('div');
   target?.prepend(container);

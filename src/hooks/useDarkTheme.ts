@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { PY_KEYS } from '@/store/key';
 
 /**
  * DarkMode 需要的状态
@@ -8,7 +9,7 @@ export const useDarkTheme = () => {
   const [theme, setTheme] = useState<'light' | 'dark'>('light');
 
   useEffect(() => {
-    const localTheme = localStorage.getItem('theme');
+    const localTheme = localStorage.getItem(PY_KEYS.theme);
     if (localTheme) {
       // @ts-ignore
       setTheme(localTheme.replace(/"/g, ''));

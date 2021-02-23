@@ -3,6 +3,7 @@ import { useLocalStorageState } from 'ahooks';
 import { useCallback, useEffect } from 'react';
 
 import { replaceImageUrl } from './utils';
+import { PY_KEYS } from '@/store/key';
 
 /**
  * DarkMode 需要的状态
@@ -10,7 +11,7 @@ import { replaceImageUrl } from './utils';
 export const useDarkModeService = () => {
   // DarkMode 可见
   const [theme, setTheme] = useLocalStorageState<'light' | 'dark'>(
-    'theme',
+    PY_KEYS.theme,
     'light',
   );
 
