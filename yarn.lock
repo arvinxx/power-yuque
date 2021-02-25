@@ -1924,27 +1924,27 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@formatjs/ecma402-abstract@1.5.4":
-  version "1.5.4"
-  resolved "https://registry.yarnpkg.com/@formatjs/ecma402-abstract/-/ecma402-abstract-1.5.4.tgz#ed7e17fdf6f6c6c163ba95fb7a752404dea9324b"
-  integrity sha512-PyzVaiXHCp1WtXnR30P06BYqWHHY5YIkbwxfB2WE1yNa7XXvozmh6mSc099HgSoTY5ZmOAqwh78G2qOg0j5aPw==
+"@formatjs/ecma402-abstract@1.6.0":
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/@formatjs/ecma402-abstract/-/ecma402-abstract-1.6.0.tgz#bd8f97dba7b8a22671a6a581d9e20fc4db0032e5"
+  integrity sha512-c+mv3Sld8ZZ+qXP37z7xzNMIkyZLC0iU5TzYBs5vmromnWjyMctPpgTkQoka1evkhzudBcSZ/cORCvX6qM5+rg==
   dependencies:
     tslib "^2.0.1"
 
-"@formatjs/intl-datetimeformat@3.2.9":
-  version "3.2.9"
-  resolved "https://registry.yarnpkg.com/@formatjs/intl-datetimeformat/-/intl-datetimeformat-3.2.9.tgz#4b88c1e5be857df417f5877c882f15d33c938bbf"
-  integrity sha512-pwmnHHJNu96XmG9Zj1bhg6f/zYW8oJxOgKwtaTl9znl+RAH5Ud6Y9IuxPbNwDBQEfcs4+X7fopbF+if0bAOc7w==
+"@formatjs/intl-datetimeformat@3.2.10":
+  version "3.2.10"
+  resolved "https://registry.yarnpkg.com/@formatjs/intl-datetimeformat/-/intl-datetimeformat-3.2.10.tgz#c564e4cde00244e49c48f4519c44072a57e4c428"
+  integrity sha512-Dgr3RIJPmmTICDc83pCHnE2r9GdfprwbSDQSL0JB7glmzMd50Or/KQlkFxOuP+5EpugdIYZbsK+dcyd8sflZgg==
   dependencies:
-    "@formatjs/ecma402-abstract" "1.5.4"
+    "@formatjs/ecma402-abstract" "1.6.0"
     tslib "^2.0.1"
 
-"@formatjs/intl-displaynames@4.0.7":
-  version "4.0.7"
-  resolved "https://registry.yarnpkg.com/@formatjs/intl-displaynames/-/intl-displaynames-4.0.7.tgz#10e18e32495ee6d9526ba79373bcc5fbb7fbba10"
-  integrity sha512-auQ8/akjhzeLPk4riG7JHulGXSoVNA5xk0IU+BzEymzFCBJyWvNoroIDCxX6RgRPumMmmIEgcc3w7BmKBo2Obw==
+"@formatjs/intl-displaynames@4.0.8":
+  version "4.0.8"
+  resolved "https://registry.yarnpkg.com/@formatjs/intl-displaynames/-/intl-displaynames-4.0.8.tgz#62fa55e57001555adf4b50e23608aacbeef19f0b"
+  integrity sha512-J+uNXKISqVXNpw6bvfdtv0dK8KGhuPd0oKRO9vRxEQj2VM5rZAc/gObpVcPQ3Obua7ea7TP8A+saeU6KtONGUw==
   dependencies:
-    "@formatjs/ecma402-abstract" "1.5.4"
+    "@formatjs/ecma402-abstract" "1.6.0"
     tslib "^2.0.1"
 
 "@formatjs/intl-displaynames@^1.2.0":
@@ -1954,12 +1954,12 @@
   dependencies:
     "@formatjs/intl-utils" "^2.3.0"
 
-"@formatjs/intl-listformat@5.0.7":
-  version "5.0.7"
-  resolved "https://registry.yarnpkg.com/@formatjs/intl-listformat/-/intl-listformat-5.0.7.tgz#4099bc263dac62a73c6fb44284304bddbb3de5e8"
-  integrity sha512-9wlKLyUI9SvvzrdfarFirNZ2XVF6cOvgSL4sIIla11BRd+3HA4UtxNUluFj5Q7p3LAjpw0je3q7WplOCY/ajZw==
+"@formatjs/intl-listformat@5.0.8":
+  version "5.0.8"
+  resolved "https://registry.yarnpkg.com/@formatjs/intl-listformat/-/intl-listformat-5.0.8.tgz#c27982fb8a5cf77d865e66d64f65fe8b133be305"
+  integrity sha512-4n2rI7L7X1nUs4RK4+Jy+NQrI40txYO/2bOKaGWJD6/QFg0msr9T7WAGp5bG584H3v3hskYVi+BaMCP1wSOH7w==
   dependencies:
-    "@formatjs/ecma402-abstract" "1.5.4"
+    "@formatjs/ecma402-abstract" "1.6.0"
     tslib "^2.0.1"
 
 "@formatjs/intl-listformat@^1.4.1":
@@ -1976,12 +1976,12 @@
   dependencies:
     "@formatjs/intl-utils" "^2.3.0"
 
-"@formatjs/intl-relativetimeformat@8.0.6":
-  version "8.0.6"
-  resolved "https://registry.yarnpkg.com/@formatjs/intl-relativetimeformat/-/intl-relativetimeformat-8.0.6.tgz#eb490618de57949bcd8bead3fa8895763cfbcbe0"
-  integrity sha512-JPGLce9BKNV+sXIBzC7+1Rwb9y4NGR7VlK2Anwu2+lZKFrxTjAcC/Ng7yBq3daR+a521N8+fxvizvDDDAtgfsw==
+"@formatjs/intl-relativetimeformat@8.1.0":
+  version "8.1.0"
+  resolved "https://registry.yarnpkg.com/@formatjs/intl-relativetimeformat/-/intl-relativetimeformat-8.1.0.tgz#de9dcc77d4f2270cdf47113298761df3c4b3873c"
+  integrity sha512-p73YchSfH7L7vw6y+U3wObw5LZq+UtI3NTSGvP1gz7zUUK50E+PwLHc4nZ1PeOcXcJhVpkdME9lVfSDj54Ip0w==
   dependencies:
-    "@formatjs/ecma402-abstract" "1.5.4"
+    "@formatjs/ecma402-abstract" "1.6.0"
     tslib "^2.0.1"
 
 "@formatjs/intl-relativetimeformat@^4.5.7", "@formatjs/intl-relativetimeformat@^4.5.9":
@@ -2003,19 +2003,19 @@
   resolved "https://registry.npm.taobao.org/@formatjs/intl-utils/download/@formatjs/intl-utils-2.3.0.tgz#2dc8c57044de0340eb53a7ba602e59abf80dc799"
   integrity sha1-LcjFcETeA0DrU6e6YC5Zq/gNx5k=
 
-"@formatjs/intl@1.7.1":
-  version "1.7.1"
-  resolved "https://registry.yarnpkg.com/@formatjs/intl/-/intl-1.7.1.tgz#bc53fe5f8f5d165bce28fd48226d9f1055d17fec"
-  integrity sha512-qqWGwbd5Fi9sCKtP6shsOH/FD9+iuRrojXnaA5cUbk94xK1krxDoOaDMIzZCr8lK+JBOxRNdSeGMxevOk8FaTw==
+"@formatjs/intl@1.8.0":
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/@formatjs/intl/-/intl-1.8.0.tgz#9b407b71af3d1ac84a0783685e588e89ed538e62"
+  integrity sha512-qZ4ZhjmwwbN/2rZ1i1J+lA+gWrEYrWiAD3W4XDgEM4C9xu42tZpRbU/y5Qet3jGgpvoIlgsXkqugtjnLoPa2Kw==
   dependencies:
-    "@formatjs/ecma402-abstract" "1.5.4"
-    "@formatjs/intl-datetimeformat" "3.2.9"
-    "@formatjs/intl-displaynames" "4.0.7"
-    "@formatjs/intl-listformat" "5.0.7"
-    "@formatjs/intl-relativetimeformat" "8.0.6"
+    "@formatjs/ecma402-abstract" "1.6.0"
+    "@formatjs/intl-datetimeformat" "3.2.10"
+    "@formatjs/intl-displaynames" "4.0.8"
+    "@formatjs/intl-listformat" "5.0.8"
+    "@formatjs/intl-relativetimeformat" "8.1.0"
     fast-memoize "^2.5.2"
-    intl-messageformat "9.4.9"
-    intl-messageformat-parser "6.3.4"
+    intl-messageformat "9.5.0"
+    intl-messageformat-parser "6.4.0"
     tslib "^2.0.1"
 
 "@fullhuman/postcss-purgecss@^3.0.0":
@@ -10973,12 +10973,12 @@ intl-format-cache@^4.2.21:
   resolved "https://registry.npm.taobao.org/intl-format-cache/download/intl-format-cache-4.3.1.tgz#484d31a9872161e6c02139349b259a6229ade377"
   integrity sha1-SE0xqYchYebAITk0myWaYimt43c=
 
-intl-messageformat-parser@6.3.4:
-  version "6.3.4"
-  resolved "https://registry.yarnpkg.com/intl-messageformat-parser/-/intl-messageformat-parser-6.3.4.tgz#1005ad4d3f7dcc8ec6f7e8e6933e3bf00b77db50"
-  integrity sha512-nlAjRbE52xxK6F6bdJ8nR7mQodP7VanP8dWPfLwby8Murt7pvyq4V49/f9l0LqvmZvqqKE4tS0+EHI6u0Xx+6A==
+intl-messageformat-parser@6.4.0:
+  version "6.4.0"
+  resolved "https://registry.yarnpkg.com/intl-messageformat-parser/-/intl-messageformat-parser-6.4.0.tgz#b054b2b87f920c5ecbbbf5f2b0fe932df137d4ff"
+  integrity sha512-i5wd0emP1DXc3BhGcRCR3Qmq/n9VK54CzYljCzli7hD8MPPv5Dl08w5HYHn3Uo367XzU+BcpiYnEhFhcWOE/sg==
   dependencies:
-    "@formatjs/ecma402-abstract" "1.5.4"
+    "@formatjs/ecma402-abstract" "1.6.0"
     tslib "^2.0.1"
 
 intl-messageformat-parser@^3.6.4:
@@ -10988,13 +10988,13 @@ intl-messageformat-parser@^3.6.4:
   dependencies:
     "@formatjs/intl-unified-numberformat" "^3.2.0"
 
-intl-messageformat@9.4.9:
-  version "9.4.9"
-  resolved "https://registry.yarnpkg.com/intl-messageformat/-/intl-messageformat-9.4.9.tgz#a3c495aea22cc8bcc6d02f6ab2bbe44c9468f0c2"
-  integrity sha512-kzGWQKQbr+RWp0Y++mUq3xuria4kk8sGspD62tBaFixq2Pv0NGy/BOVI1VvdIELbgSz0fKl4jA/klH+cYDU2iQ==
+intl-messageformat@9.5.0:
+  version "9.5.0"
+  resolved "https://registry.yarnpkg.com/intl-messageformat/-/intl-messageformat-9.5.0.tgz#0fcf395d451f2b06d784ac4e61a93b098a9f9480"
+  integrity sha512-c1G96qnlm0Y66AaxguUsHTcCGA0CH4Ls3uFX1V2cLG0tfJLhz3/x6A7g/bNPAimzu1tX1GzmP43CWLDSMDZaHA==
   dependencies:
     fast-memoize "^2.5.2"
-    intl-messageformat-parser "6.3.4"
+    intl-messageformat-parser "6.4.0"
     tslib "^2.0.1"
 
 intl-messageformat@^7.8.4:
@@ -17498,21 +17498,21 @@ react-intl@3.12.1:
     intl-messageformat-parser "^3.6.4"
     shallow-equal "^1.2.1"
 
-react-intl@^5.12.5:
-  version "5.12.5"
-  resolved "https://registry.yarnpkg.com/react-intl/-/react-intl-5.12.5.tgz#ba2a2f5c663071fb4348a716a8b7d39dd533d4eb"
-  integrity sha512-QyIc7ujm6UmIzsekoMbnGZc/lUzRqd6fgce/N4lwO6EK++w482d0MoYgsB9cPCaag3Orj4p4PsndHIcS4aR4mQ==
+react-intl@^5.13.0:
+  version "5.13.0"
+  resolved "https://registry.yarnpkg.com/react-intl/-/react-intl-5.13.0.tgz#89c7f5d7133f6a7580a035ed93dcef46cdbd2874"
+  integrity sha512-/DN8MqaroGu6SeJN4UYYjKzMEM2sCo7j8MvBsNXvhTYJ/TYHF8Q75S44xJiHF5hCwubE6LFaHQO0do5P9/zaqQ==
   dependencies:
-    "@formatjs/ecma402-abstract" "1.5.4"
-    "@formatjs/intl" "1.7.1"
-    "@formatjs/intl-displaynames" "4.0.7"
-    "@formatjs/intl-listformat" "5.0.7"
-    "@formatjs/intl-relativetimeformat" "8.0.6"
+    "@formatjs/ecma402-abstract" "1.6.0"
+    "@formatjs/intl" "1.8.0"
+    "@formatjs/intl-displaynames" "4.0.8"
+    "@formatjs/intl-listformat" "5.0.8"
+    "@formatjs/intl-relativetimeformat" "8.1.0"
     "@types/hoist-non-react-statics" "^3.3.1"
     fast-memoize "^2.5.2"
     hoist-non-react-statics "^3.3.2"
-    intl-messageformat "9.4.9"
-    intl-messageformat-parser "6.3.4"
+    intl-messageformat "9.5.0"
+    intl-messageformat-parser "6.4.0"
     shallow-equal "^1.2.1"
     tslib "^2.0.1"
 
