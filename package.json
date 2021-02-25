@@ -65,7 +65,7 @@
     "react-hotkeys-hook": "^3.1.0",
     "react-intl": "^5.12.5",
     "react-spring": "^8.0.27",
-    "rxjs": "^6.6.3",
+    "rxjs": "^6.6.6",
     "rxjs-hooks": "^0.6.2",
     "umi": "^3.3.9",
     "umi-plugin-extensions": "^0.4.0",
