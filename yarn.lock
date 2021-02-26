@@ -2023,6 +2023,11 @@
   resolved "https://registry.yarnpkg.com/@gitmoji/parser-opts/-/parser-opts-1.2.5.tgz#d7adac21a76ed929a497ab8654686d1be244bfa3"
   integrity sha512-Imxx7OjuZH374H7wNMBEwJ9i1U/0xGEPxjcyYfX47fKzdWZ57UNmiYEC4HoAV8sDpGi4AG0uU4o4NgOiQP1sEg==
 
+"@gitmoji/parser-opts@1.2.6":
+  version "1.2.6"
+  resolved "https://registry.yarnpkg.com/@gitmoji/parser-opts/-/parser-opts-1.2.6.tgz#1f7d253d9f52e91e9e5f65216b190e481b505277"
+  integrity sha512-90e0sDneqK5EdtUqEn/e6p8hRmQ/+VDcHOm+mS/9d+4QDx1BQ8tULKhBc+cmZqRihTluZWsp2W1zNcS2VqRm8A==
+
 "@hapi/address@^2.1.2":
   version "2.1.4"
   resolved "https://registry.npm.taobao.org/@hapi/address/download/@hapi/address-2.1.4.tgz?cache=0&sync_timestamp=1603524710662&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40hapi%2Faddress%2Fdownload%2F%40hapi%2Faddress-2.1.4.tgz#5d67ed43f3fd41a69d4b9ff7b56e7c0d1d0a81e5"
@@ -6655,13 +6660,13 @@ commander@^6.0.0, commander@^6.2.0:
   resolved "https://registry.npm.taobao.org/commander/download/commander-6.2.1.tgz?cache=0&sync_timestamp=1610702173050&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fcommander%2Fdownload%2Fcommander-6.2.1.tgz#0792eb682dfbc325999bb2b84fddddba110ac73c"
   integrity sha1-B5LraC37wyWZm7K4T93duhEKxzw=
 
-commitlint-config-gitmoji@^2.2.1:
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/commitlint-config-gitmoji/-/commitlint-config-gitmoji-2.2.1.tgz#f42e247953f99cd328417956eef20c72f9926910"
-  integrity sha512-VSIC5TJdMqDcYsrswil5max//85170RZcqRRG0pUsVmAB92ntge6XVprgJMi70poPeZHpaDQBraEGaNNnJvsDw==
+commitlint-config-gitmoji@^2.2.2:
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/commitlint-config-gitmoji/-/commitlint-config-gitmoji-2.2.2.tgz#b6caae7b7631e1cbda724f8f2d552f08ab3c48f1"
+  integrity sha512-dIodTBQHMQQ0sij+6etqtjJzIxIfddPQE2fsOFC6DcNWdRod3C0iccThbpgmT37q5XrmeZTfnyeBM+rw7Bvvrg==
   dependencies:
     "@gitmoji/commit-types" "1.1.5"
-    "@gitmoji/parser-opts" "1.2.5"
+    "@gitmoji/parser-opts" "1.2.6"
     commitlint-plugin-gitmoji "2.0.6"
 
 commitlint-plugin-gitmoji@2.0.6:
