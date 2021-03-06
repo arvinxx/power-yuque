@@ -6,4 +6,5 @@ export const isDevSearchBar = process.env.SEARCH_BAR === '1';
 
 export const yuqueToken = isTest
   ? process.env.YUQUE_TOKEN!
-  : localStorage.getItem(PY_KEYS.token)?.replace(/"/g, '') || '';
+  : /* istanbul ignore next */
+    localStorage.getItem(PY_KEYS.token)?.replace(/"/g, '') || '';
