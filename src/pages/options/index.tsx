@@ -1,4 +1,5 @@
-import React from 'react';
+import type { FC } from 'react';
+import React, { useState } from 'react';
 import { Menu } from 'antd';
 import {
   BulbOutlined,
@@ -8,12 +9,28 @@ import {
 } from '@ant-design/icons';
 
 import { useYuqueTokenService, YuqueTokenService } from '@/services';
+
 import Token from './Token';
+import Typography from './Typography';
 
 import styles from './style.less';
 
-const App = () => {
+const App: FC = () => {
+  const [selectedKey, setSelectedKey] = useState(
+    'typography',
+    // 'token'
+  );
   const yuqueTokenService = useYuqueTokenService();
+
+  const Panel: FC = () => {
+    switch (selectedKey) {
+      case 'typography':
+        return <Typography />;
+      case 'token':
+      default:
+        return <Token />;
+    }
+  };
 
   return (
     <YuqueTokenService.Provider value={yuqueTokenService}>
@@ -23,12 +40,15 @@ const App = () => {
           <Menu
             mode="inline"
             className={styles.menu}
-            defaultSelectedKeys={['token']}
+            onSelect={(e) => {
+              setSelectedKey(e.selectedKeys?.[0] as string);
+            }}
+            selectedKeys={[selectedKey]}
           >
             <Menu.Item key="token">
               <KeyOutlined /> 语雀 Token
             </Menu.Item>
-            <Menu.Item disabled key="typographic">
+            <Menu.Item key="typography">
               <FontColorsOutlined />
               排版配置
             </Menu.Item>
@@ -43,7 +63,7 @@ const App = () => {
           </Menu>
 
           <div className={styles.content}>
-            <Token />
+            <Panel />
           </div>
         </div>
       </div>

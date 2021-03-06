@@ -1,5 +1,4 @@
 import type { FC } from 'react';
-import React from 'react';
 import { ReactComponent as BookSvg } from './book.svg';
 import { ReactComponent as ColumnSvg } from './column.svg';
 import { ReactComponent as DesignSvg } from './design.svg';

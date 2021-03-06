@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import type { FC } from 'react';
 import { Skeleton } from 'antd';
 import cls from 'classnames';

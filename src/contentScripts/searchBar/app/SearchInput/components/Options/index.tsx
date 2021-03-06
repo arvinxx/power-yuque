@@ -1,5 +1,5 @@
 import type { FC } from 'react';
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import { Checkbox, Space } from 'antd';
 import cls from 'classnames';
 

@@ -1,5 +1,4 @@
 import type { FC } from 'react';
-import React from 'react';
 import ReactDOM from 'react-dom';
 import { DarkModeService, useDarkModeService } from './useDarkModeService';
 

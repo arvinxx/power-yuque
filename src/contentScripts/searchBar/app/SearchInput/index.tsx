@@ -1,5 +1,5 @@
 import type { FC } from 'react';
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import { Input } from 'antd';
 import Options from './components/Options';
 

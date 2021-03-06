@@ -6,7 +6,6 @@ import Heatmap from './Heatmap';
 import { useHeatmapData } from './useHeatmapData';
 import styles from './style.less';
 import { yuqueToken } from '@/utils';
-import React from 'react';
 
 const App: FC = () => {
   const { loading, data, fetchData, isHome } = useHeatmapData();
