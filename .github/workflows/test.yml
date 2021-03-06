@@ -1,0 +1,26 @@
+name: Test CI
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2.1.2
+        with:
+          node-version: '14'
+
+      - uses: c-hive/gha-yarn-cache@v1
+
+      - name: install
+        run: yarn
+
+      - name: test
+        run: yarn test:coverage
+        env:
+          YUQUE_TOKEN: ${{ secrets.YUQUE_TOKEN }}
+
+      - name: Generate coverage
+        run: bash <(curl -s https://codecov.io/bash)
