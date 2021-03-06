@@ -25,7 +25,8 @@ const App: FC = () => {
   const Panel: FC = () => {
     switch (selectedKey) {
       case 'typography':
-        return <Typography />;
+        return <div />;
+      // return <Typography />;
       case 'token':
       default:
         return <Token />;
