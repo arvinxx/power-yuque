@@ -1,5 +1,5 @@
 import type { FC } from 'react';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Menu } from 'antd';
 import {
   BulbOutlined,
@@ -11,7 +11,7 @@ import {
 import { useYuqueTokenService, YuqueTokenService } from '@/services';
 
 import Token from './Token';
-import Typography from './Typography';
+// import Typography from './Typography';
 
 import styles from './style.less';
 
