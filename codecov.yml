@@ -1,0 +1,2 @@
+fixes:
+  - '/home/runner/work/*/*/::' # 修正 github ci 路径问题
