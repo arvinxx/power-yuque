@@ -1,6 +1,6 @@
 # Power Yuque
 
-![][version-url] [![Coverage][coverage]][codecov-url] ![Test CI status][test-ci] [![Release CI][release-ci]]
+![][version-url] [![Coverage][coverage]][codecov-url] ![Test CI status][test-ci] ![Release CI][release-ci]
 
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release) ![][license-url]
 
