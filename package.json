@@ -67,7 +67,7 @@
     "react-spring": "^8.0.27",
     "rxjs": "^6.6.6",
     "rxjs-hooks": "^0.6.2",
-    "umi": "^3.3.9",
+    "umi": "^3.4.2",
     "umi-plugin-extensions": "^0.4.0",
     "umi-plugin-tailwindcss": "^3.0.0",
     "umi-request": "^1.0.0"
