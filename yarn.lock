@@ -93,14 +93,14 @@
     rc-util "^5.0.6"
     use-media-antd-query "^1.0.6"
 
-"@ant-design/pro-layout@^6.15.0":
-  version "6.15.0"
-  resolved "https://registry.yarnpkg.com/@ant-design/pro-layout/-/pro-layout-6.15.0.tgz#75829326054e54af4f37fc36f878e6af38a408b6"
-  integrity sha512-On4SrzbfNTRX3txU+kRB5puq982HXDNy5MH5BV4k9KSXthpt0L6N+380O9OgWlRmF+uO3wD1bgA9Y0JuoUlM+Q==
+"@ant-design/pro-layout@^6.15.5":
+  version "6.15.5"
+  resolved "https://registry.yarnpkg.com/@ant-design/pro-layout/-/pro-layout-6.15.5.tgz#570ab012739ae22ab880c0d84fb9b36252cfb0a5"
+  integrity sha512-MDh5B0WCGLub7Ub7he1cG6MaoLuNduuAbwfXRnUJV7CtfVBWe+yuL/TaKPWv8AWl0CM/9bmbEllfHufgikZH6w==
   dependencies:
     "@ant-design/icons" "^4.0.0"
-    "@ant-design/pro-provider" "1.4.7"
-    "@ant-design/pro-utils" "1.14.0"
+    "@ant-design/pro-provider" "1.4.9"
+    "@ant-design/pro-utils" "1.15.1"
     "@umijs/route-utils" "^1.0.35"
     "@umijs/use-params" "^1.0.2"
     classnames "^2.2.6"
@@ -136,6 +136,13 @@
   dependencies:
     rc-util "^5.0.1"
 
+"@ant-design/pro-provider@1.4.9":
+  version "1.4.9"
+  resolved "https://registry.yarnpkg.com/@ant-design/pro-provider/-/pro-provider-1.4.9.tgz#a9e8fa6b08965ffd7ef3d21c27836010fd97b076"
+  integrity sha512-mISOJLZ6womxQCNfr1SQpdu0DBXkKoHI23EbRSzUC3KCM6Bw/YzgZ1gxnMATErttY2amAjXtTl+PJCzglFsrvA==
+  dependencies:
+    rc-util "^5.0.1"
+
 "@ant-design/pro-table@2.30.4":
   version "2.30.4"
   resolved "https://registry.yarnpkg.com/@ant-design/pro-table/-/pro-table-2.30.4.tgz#94b508fbf3c01c2603744b57ffb91a45635498f5"
@@ -161,6 +168,18 @@
   dependencies:
     "@ant-design/icons" "^4.3.0"
     "@ant-design/pro-provider" "1.4.7"
+    classnames "^2.2.6"
+    fast-deep-equal "^3.1.3"
+    moment "^2.27.0"
+    rc-util "^5.0.6"
+
+"@ant-design/pro-utils@1.15.1":
+  version "1.15.1"
+  resolved "https://registry.yarnpkg.com/@ant-design/pro-utils/-/pro-utils-1.15.1.tgz#09d16c537cd3c33ed1cabc053c0621475efe8789"
+  integrity sha512-ddcdXRNIwKDGj7D8F1pa4uI1YdHZ3k/wkbXZLlmFKzLDEK1/p0xUVdHQD4SzvpldtREE8ZU2Lmz1zS+kjk36Fw==
+  dependencies:
+    "@ant-design/icons" "^4.3.0"
+    "@ant-design/pro-provider" "1.4.9"
     classnames "^2.2.6"
     fast-deep-equal "^3.1.3"
     moment "^2.27.0"
