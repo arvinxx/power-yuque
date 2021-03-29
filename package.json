@@ -98,7 +98,7 @@
     "conventional-changelog-cli": "^2.1.1",
     "conventional-changelog-gitmoji-config": "^1.4.2",
     "cross-env": "^7.0.0",
-    "eslint": "^7.21.0",
+    "eslint": "^7.23.0",
     "eslint-config-umi": "^1.6.0",
     "fs-extra": "^9.1.0",
     "husky": "^4.3.8",
