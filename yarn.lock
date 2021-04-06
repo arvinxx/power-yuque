@@ -20967,10 +20967,10 @@ umi-plugin-extensions@^0.4.0:
     fs-extra "^9.0.1"
     generate-json-webpack-plugin "^1.0.0"
 
-umi-plugin-tailwindcss@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/umi-plugin-tailwindcss/-/umi-plugin-tailwindcss-3.0.0.tgz#b21c19684989e32dac709bc0a68ccb64058dbc19"
-  integrity sha512-K68AtKgCohW7EGW1Aza2OrKxlwy1nnsoyfG2RH6GZJuE4i82oL3kPfcXka6lQhfnSdh1Nlc9w65xOZJ/kysi/g==
+umi-plugin-tailwindcss@^3.0.4:
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/umi-plugin-tailwindcss/-/umi-plugin-tailwindcss-3.0.4.tgz#5ef4b280998b4be2eabe1f6afc6240f774be81f5"
+  integrity sha512-N0XL7Zh1Ht6uwnHoHG0+IUow+rTTBQ2q/c4tt7W05Gd/X5KxM3fav84sGc6c/EZnczci8we0kUUOqqYBpq/rrw==
   dependencies:
     tailwindcss "2.0.1-compat"
 
