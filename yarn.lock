@@ -93,14 +93,14 @@
     rc-util "^5.0.6"
     use-media-antd-query "^1.0.6"
 
-"@ant-design/pro-layout@^6.15.0":
-  version "6.15.0"
-  resolved "https://registry.yarnpkg.com/@ant-design/pro-layout/-/pro-layout-6.15.0.tgz#75829326054e54af4f37fc36f878e6af38a408b6"
-  integrity sha512-On4SrzbfNTRX3txU+kRB5puq982HXDNy5MH5BV4k9KSXthpt0L6N+380O9OgWlRmF+uO3wD1bgA9Y0JuoUlM+Q==
+"@ant-design/pro-layout@^6.16.2":
+  version "6.16.2"
+  resolved "https://registry.yarnpkg.com/@ant-design/pro-layout/-/pro-layout-6.16.2.tgz#134a8a45299576ca41e06fdecb6cdcdc42d85a97"
+  integrity sha512-ZMJADXCGwsFn6nugyfk1EN0c6vTmB9rqAEeeJ2oXqxMvlZ8nOujdVTsrvgjXWT1PmPTx13Trezk35VcQEgHnHg==
   dependencies:
     "@ant-design/icons" "^4.0.0"
-    "@ant-design/pro-provider" "1.4.7"
-    "@ant-design/pro-utils" "1.14.0"
+    "@ant-design/pro-provider" "1.4.10"
+    "@ant-design/pro-utils" "1.16.0"
     "@umijs/route-utils" "^1.0.35"
     "@umijs/use-params" "^1.0.2"
     classnames "^2.2.6"
@@ -108,6 +108,7 @@
     path-to-regexp "2.4.0"
     rc-resize-observer "^0.2.1"
     rc-util "^5.0.6"
+    swr "^0.5.4"
     unstated-next "^1.1.0"
     use-json-comparison "^1.0.3"
     use-media-antd-query "^1.0.6"
@@ -128,6 +129,13 @@
     rc-util "^4.19.0"
     unstated-next "^1.1.0"
     use-media-antd-query "1.0.6"
+
+"@ant-design/pro-provider@1.4.10":
+  version "1.4.10"
+  resolved "https://registry.yarnpkg.com/@ant-design/pro-provider/-/pro-provider-1.4.10.tgz#e4d6eed4849c7be9bca2247d4b66850d33a8ef23"
+  integrity sha512-wH2IXEkxRDELVFdrLwVFtXLblcumQvn/1tVznZyavsOO/mPN09AKmC3npnupYtbhiFYBiA/wSCqcyJPwWTrBMw==
+  dependencies:
+    rc-util "^5.0.1"
 
 "@ant-design/pro-provider@1.4.7":
   version "1.4.7"
@@ -161,6 +169,18 @@
   dependencies:
     "@ant-design/icons" "^4.3.0"
     "@ant-design/pro-provider" "1.4.7"
+    classnames "^2.2.6"
+    fast-deep-equal "^3.1.3"
+    moment "^2.27.0"
+    rc-util "^5.0.6"
+
+"@ant-design/pro-utils@1.16.0":
+  version "1.16.0"
+  resolved "https://registry.yarnpkg.com/@ant-design/pro-utils/-/pro-utils-1.16.0.tgz#88ee7c24928ff9e4e642b40177c77b6591efaded"
+  integrity sha512-IqiRavbP7Wg8puxGNqM8o+8+4VdtL4dg8mCgHEIlJ5Wg/ZJf1yIq/gmNntWnEV4ZVLKvD7kknQmnbEAbzWnAvA==
+  dependencies:
+    "@ant-design/icons" "^4.3.0"
+    "@ant-design/pro-provider" "1.4.10"
     classnames "^2.2.6"
     fast-deep-equal "^3.1.3"
     moment "^2.27.0"
@@ -20284,6 +20304,13 @@ swr@^0.3.6:
   version "0.3.11"
   resolved "https://registry.npm.taobao.org/swr/download/swr-0.3.11.tgz#f7f50ed26c06afea4249482cec504768a2272664"
   integrity sha1-9/UO0mwGr+pCSUgs7FBHaKInJmQ=
+  dependencies:
+    dequal "2.0.2"
+
+swr@^0.5.4:
+  version "0.5.5"
+  resolved "https://registry.yarnpkg.com/swr/-/swr-0.5.5.tgz#c72c1615765f33570a16bbb13699e3ac87eaaa3a"
+  integrity sha512-u4mUorK9Ipt+6LEITvWRWiRWAQjAysI6cHxbMmMV1dIdDzxMnswWo1CyGoyBHXX91CchxcuoqgFZ/ycx+YfhCA==
   dependencies:
     dequal "2.0.2"
 
