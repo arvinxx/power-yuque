@@ -54,7 +54,7 @@
     "@ant-design/pro-list": "^1.5.5",
     "@umijs/preset-react": "^1.8.0",
     "@yuque/sdk": "^1.1.1",
-    "ahooks": "^2.9.6",
+    "ahooks": "^2.10.1",
     "antd": "^4.13.1",
     "classnames": "^2.2.6",
     "current-device": "^0.10.2",
