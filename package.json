@@ -80,7 +80,7 @@
     "@semantic-release/release-notes-generator": "^9.0.1",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
-    "@testing-library/react-hooks": "^5.0.3",
+    "@testing-library/react-hooks": "^5.1.2",
     "@types/archiver": "^5.1.0",
     "@types/chrome": "^0.0.133",
     "@types/classnames": "^2.2.11",
