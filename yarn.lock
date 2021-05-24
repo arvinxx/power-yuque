@@ -2062,27 +2062,41 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@formatjs/ecma402-abstract@1.6.2":
-  version "1.6.2"
-  resolved "https://registry.yarnpkg.com/@formatjs/ecma402-abstract/-/ecma402-abstract-1.6.2.tgz#9d064a2cf790769aa6721e074fb5d5c357084bb9"
-  integrity sha512-aLBODrSRhHaL/0WdQ0T2UsGqRbdtRRHqqrs4zwNQoRsGBEtEAvlj/rgr6Uea4PSymVJrbZBoAyECM2Z3Pq4i0g==
+"@formatjs/ecma402-abstract@1.9.1":
+  version "1.9.1"
+  resolved "https://registry.yarnpkg.com/@formatjs/ecma402-abstract/-/ecma402-abstract-1.9.1.tgz#5d15c5a687a215ed9de47a577ac7c720a3fe5e00"
+  integrity sha512-XAJ1ygWKgGEaFuNg3Cf+maJNYEJjl5LjSVZ1iAnSaOKDg/VXa+dDPWhWQP6jimvWv6h9NyDj6Zgh+2qFBeVABw==
   dependencies:
     tslib "^2.1.0"
 
-"@formatjs/intl-datetimeformat@3.2.12":
-  version "3.2.12"
-  resolved "https://registry.yarnpkg.com/@formatjs/intl-datetimeformat/-/intl-datetimeformat-3.2.12.tgz#c9b2e85f0267ee13ea615a8991995da3075e3b13"
-  integrity sha512-qvY5+dl3vlgH0iWRXwl8CG9UkSVB5uP2+HH//fyZZ01G4Ww5rxMJmia1SbUqatpoe/dX+Z+aLejCqUUyugyL2g==
+"@formatjs/fast-memoize@1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@formatjs/fast-memoize/-/fast-memoize-1.1.1.tgz#3006b58aca1e39a98aca213356b42da5d173f26b"
+  integrity sha512-mIqBr5uigIlx13eZTOPSEh2buDiy3BCdMYUtewICREQjbb4xarDiVWoXSnrERM7NanZ+0TAHNXSqDe6HpEFQUg==
+
+"@formatjs/icu-messageformat-parser@2.0.4":
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/@formatjs/icu-messageformat-parser/-/icu-messageformat-parser-2.0.4.tgz#b54d2be1bf51892fbadd9f13e857fe4ffaa528bf"
+  integrity sha512-R6tEOyP+GRFuqLI9NQ4Aw6y5K2m7ASLn6Zu+fCu0HRh9IfHnNrvriHUSntmaXpxwSB3gI8eSawmyemKqdSxgtg==
   dependencies:
-    "@formatjs/ecma402-abstract" "1.6.2"
+    "@formatjs/ecma402-abstract" "1.9.1"
+    "@formatjs/icu-skeleton-parser" "1.2.5"
     tslib "^2.1.0"
 
-"@formatjs/intl-displaynames@4.0.10":
-  version "4.0.10"
-  resolved "https://registry.yarnpkg.com/@formatjs/intl-displaynames/-/intl-displaynames-4.0.10.tgz#5bbd1bbcd64a036b4be27798b650c864dcf4466a"
-  integrity sha512-KmYJQHynGnnMeqIWVXhbzCMcEC8lg1TfGVdcO9May6paDT+dksZoOBQc741t7iXi/YVO/wXEZdmXhUNX7ODZug==
+"@formatjs/icu-skeleton-parser@1.2.5":
+  version "1.2.5"
+  resolved "https://registry.yarnpkg.com/@formatjs/icu-skeleton-parser/-/icu-skeleton-parser-1.2.5.tgz#db611b3c1eed743673c29c01a8248a5ff56105a2"
+  integrity sha512-Y99K8gEOei8dRRjxdV8PX+BFopGtFnc+MyWByhCmb/UbOpn/XbFxz/iM+DpWRnF1GEs5R3tq9RNpFpD6O/hjGg==
   dependencies:
-    "@formatjs/ecma402-abstract" "1.6.2"
+    "@formatjs/ecma402-abstract" "1.9.1"
+    tslib "^2.1.0"
+
+"@formatjs/intl-displaynames@5.1.2":
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/@formatjs/intl-displaynames/-/intl-displaynames-5.1.2.tgz#b7f4b8809e2bf58bf3a44c4c2c09f52eec5939d7"
+  integrity sha512-yFtQ1hCWPQ7CmhS0Ck1ONIf8EqGrNXe0KC7SRHpg02pjc7pMnHJAs1/sAXKzl1O4dOpKv2veIylLI3zO72onjg==
+  dependencies:
+    "@formatjs/ecma402-abstract" "1.9.1"
     tslib "^2.1.0"
 
 "@formatjs/intl-displaynames@^1.2.0":
@@ -2092,12 +2106,12 @@
   dependencies:
     "@formatjs/intl-utils" "^2.3.0"
 
-"@formatjs/intl-listformat@5.0.10":
-  version "5.0.10"
-  resolved "https://registry.yarnpkg.com/@formatjs/intl-listformat/-/intl-listformat-5.0.10.tgz#9f8c4ad5e8a925240e151ba794c41fba01f742cc"
-  integrity sha512-FLtrtBPfBoeteRlYcHvThYbSW2YdJTllR0xEnk6cr/6FRArbfPRYMzDpFYlESzb5g8bpQMKZy+kFQ6V2Z+5KaA==
+"@formatjs/intl-listformat@6.2.1":
+  version "6.2.1"
+  resolved "https://registry.yarnpkg.com/@formatjs/intl-listformat/-/intl-listformat-6.2.1.tgz#ceb61dc0e7ad8be55499417203d45276fdb25b8a"
+  integrity sha512-sXvITvtsqEGmSrZsbRbjKv9OhtmklYdKJ+xGwavNb3P1hR+cERbefI6zJx8aZJ6GWvTfBIFYsDF2gIzarF0W6g==
   dependencies:
-    "@formatjs/ecma402-abstract" "1.6.2"
+    "@formatjs/ecma402-abstract" "1.9.1"
     tslib "^2.1.0"
 
 "@formatjs/intl-listformat@^1.4.1":
@@ -2113,14 +2127,6 @@
   integrity sha1-w2PIM8DM3hHrUI3kwJ0+qiMugZo=
   dependencies:
     "@formatjs/intl-utils" "^2.3.0"
-
-"@formatjs/intl-relativetimeformat@8.1.2":
-  version "8.1.2"
-  resolved "https://registry.yarnpkg.com/@formatjs/intl-relativetimeformat/-/intl-relativetimeformat-8.1.2.tgz#119f3dce97458991f86bf34a736880e4a7bc1697"
-  integrity sha512-LZUxbc9GHVGmDc4sqGAXugoxhvZV7EG2lG2c0aKERup2ixvmDMbbEN3iEEr5aKkP7YyGxXxgqDn2dwg7QCPR6Q==
-  dependencies:
-    "@formatjs/ecma402-abstract" "1.6.2"
-    tslib "^2.1.0"
 
 "@formatjs/intl-relativetimeformat@^4.5.7", "@formatjs/intl-relativetimeformat@^4.5.9":
   version "4.5.16"
@@ -2141,19 +2147,17 @@
   resolved "https://registry.npm.taobao.org/@formatjs/intl-utils/download/@formatjs/intl-utils-2.3.0.tgz#2dc8c57044de0340eb53a7ba602e59abf80dc799"
   integrity sha1-LcjFcETeA0DrU6e6YC5Zq/gNx5k=
 
-"@formatjs/intl@1.8.2":
-  version "1.8.2"
-  resolved "https://registry.yarnpkg.com/@formatjs/intl/-/intl-1.8.2.tgz#6090e6c1826a92e70668dfe08b4ba30127ea3a85"
-  integrity sha512-9xHoNKPv4qQIQ5AVfpQbIPZanz50i7oMtZWrd6Fz7Q2GM/5uhBr9mrCrY1tz/+diP7uguKmhj1IweLYaxY3DTQ==
+"@formatjs/intl@1.11.1":
+  version "1.11.1"
+  resolved "https://registry.yarnpkg.com/@formatjs/intl/-/intl-1.11.1.tgz#def91639de6159283f0976dd3c62dd0a141eaf7d"
+  integrity sha512-Ad/+/9gGmb+Yu8HujmvE7BAmIO57w74yo3ObR6uLDHpNBzUV+dIGwrPxFdKKZRwhgorvvm7hSjPW67aw6YxNvg==
   dependencies:
-    "@formatjs/ecma402-abstract" "1.6.2"
-    "@formatjs/intl-datetimeformat" "3.2.12"
-    "@formatjs/intl-displaynames" "4.0.10"
-    "@formatjs/intl-listformat" "5.0.10"
-    "@formatjs/intl-relativetimeformat" "8.1.2"
-    fast-memoize "^2.5.2"
-    intl-messageformat "9.5.2"
-    intl-messageformat-parser "6.4.2"
+    "@formatjs/ecma402-abstract" "1.9.1"
+    "@formatjs/fast-memoize" "1.1.1"
+    "@formatjs/icu-messageformat-parser" "2.0.4"
+    "@formatjs/intl-displaynames" "5.1.2"
+    "@formatjs/intl-listformat" "6.2.1"
+    intl-messageformat "9.6.16"
     tslib "^2.1.0"
 
 "@fullhuman/postcss-purgecss@^3.0.0":
@@ -9449,11 +9453,6 @@ fast-levenshtein@^2.0.6, fast-levenshtein@~2.0.6:
   resolved "https://registry.npm.taobao.org/fast-levenshtein/download/fast-levenshtein-2.0.6.tgz?cache=0&sync_timestamp=1605292839055&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ffast-levenshtein%2Fdownload%2Ffast-levenshtein-2.0.6.tgz#3d8a5c66883a16a30ca8643e851f19baa7797917"
   integrity sha1-PYpcZog6FqMMqGQ+hR8Zuqd5eRc=
 
-fast-memoize@^2.5.2:
-  version "2.5.2"
-  resolved "https://registry.npm.taobao.org/fast-memoize/download/fast-memoize-2.5.2.tgz#79e3bb6a4ec867ea40ba0e7146816f6cdce9b57e"
-  integrity sha1-eeO7ak7IZ+pAug5xRoFvbNzptX4=
-
 fastest-levenshtein@^1.0.12:
   version "1.0.12"
   resolved "https://registry.npm.taobao.org/fastest-levenshtein/download/fastest-levenshtein-1.0.12.tgz?cache=0&sync_timestamp=1598877489440&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ffastest-levenshtein%2Fdownload%2Ffastest-levenshtein-1.0.12.tgz#9990f7d3a88cc5a9ffd1f1745745251700d497e2"
@@ -11133,14 +11132,6 @@ intl-format-cache@^4.2.21:
   resolved "https://registry.npm.taobao.org/intl-format-cache/download/intl-format-cache-4.3.1.tgz#484d31a9872161e6c02139349b259a6229ade377"
   integrity sha1-SE0xqYchYebAITk0myWaYimt43c=
 
-intl-messageformat-parser@6.4.2:
-  version "6.4.2"
-  resolved "https://registry.yarnpkg.com/intl-messageformat-parser/-/intl-messageformat-parser-6.4.2.tgz#e2d28c3156c27961ead9d613ca55b6a155078d7d"
-  integrity sha512-IVNGy24lNEYr/KPWId5tF3KXRHFFbMgzIMI4kUonNa/ide2ywUYyBuOUro1IBGZJqjA2ncBVUyXdYKlMfzqpAA==
-  dependencies:
-    "@formatjs/ecma402-abstract" "1.6.2"
-    tslib "^2.1.0"
-
 intl-messageformat-parser@^3.6.4:
   version "3.6.4"
   resolved "https://registry.npm.taobao.org/intl-messageformat-parser/download/intl-messageformat-parser-3.6.4.tgz?cache=0&sync_timestamp=1609819967115&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fintl-messageformat-parser%2Fdownload%2Fintl-messageformat-parser-3.6.4.tgz#5199d106d816c3dda26ee0694362a9cf823978fb"
@@ -11148,13 +11139,13 @@ intl-messageformat-parser@^3.6.4:
   dependencies:
     "@formatjs/intl-unified-numberformat" "^3.2.0"
 
-intl-messageformat@9.5.2:
-  version "9.5.2"
-  resolved "https://registry.yarnpkg.com/intl-messageformat/-/intl-messageformat-9.5.2.tgz#e72d32152c760b7411e413780e462909987c005a"
-  integrity sha512-sBGXcSQLyBuBA/kzAYhTpzhzkOGfSwGIau2W6FuwLZk0JE+VF3C+y0077FhVDOcRSi60iSfWzT8QC3Z7//dFxw==
+intl-messageformat@9.6.16:
+  version "9.6.16"
+  resolved "https://registry.yarnpkg.com/intl-messageformat/-/intl-messageformat-9.6.16.tgz#2e44203f391632468256de873b99945a37417881"
+  integrity sha512-EdsdT0izNWH2MTTAXzOJHvv6w14Y9hyjWop8V38SukbAWcMz9CATp6qQC3x7n3U5xYUhWWDHFP0SEuz/rp33+w==
   dependencies:
-    fast-memoize "^2.5.2"
-    intl-messageformat-parser "6.4.2"
+    "@formatjs/fast-memoize" "1.1.1"
+    "@formatjs/icu-messageformat-parser" "2.0.4"
     tslib "^2.1.0"
 
 intl-messageformat@^7.8.4:
@@ -17698,21 +17689,19 @@ react-intl@3.12.1:
     intl-messageformat-parser "^3.6.4"
     shallow-equal "^1.2.1"
 
-react-intl@^5.13.2:
-  version "5.13.2"
-  resolved "https://registry.yarnpkg.com/react-intl/-/react-intl-5.13.2.tgz#b0f49c301504bed380a8468e83d28494cdb073db"
-  integrity sha512-5NbfIjmA1+35dM4pusDj3xCgc5YgN4uAQealDW32M7IC2PykPmiQy8IZbTya/hYIZGFYpFSnvU3rUVGatqokFQ==
+react-intl@^5.18.1:
+  version "5.18.1"
+  resolved "https://registry.yarnpkg.com/react-intl/-/react-intl-5.18.1.tgz#991867dc8b71b685318d982cc6f4a742184a39ef"
+  integrity sha512-xngD4/1SaEXc+0iN//CB8vsFzgkmFaOlIMnz7f+sg3RYnBiYGiBAREXDPleTESbudpJUjm1XUA5VX46fp/lMHg==
   dependencies:
-    "@formatjs/ecma402-abstract" "1.6.2"
-    "@formatjs/intl" "1.8.2"
-    "@formatjs/intl-displaynames" "4.0.10"
-    "@formatjs/intl-listformat" "5.0.10"
-    "@formatjs/intl-relativetimeformat" "8.1.2"
+    "@formatjs/ecma402-abstract" "1.9.1"
+    "@formatjs/icu-messageformat-parser" "2.0.4"
+    "@formatjs/intl" "1.11.1"
+    "@formatjs/intl-displaynames" "5.1.2"
+    "@formatjs/intl-listformat" "6.2.1"
     "@types/hoist-non-react-statics" "^3.3.1"
-    fast-memoize "^2.5.2"
     hoist-non-react-statics "^3.3.2"
-    intl-messageformat "9.5.2"
-    intl-messageformat-parser "6.4.2"
+    intl-messageformat "9.6.16"
     tslib "^2.1.0"
 
 react-is@^16.12.0, react-is@^16.13.1, react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.1:
