@@ -18796,12 +18796,12 @@ runscript@^1.4.0:
     debug "^2.6.8"
     is-type-of "^1.1.0"
 
-rxjs-hooks@^0.6.2:
-  version "0.6.2"
-  resolved "https://registry.npm.taobao.org/rxjs-hooks/download/rxjs-hooks-0.6.2.tgz#08428ea10739a8da50a9b45724faf7f81156e4cf"
-  integrity sha1-CEKOoQc5qNpQqbRXJPr3+BFW5M8=
+rxjs-hooks@^0.7.0:
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/rxjs-hooks/-/rxjs-hooks-0.7.0.tgz#01c00257afa3d602b28025f943ba613e9fa31e57"
+  integrity sha512-R7uSuiYkn5p0ig9dgdpiCyrRwoltTW70wtCNSalwxb+OWVuI1wkg3sYF/tLOtSXUm1n4eGwKkJgL65ICS3n/5A==
   dependencies:
-    tslib "^1.10.0"
+    tslib "^2.1.0"
     use-constant "^1.0.0"
 
 rxjs@^6.4.0, rxjs@^6.6.3, rxjs@^6.6.6:
