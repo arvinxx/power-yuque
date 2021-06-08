@@ -88,7 +88,7 @@
     "@types/jest": "^26.0.14",
     "@types/jquery": "^3.5.5",
     "@types/react-test-renderer": "^17.0.1",
-    "@types/webpack": "^4.41.22",
+    "@types/webpack": "^5.28.0",
     "@umijs/fabric": "^2.5.7",
     "@umijs/preset-ui": "^2.2.9",
     "@umijs/test": "^3.3.9",
