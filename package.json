@@ -58,7 +58,7 @@
     "antd": "^4.13.1",
     "classnames": "^2.2.6",
     "current-device": "^0.10.2",
-    "dayjs": "^1.10.4",
+    "dayjs": "^1.10.5",
     "jquery": "^3.6.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
