@@ -10620,10 +10620,10 @@ hosted-git-info@^3.0.0, hosted-git-info@^3.0.6:
   dependencies:
     lru-cache "^6.0.0"
 
-hotkeys-js@3.8.2:
-  version "3.8.2"
-  resolved "https://registry.yarnpkg.com/hotkeys-js/-/hotkeys-js-3.8.2.tgz#177c3e7dc19279c881e69983177849bed76e4747"
-  integrity sha512-HZZ9RVNr3nBbs2nW968o4rp3xXSdPjJ4B7GTXE375WwboltDJMsP9mcHfAAv+igsTeVxetr10mEbnoac/1U+oQ==
+hotkeys-js@3.8.7:
+  version "3.8.7"
+  resolved "https://registry.yarnpkg.com/hotkeys-js/-/hotkeys-js-3.8.7.tgz#c16cab978b53d7242f860ca3932e976b92399981"
+  integrity sha512-ckAx3EkUr5XjDwjEHDorHxRO2Kb7z6Z2Sxul4MbBkN8Nho7XDslQsgMJT+CiJ5Z4TgRxxvKHEpuLE3imzqy4Lg==
 
 hpack.js@^2.1.6:
   version "2.1.6"
@@ -17673,12 +17673,12 @@ react-helmet@^6.1.0:
     react-fast-compare "^3.1.1"
     react-side-effect "^2.1.0"
 
-react-hotkeys-hook@^3.2.1:
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/react-hotkeys-hook/-/react-hotkeys-hook-3.2.1.tgz#314760bad7b27c1cf5dedb4b8b15fb7eced3ae1f"
-  integrity sha512-l5Y4Dr109Fz10hHq40hkJmppXUqdv7tNVFldPq7lDsgWBpPLWCtkkSkrzTySje4GK+t5VLzPA01cCyUsZutOmQ==
+react-hotkeys-hook@^3.3.3:
+  version "3.3.3"
+  resolved "https://registry.yarnpkg.com/react-hotkeys-hook/-/react-hotkeys-hook-3.3.3.tgz#976a4dec807f6f2ca905af42eefe394749b60c43"
+  integrity sha512-V+4PRCZa41Irqcw0nDSeEF7pRIk+o0AH8LyGGF5ZEBTFnTsb6gc+9G3qB4lXHNfEmyMBGLxzPWenQ09JcwCGfQ==
   dependencies:
-    hotkeys-js "3.8.2"
+    hotkeys-js "3.8.7"
 
 react-intl@3.12.1:
   version "3.12.1"
