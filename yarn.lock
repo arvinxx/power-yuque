@@ -3211,10 +3211,10 @@
   dependencies:
     "@types/node" "*"
 
-"@types/chrome@^0.0.133":
-  version "0.0.133"
-  resolved "https://registry.yarnpkg.com/@types/chrome/-/chrome-0.0.133.tgz#9e1d55441584ba2d5274ca84db36427da9c5dc6e"
-  integrity sha512-G8uIUdaCTBILprQvQXBWGXZxjAWbkCkFQit17cdH3zYQEwU8f/etNl8+M7e8MRz9Xj8daHaVpysneMZMx8/ldQ==
+"@types/chrome@^0.0.150":
+  version "0.0.150"
+  resolved "https://registry.yarnpkg.com/@types/chrome/-/chrome-0.0.150.tgz#84fe4023e78bbca660af070bd531340efe8af44e"
+  integrity sha512-StzZ2lnnj9FtikyV4s0AVdOIl9/iuOYLtR2FJFoQi7tVZkPL+mBwW4P4Pq5fdn9yiXmcNPu0mKKNvRFp8EHQOQ==
   dependencies:
     "@types/filesystem" "*"
     "@types/har-format" "*"
