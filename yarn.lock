@@ -4154,10 +4154,10 @@
   resolved "https://registry.npm.taobao.org/@umijs/error-code-map/download/@umijs/error-code-map-1.0.1.tgz#2a2dd7b4bcd11869e968264ff3dabacfabe8b874"
   integrity sha1-Ki3XtLzRGGnpaCZP89q6z6vouHQ=
 
-"@umijs/fabric@^2.2.2", "@umijs/fabric@^2.5.7":
-  version "2.5.7"
-  resolved "https://registry.yarnpkg.com/@umijs/fabric/-/fabric-2.5.7.tgz#5d73b6110d240147669dea78789185ddcf81271b"
-  integrity sha512-s2daVngqVtawaFmJ19sGu8hOgrCCgFR9TI+WoMlUKfMpOlRcMLKGG8JxQIsX/AMlPNMbLB7/iDZFI4KLsWaCpw==
+"@umijs/fabric@^2.2.2", "@umijs/fabric@^2.6.4":
+  version "2.6.4"
+  resolved "https://registry.yarnpkg.com/@umijs/fabric/-/fabric-2.6.4.tgz#026898a322052781ccf58af69e5dee7fb87ebdf9"
+  integrity sha512-QskH8U34zeSk3KPbw2AO0T6aYOIksJ6eSHvp52Izzr1fxXbnqmZGoFiXVKks9HtenV9vyOV7tpUWS9hAKtP55g==
   dependencies:
     "@babel/core" "^7.12.10"
     "@babel/eslint-parser" "^7.12.1"
@@ -4168,6 +4168,7 @@
     "@babel/preset-typescript" "^7.12.7"
     "@typescript-eslint/eslint-plugin" "^4.10.0"
     "@typescript-eslint/parser" "^4.10.0"
+    chalk "^4.1.1"
     eslint "^7.11.0"
     eslint-config-airbnb-base "^14.2.0"
     eslint-config-prettier "^6.13.0"
@@ -4184,6 +4185,7 @@
     eslint-plugin-react-hooks "^4.1.2"
     eslint-plugin-unicorn "^20.0.0"
     fast-glob "^3.2.4"
+    os-locale "^5.0.0"
     prettier-plugin-style-order "^0.2.2"
     stylelint "^13.7.0"
     stylelint-config-css-modules "^2.2.0"
@@ -6296,7 +6298,7 @@ chalk@2.4.2, chalk@^2.0.0, chalk@^2.0.1, chalk@^2.3.2, chalk@^2.4.1, chalk@^2.4.
     escape-string-regexp "^1.0.5"
     supports-color "^5.3.0"
 
-chalk@4.1.0, chalk@^4.0.0, chalk@^4.1.0:
+chalk@4.1.0:
   version "4.1.0"
   resolved "https://registry.npm.taobao.org/chalk/download/chalk-4.1.0.tgz?cache=0&sync_timestamp=1592843133653&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fchalk%2Fdownload%2Fchalk-4.1.0.tgz#4e14870a618d9e2edd97dd8345fd9d9dc315646a"
   integrity sha1-ThSHCmGNni7dl92DRf2dncMVZGo=
@@ -6319,6 +6321,14 @@ chalk@^3.0.0:
   version "3.0.0"
   resolved "https://registry.npm.taobao.org/chalk/download/chalk-3.0.0.tgz?cache=0&sync_timestamp=1592843133653&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fchalk%2Fdownload%2Fchalk-3.0.0.tgz#3f73c2bf526591f574cc492c51e2456349f844e4"
   integrity sha1-P3PCv1JlkfV0zEksUeJFY0n4ROQ=
+  dependencies:
+    ansi-styles "^4.1.0"
+    supports-color "^7.1.0"
+
+chalk@^4.0.0, chalk@^4.1.0, chalk@^4.1.1:
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/chalk/-/chalk-4.1.2.tgz#aac4e2b7734a740867aeb16bf02aad556a1e7a01"
+  integrity sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==
   dependencies:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
@@ -15254,7 +15264,7 @@ os-homedir@^1.0.0:
   resolved "https://registry.npm.taobao.org/os-homedir/download/os-homedir-1.0.2.tgz#ffbc4988336e0e833de0c168c7ef152121aa7fb3"
   integrity sha1-/7xJiDNuDoM94MFox+8VISGqf7M=
 
-os-locale@5.0.0:
+os-locale@5.0.0, os-locale@^5.0.0:
   version "5.0.0"
   resolved "https://registry.npm.taobao.org/os-locale/download/os-locale-5.0.0.tgz#6d26c1d95b6597c5d5317bf5fba37eccec3672e0"
   integrity sha1-bSbB2Vtll8XVMXv1+6N+zOw2cuA=
