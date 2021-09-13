@@ -1,5 +1,12 @@
 # Power Yuque 更新日志
 
+# [0.5.0](https://github.com/arvinxx/power-yuque/compare/v0.4.2...v0.5.0) (2021-09-13)
+
+
+### ✨ 新特性
+
+* 支持内网语雀 ([fc74744](https://github.com/arvinxx/power-yuque/commit/fc74744))
+
 ## [0.4.2](https://github.com/arvinxx/power-yuque/compare/v0.4.1...v0.4.2) (2021-02-21)
 
 
