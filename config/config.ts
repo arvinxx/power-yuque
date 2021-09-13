@@ -23,7 +23,11 @@ export default defineConfig({
     },
     contentScripts: [
       {
-        matches: ['https://yuque.com/*', 'https://www.yuque.com/*'],
+        matches: [
+          'https://yuque.com/*',
+          'https://www.yuque.com/*',
+          'https://yuque.antfin.com/*',
+        ],
         entries: ['@/contentScripts/index'],
       },
     ],
