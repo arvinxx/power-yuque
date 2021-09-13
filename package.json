@@ -93,7 +93,7 @@
     "@umijs/preset-ui": "^2.2.9",
     "@umijs/test": "^3.3.9",
     "archiver": "^5.3.0",
-    "babel-jest": "^26.6.0",
+    "babel-jest": "^27.2.0",
     "commitlint-config-gitmoji": "^2.2.3",
     "conventional-changelog-cli": "^2.1.1",
     "conventional-changelog-gitmoji-config": "^1.4.2",
