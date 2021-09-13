@@ -4,7 +4,7 @@
 
 import type { ActivityDoc } from '@/utils';
 import {
-  fetchRepo,
+  // fetchRepo,
   fetchDocs,
   // fetchGroup,
   fetchUser,
@@ -29,10 +29,10 @@ describe('数据请求', () => {
   //   }
   // });
 
-  it('成功获取 Repo ', async () => {
-    const data = await fetchRepo('lruur3');
-    expect(data).toEqual(['lruur3/cv407h', 'lruur3/wo986l']);
-  });
+  // it('成功获取 Repo ', async () => {
+  //   const data = await fetchRepo('lruur3');
+  //   expect(data).toEqual(['lruur3/cv407h', 'lruur3/wo986l']);
+  // });
 
   it('成功获取仓库文档列表', async () => {
     const data = await fetchDocs('lruur3/cv407h');
