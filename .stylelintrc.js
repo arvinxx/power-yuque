@@ -1,8 +1,1 @@
-const fabric = require('@umijs/fabric');
-
-module.exports = {
-  ...fabric.stylelint,
-  rules: {
-    'no-invalid-double-slash-comments': null,
-  },
-};
+module.exports = require('@umijs/max/stylelint');

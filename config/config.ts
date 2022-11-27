@@ -1,15 +1,25 @@
-import { defineConfig } from 'umi';
+import { defineConfig } from '@umijs/max';
 import { resolve } from 'path';
-import theme from '../src/theme/theme';
 
 const isDev = process.env.NODE_ENV === 'development';
 
 export default defineConfig({
+  plugins: [require.resolve('umi-plugin-extensions')],
+
   locale: { default: 'zh-CN' },
   alias: {
     theme: resolve(__dirname, '../src/theme'),
   },
-  theme,
+  antd: {
+    configProvider: {
+      theme: {
+        token: {
+          colorPrimary: 'hsl(146, 51%, 52%)',
+        },
+      },
+    },
+    import: false,
+  },
   define: {
     'process.env.SEARCH_BAR': process.env.SEARCH_BAR,
   },
@@ -31,7 +41,7 @@ export default defineConfig({
         entries: ['@/contentScripts/index'],
       },
     ],
-    background: { scripts: ['@/background/index'] },
+    background: { service_worker: '@/background/index' },
     popupUI: '@/pages/popup',
     permissions: ['storage'],
     icons: isDev
