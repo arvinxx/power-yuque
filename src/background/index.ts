@@ -1,5 +1,3 @@
-console.log('This is background page!');
-
 chrome.browserAction.onClicked.addListener(() => {
   chrome.tabs.create({ url: 'https://yuque.com' });
 });
