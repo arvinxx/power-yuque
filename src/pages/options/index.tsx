@@ -7,12 +7,14 @@ import { useYuqueTokenService, YuqueTokenService } from '@/services';
 
 import Token from './Token';
 
-import styles from './style.less';
+import { useStyles } from './style';
 
 const App: FC = () => {
   const [selectedKey, setSelectedKey] = useState('token');
 
   const yuqueTokenService = useYuqueTokenService();
+
+  const styles = useStyles();
 
   const Panel: FC = () => {
     switch (selectedKey) {

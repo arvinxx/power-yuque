@@ -8,7 +8,7 @@ import { useKeyboardResult } from './useKeyboardResult';
 import RepoIcon from './RepoIcon';
 import AnimatedHeight from './AnimatedHeight';
 
-import styles from './style.less';
+import { useStyles } from './style';
 
 const SearchResult: FC = () => {
   const { result, loading } = useContext(SearchService);
@@ -19,6 +19,8 @@ const SearchResult: FC = () => {
     resultRef,
     openPage,
   } = useKeyboardResult();
+
+  const styles = useStyles();
 
   return (
     // @ts-ignore

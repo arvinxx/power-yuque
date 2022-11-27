@@ -6,19 +6,14 @@ import cls from 'classnames';
 import { SearchService } from '../../../useSearchService';
 import { KeyboardService } from '../../../useKeyboardService';
 
-import styles from './style.less';
+import { useStyles } from './style';
 
 const Options: FC = () => {
-  const {
-    type,
-    setType,
-    related,
-    setRelated,
-    options,
-    optionActiveIndex,
-  } = useContext(SearchService);
+  const { type, setType, related, setRelated, options, optionActiveIndex } =
+    useContext(SearchService);
   const { focusKey, focusOnOptions } = useContext(KeyboardService);
 
+  const styles = useStyles();
   return (
     <div className={styles.container}>
       <Space>

@@ -1,2 +1,1 @@
-import './typographic';
 import './searchBar';
