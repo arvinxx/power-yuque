@@ -1,6 +1,6 @@
 import { useLocalStorageState } from 'ahooks';
 import { useCallback, useEffect, useState } from 'react';
-import { message } from 'antd';
+import { message } from '@/components';
 import request from 'umi-request';
 
 import { getServiceToken } from '@/utils';

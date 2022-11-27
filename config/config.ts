@@ -10,14 +10,10 @@ export default defineConfig({
   alias: {
     theme: resolve(__dirname, '../src/theme'),
   },
+  mpa: {
+    layout: '@/layouts/Layout',
+  },
   antd: {
-    configProvider: {
-      theme: {
-        token: {
-          colorPrimary: 'hsl(146, 51%, 52%)',
-        },
-      },
-    },
     import: false,
   },
   define: {

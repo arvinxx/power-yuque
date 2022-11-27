@@ -1,32 +1,21 @@
 import type { FC } from 'react';
 import { useState } from 'react';
 import { Menu } from 'antd';
-import {
-  BulbOutlined,
-  FontColorsOutlined,
-  KeyOutlined,
-  SearchOutlined,
-} from '@ant-design/icons';
+import { KeyOutlined, SearchOutlined } from '@ant-design/icons';
 
 import { useYuqueTokenService, YuqueTokenService } from '@/services';
 
 import Token from './Token';
-// import Typography from './Typography';
 
 import styles from './style.less';
 
 const App: FC = () => {
-  const [selectedKey, setSelectedKey] = useState(
-    'typography',
-    // 'token'
-  );
+  const [selectedKey, setSelectedKey] = useState('token');
+
   const yuqueTokenService = useYuqueTokenService();
 
   const Panel: FC = () => {
     switch (selectedKey) {
-      case 'typography':
-        return <div />;
-      // return <Typography />;
       case 'token':
       default:
         return <Token />;
@@ -49,15 +38,7 @@ const App: FC = () => {
             <Menu.Item key="token">
               <KeyOutlined /> 语雀 Token
             </Menu.Item>
-            <Menu.Item key="typography">
-              <FontColorsOutlined />
-              排版配置
-            </Menu.Item>
 
-            <Menu.Item disabled key="dark">
-              <BulbOutlined />
-              深色模式
-            </Menu.Item>
             <Menu.Item disabled key="search-bar">
               <SearchOutlined /> 高级搜索框
             </Menu.Item>
