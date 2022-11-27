@@ -1,5 +1,5 @@
 {
-  "include": ["./src", "./types", "config", "scripts", "tests"],
+  "include": ["src", "types", "config", "scripts"],
   "compilerOptions": {
     /* Basic Options */
     "jsx": "react-jsx",
@@ -27,7 +27,7 @@
     "skipLibCheck": true,
 
     // 下面这些选项对 babel 编译 TypeScript 没有作用但是可以让 VSCode 等编辑器正确提示错误
-    "target": "ES5",
+    "target": "ES2020",
     "module": "ESNext",
     // Alias 路径
     "baseUrl": ".",
@@ -35,6 +35,5 @@
       "@/*": ["src/*"],
       "@@/*": ["src/.umi/*"]
     }
-  },
-  "exclude": [".eslintrc.js", ".commitlintrc.js"]
+  }
 }
