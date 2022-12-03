@@ -48,7 +48,7 @@
   "dependencies": {
     "@ant-design/charts": "^1.0.19",
     "@ant-design/icons": "^4",
-    "@ant-design/pro-layout": "^6.15.0",
+    "@ant-design/pro-layout": "^7.3.3",
     "@ant-design/pro-list": "^1.5.5",
     "@emotion/css": "^11.10.5",
     "@yuque/sdk": "^1.1.1",
