@@ -52,7 +52,7 @@
     "@ant-design/pro-list": "^1.5.5",
     "@emotion/css": "^11.10.5",
     "@yuque/sdk": "^1.1.1",
-    "ahooks": "^2.9.6",
+    "ahooks": "^3.7.2",
     "antd": "^5",
     "classnames": "^2.2.6",
     "current-device": "^0.10.2",
